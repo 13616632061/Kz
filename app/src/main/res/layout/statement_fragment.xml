@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:background="#f4f4f4"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="报表"
+            android:gravity="center"
+            android:background="@drawable/but_shangping"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="137dp"
+            android:layout_height="37dp" />
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/but_statement"
+            android:text="订单"
+            android:background="#ffffff"
+            android:textColor="@drawable/text_color"
+            android:layout_width="137dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:id="@+id/im_di1"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/but_di"/>
+        <View
+            android:background="#f4f4f4"
+            android:layout_width="137dp"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/but_statistics"
+            android:text="商品销售统计"
+            android:background="#ffffff"
+            android:textColor="@drawable/text_color"
+            android:layout_width="137dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:id="@+id/im_di2"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/but_di"/>
+        <View
+            android:background="#f4f4f4"
+            android:layout_width="137dp"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/tv_shifting"
+            android:text="交接日志"
+            android:background="#ffffff"
+            android:textColor="@drawable/text_color"
+            android:layout_width="137dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:id="@+id/im_di3"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/but_di"/>
+        <View
+            android:background="#f4f4f4"
+            android:layout_width="137dp"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/but_return"
+            android:text="退货详情"
+            android:background="#ffffff"
+            android:textColor="@drawable/text_color"
+            android:layout_width="137dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:id="@+id/im_di4"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/but_di"/>
+        <View
+            android:background="#f4f4f4"
+            android:layout_width="137dp"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/but_redeem"
+            android:text="兑奖详情"
+            android:background="#ffffff"
+            android:textColor="@drawable/text_color"
+            android:layout_width="137dp"
+            android:layout_height="37dp" />
+        <ImageView
+            android:id="@+id/im_di5"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/but_di"/>
+        <View
+            android:background="#f4f4f4"
+            android:layout_width="137dp"
+            android:layout_height="1dp"/>
+
+
+
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/fl_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

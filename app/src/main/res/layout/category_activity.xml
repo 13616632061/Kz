@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+    android:background="@color/colormain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/im_huanghui"
+        android:src="@drawable/huanghui"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:textSize="22dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:text="@string/selective_classification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <widget.MyGirdView
+        android:id="@+id/gv_category"
+        android:numColumns="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </ScrollView>
+</LinearLayout>

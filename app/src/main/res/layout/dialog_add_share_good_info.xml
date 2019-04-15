@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/whitle_icon"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="600dp"
+        android:layout_height="450dp">
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="#ff00"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:text="新增商品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="40dp"
+                android:text="商品名称"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_sharegoods_name"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_bg"
+                android:textSize="14sp"
+                android:paddingLeft="15dp"
+                android:hint="请输入商品名字"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="40dp"
+                android:text="编        号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_sharegoods_bn"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_bg"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:hint="请输入商品编号"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="40dp"
+                android:text="分        类"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/Spinner_sharegoods_sort"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:hint="请输入商品分类"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="40dp"
+                android:text="库        存"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_sharegoods_store"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_bg"
+                android:textSize="14sp"
+                android:paddingLeft="15dp"
+                android:inputType="number"
+                android:hint="请输入商品库存"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="40dp"
+                android:text="价        格"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_sharegoods_price"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_bg"
+                android:textSize="14sp"
+                android:paddingLeft="15dp"
+                android:digits="0123456789."
+                android:hint="请输入商品价格"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:layout_marginLeft="40dp"
+                android:text="开        启"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <widget.Switch
+                android:id="@+id/switch_share_goods"
+                android:layout_marginLeft="55dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:switch_back_color="#747373"
+                app:switch_circle_color="#fff"
+                app:switch_main_color="#68b94d"/>
+        </LinearLayout>
+
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+    <EditText
+        android:id="@+id/et_sharegoods_freetime"
+        android:gravity="center"
+        android:background="@drawable/edit_bg"
+        android:textColor="#ff00"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="50dp"
+        android:layout_height="28dp" />
+    <TextView
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:text="小时内免费，之后每隔"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_sharegoods_cost_time"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:textColor="#ff00"
+        android:background="@drawable/edit_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="50dp"
+        android:layout_height="28dp" />
+    <TextView
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:text="小时，收费"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_sharegoods_cost_price"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:digits="0123456789."
+        android:textColor="#ff00"
+        android:background="@drawable/edit_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="50dp"
+        android:layout_height="28dp" />
+    <TextView
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:text="元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_marginLeft="45dp"
+                android:id="@+id/btn_cell"
+                android:layout_marginBottom="15dp"
+                android:textSize="16sp"
+                android:textColor="#ff0000"
+                android:background="@drawable/btn_gray_less"
+                android:text="取消"
+                android:layout_width="150dp"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_marginRight="45dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_sure"
+                android:layout_marginBottom="30dp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_red"
+                android:text="确定"
+                android:layout_width="150dp"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

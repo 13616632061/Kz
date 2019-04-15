@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <RelativeLayout
+            android:id="@+id/layoutscan"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_above="@+id/tv_scan"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_scan"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"
+                android:text="扫商品条码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_gravity="bottom"
+            android:src="@drawable/right"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginBottom="5dp"
+                android:layout_above="@+id/tv_scanpay"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_scanpay"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:text="扫码支付"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_gravity="bottom"
+            android:src="@drawable/right"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginBottom="5dp"
+                android:layout_above="@+id/tv_paysuccess"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_paysuccess"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"
+                android:text="支付成功"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:background="@drawable/guidebackground_nums"
+        android:layout_above="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <Button
+            android:id="@+id/btn_ok"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text="选好了"
+            android:background="@drawable/btn_red"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="48dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

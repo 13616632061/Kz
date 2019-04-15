@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_switme"
+    android:background="#f00"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_msg_cancel"-->
+            <!--android:background="@mipmap/cancel_icon"-->
+            <!--android:textColor="@color/color_fefefe"-->
+            <!--android:textSize="@dimen/text_size16_s"-->
+            <!--android:text="取消"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="74dp" />-->
+
+        <TextView
+            android:id="@+id/tv_msg_delete"
+            android:background="@drawable/confirm_icon"
+            android:textColor="@color/color_fefefe"
+            android:textSize="16sp"
+            android:text="删除"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="78dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/edit_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="15sp"
+            android:id="@+id/msg_list_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/msg_icon" />
+
+        <LinearLayout
+            android:id="@+id/ll_tilte"
+            android:layout_marginTop="16sp"
+            android:layout_toRightOf="@+id/msg_list_item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_msg_tilte"
+            android:textSize="16sp"
+            android:textColor="@color/color333"
+            android:text="审核通知"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_msg_time"
+                android:layout_marginRight="12sp"
+                android:text="12月19日18:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="16sp"
+            android:layout_below="@+id/ll_tilte"
+            android:layout_toRightOf="@+id/msg_list_item_icon"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_msg_context"
+            android:textColor="@color/color333"
+            android:text="新的采购记录需要您审核"
+            android:layout_weight="1"
+            android:lines="1"
+            android:layout_marginRight="12sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_msg_unread"
+            android:src="@drawable/unread_icon"
+            android:layout_marginRight="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/line_msg"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+    </RelativeLayout>
+
+
+</widget.SwipeItemLayout>

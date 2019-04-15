@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_goods__common__notes_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="retail.yzx.com.kz.Goods_Common_Notes_Activity">
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:background="@drawable/teltit"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/huanghui" />
+        <TextView
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:text="@string/common_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_notes"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <GridView
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="15dp"
+        android:numColumns="10"
+        android:layout_below="@+id/layout_title"
+        android:layout_above="@+id/btn_add_notes"
+        android:id="@+id/gridview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+    <Button
+        android:id="@+id/btn_add_notes"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_red"
+        android:text="@string/add_common_remarks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

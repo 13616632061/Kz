@@ -1,0 +1,338 @@
+<resources>
+    <string name="app_name">易众云Pos</string>
+
+
+    <string name="pull_to_load">上拉加载</string>
+    <string name="loading">上拉加载</string>
+    <string name="release_to_load">上拉加载</string>
+
+    <string name="register_success">Register push success.</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="recv_passthrough_message"> Receive a passthrough message. Content is \"%1$s\"</string>
+    <string name="click_notification_message"> Clicked a notification message. Content is \"%1$s\"</string>
+    <string name="arrive_notification_message"> Arrived a notification message. Content is \"%1$s\"</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="set_account_success"> Set account \"%1$s\" success.</string>
+    <string name="set_account_fail"> Set account fail for %1$s.</string>
+    <string name="unset_account_success"> Unset account \"%1$s\" success.</string>
+    <string name="unset_account_fail"> Unset account fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+
+    <string name="none_paired">没有已匹配的设备</string>
+    <string name="scanning">搜索</string>
+    <string name="select_device">选择一个设备连接</string>
+    <string name="none_found">未发现设备</string>
+    <string name="btnSearch">连接蓝牙打印机</string>
+    <string name="btnSend">打印</string>
+    <string name="btn_test">打印测试页</string>
+    <string name="btnClose">关闭</string>
+    <string name="txt_content">&quot;&quot;</string>
+    <string name="menu_settings">设置</string>
+    <string name="strLang">ch</string>
+    <string name="button_scan">搜索</string>
+
+
+    <string name="isTest">测试环境</string>
+    <string name="Online">线上环境</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="processing">退货处理</string>
+    <string name="undisposed">退钱处理</string>
+
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION</string>
+
+    <string name="shangchao_retail">商超/零售</string>
+    <string name="mobile_terminal">手机端</string>
+    <string name="restaurant">餐饮</string>
+    <string name="fruits_grain">果蔬/粮油</string>
+    <string name="milk_dessert">奶茶/甜品</string>
+    <string name="smoking_drinking">烟酒/茶</string>
+    <string name="clothing_shoes">服装/鞋帽</string>
+    <string name="self_catering">自助餐饮</string>
+    <string name="self_retailing">自助零售</string>
+    <string name="mobile_app_cashier_system">手机App收银系统,扫码免费下载！</string>
+    <string name="user_login">用户登录</string>
+    <string name="account">账户</string>
+    <string name="enter_account_number">请输入账号</string>
+    <string name="staff">员工</string>
+    <string name="enter_employee_number">请输入员工编号</string>
+    <string name="password">密码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="business">商家</string>
+    <string name="clerk">商家</string>
+    <string name="change_password">修改密码</string>
+    <string name="login">登录</string>
+    <string name="input_30_characters">请输入30个字符以内</string>
+    <string name="input_password_account">请输入账户和密码</string>
+    <string name="login_type">请选择登录类型</string>
+    <string name="cannot_be_empty">帐号或密码不能为空！</string>
+    <string name="account_password_incorrect">帐号或密码有误，请重新输入！</string>
+    <string name="logining">正在登录...</string>
+    <string name="bluetooth_open_successfully">蓝牙打开成功</string>
+    <string name="more">更多</string>
+    <string name="outlogin">登出</string>
+    <string name="refresh">同步</string>
+    <string name="catering_version">餐饮版</string>
+    <string name="fruits">餐饮版</string>
+    <string name="serial_number">序号</string>
+    <string name="name">名称</string>
+    <string name="unit_price">单价</string>
+    <string name="number">数量</string>
+    <string name="subtotal">小计</string>
+    <string name="stock">库存</string>
+    <string name="purchase_price">进价</string>
+    <string name="profit">利润</string>
+    <string name="goods">商品：</string>
+    <string name="total">合计：</string>
+    <string name="put_order">挂单</string>
+    <string name="get_order">取单</string>
+    <string name="return_goods">退货</string>
+    <string name="cash_prize">兑奖</string>
+    <string name="change_money">换钱</string>
+    <string name="member">换钱</string>
+    <string name="onCredit">赊账</string>
+    <string name="retail">零售</string>
+    <string name="take_out_food">外卖</string>
+    <string name="delete">删除</string>
+    <string name="shortcut_bar">快捷栏</string>
+    <string name="weighting_column">计重栏</string>
+    <string name="current_no_network">当前无网络</string>
+    <string name="successful_receipt">收款成功</string>
+    <string name="receivable">已收款：</string>
+    <string name="pay_type">支付方式：</string>
+    <string name="cash_payment">现金支付：</string>
+    <string name="order_numbers">单号：</string>
+    <string name="date">日期：</string>
+    <string name="customer_paid">顾客已付款：</string>
+    <string name="close_after_one_econd">1秒后关闭</string>
+    <string name="amount_payable">应付金额：</string>
+    <string name="two_code_played">二维码已客显</string>
+    <string name="mobile_type">移动支付</string>
+    <string name="mobile_cashier_without_network">无网移动收银</string>
+    <string name="receivables">应收</string>
+    <string name="netreceipts">实收</string>
+    <string name="give_change">找零</string>
+    <string name="vertical_reduction">立减</string>
+    <string name="discount">折扣</string>
+    <string name="zero_suppression">折扣</string>
+    <string name="tips_for_collection">收款提示</string>
+    <string name="accepted">已收</string>
+    <string name="out_order">解挂</string>
+    <string name="previous_page">上一页</string>
+    <string name="next_page">下一页</string>
+    <string name="Bluetooth_not_available">蓝牙不可用</string>
+    <string name="no_reduction_without_commodities">没有商品不能立减</string>
+    <string name="activities">活动</string>
+    <string name="input_preferential_amount">输入优惠金额</string>
+    <string name="activities_reduction">活动立减</string>
+    <string name="jin">斤</string>
+    <string name="liang">两</string>
+    <string name="g">克</string>
+    <string name="data_wait_long_time">同步数据等待时间较长是否继续？</string>
+    <string name="please_input_code">请输入条码</string>
+    <string name="only_one_times">一次只可以搜索一个</string>
+    <string name="modified_quantity">修改数量</string>
+    <string name="please_modified_quantity">请修改数量</string>
+    <string name="modified_price">修改价格</string>
+    <string name="please_modified_price">请修改价格</string>
+    <string name="can_not_put_order">兑奖不能挂单</string>
+    <string name="lock_screen">锁屏</string>
+    <string name="cash_box_operation">钱箱操作</string>
+    <string name="open_cash_box">打开了钱箱</string>
+    <string name="use_other_payment_methods">没有网络请用其他支付方式</string>
+    <string name="current_network_is_poor">当前网络较差</string>
+    <string name="removed">移除了：</string>
+    <string name="remove">移除</string>
+    <string name="no_such_commodity">没有该商品</string>
+    <string name="pay_success">支付成功</string>
+    <string name="newly_increased_goods">新增商品</string>
+    <string name="bar_code">条码</string>
+    <string name="no_bar_code">没有条码 ?</string>
+    <string name="please_scan_or_enter_barcode">请扫码或输入条码</string>
+    <string name="goods_name">商品名</string>
+    <string name="must_fill_goods_name">商品名称（必填）</string>
+    <string name="selling_price">售价</string>
+    <string name="must_fill_selling_price">销售单价（必填）</string>
+    <string name="classification">分类</string>
+    <string name="unit">单位</string>
+    <string name="edit_more">编辑更多</string>
+    <string name="more_goods_info">更多商品信息</string>
+    <string name="upper_shelf">上架</string>
+    <string name="no_discount_on_special_price">特价不打折</string>
+    <string name="specifications">规格</string>
+    <string name="place_of_production">产地</string>
+    <string name="membership_price">会员价</string>
+    <string name="v1price">v1价</string>
+    <string name="v2price">v2价</string>
+    <string name="v3price">v3价</string>
+    <string name="v4price">v4价</string>
+    <string name="v5price">v5价</string>
+    <string name="unit_price_of_purchase">进货单价</string>
+    <string name="discount_of_purchase">进货折扣</string>
+    <string name="selection_of_suppliers">选择供应商</string>
+    <string name="must_fill_stock_nums">商品库存量（必填）</string>
+    <string name="replenish_stock">补充库存</string>
+    <string name="stock_top_limit">库存上限</string>
+    <string name="max_stock">最大库存量</string>
+    <string name="stock_lower_limit">库存下限</string>
+    <string name="min_stock">最小库存量</string>
+    <string name="return_of_goods">反退货</string>
+    <string name="open_box">开启拆箱</string>
+    <string name="set_stock_warn_msg">设置库存范围，方便我们为您配货，并为您进行库存预警</string>
+    <string name="pinyin_code">拼音码</string>
+    <string name="pinyin_code_initials">商品名称的首字母</string>
+    <string name="label">标签</string>
+    <string name="date_of_manufacture">生产日期</string>
+    <string name="due_date">到期日期</string>
+    <string name="quality_guarantee_period">保质期</string>
+    <string name="input_quality_guarantee_period">请输入保质期</string>
+    <string name="day">天</string>
+    <string name="remaining_0_days">库存上限</string>
+    <string name="remaining_50_words">剩余50个字</string>
+    <string name="print_label">打印标签</string>
+    <string name="del_good">删除商品</string>
+    <string name="save">保存</string>
+    <string name="selective_classification">选择分类</string>
+    <string name="user_name">用户名</string>
+    <string name="old_password">原密码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_modify">确定修改</string>
+    <string name="please_input_a_order_num_search">请输入单号搜索</string>
+    <string name="search">搜索</string>
+    <string name="collect_money">收银</string>
+    <string name="report_form">报表</string>
+    <string name="good">商品</string>
+    <string name="put_into_stock">出入库</string>
+    <string name="inventory">盘点</string>
+    <string name="loss">报损</string>
+    <string name="report_goods">报货</string>
+    <string name="members">会员</string>
+    <string name="about">关于</string>
+    <string name="news">消息</string>
+    <string name="paired_devices">配对设备</string>
+    <string name="other_devices">其他可用设备</string>
+    <string name="common_remarks">常用备注</string>
+    <string name="add_common_remarks">新增常用备注</string>
+    <string name="change_shifts">交接班</string>
+    <string name="cashier">收银员: </string>
+    <string name="mobile_income">移动收入：</string>
+    <string name="currently_cash">应有现金：</string>
+    <string name="reserve_fund">备用金</string>
+    <string name="total_sales">总销售额:</string>
+    <string name="toatl_order_nums">总单数</string>
+    <string name="turn_over_money">上缴金额:</string>
+    <string name="other_income">其他收入：</string>
+    <string name="remarks">备注：</string>
+    <string name="pleaser_input_remarks">请输入备注</string>
+    <string name="stock_cash">库存现金：</string>
+    <string name="please_input_stock_cash">请输入库存现金</string>
+    <string name="work_time">工作时间：</string>
+    <string name="change_shifts_and_outlogin">交接班并登出</string>
+    <string name="opened_cash_box">开钱箱</string>
+    <string name="stock_status">库存状态</string>
+    <string name="normal_stock">库存正常()</string>
+    <string name="abnormal_stock">库存异常()</string>
+    <string name="no_inventory">未盘点()</string>
+    <string name="submit">提交</string>
+    <!--<string name="stock_cash">库存现金：</string>-->
+    <!--<string name="stock_cash">库存现金：</string>-->
+    <!--<string name="stock_cash">库存现金：</string>-->
+    <!--<string name="stock_cash">库存现金：</string>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

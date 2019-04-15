@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_go_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/but_close"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/dengchu"
+        android:text="关闭"
+        android:layout_gravity="right"
+        android:textColor="#626262"
+        android:textSize="18.9sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/but_close"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="22dp"
+            android:layout_gravity="center_horizontal"
+            android:text="会员信息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_below="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="会员:"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:textColor="@color/colormain"
+            android:text="陈先生"
+            android:textSize="22dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_below="@+id/ll_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="22dp"
+                    android:padding="5dp"
+                    android:text="折扣:" />
+
+                <TextView
+                    android:id="@+id/tv_discount"
+                    android:textColor="@color/colormain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="22dp"
+                    android:padding="5dp"
+                    android:text="95%" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+        android:id="@+id/ll_9"
+        android:layout_below="@+id/ll_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="等级:"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:textColor="@color/colormain"
+            android:text="Lv1"
+            android:textSize="22dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_3"
+                android:layout_below="@+id/ll_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="余额:"
+                    android:textSize="22dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_balance1"
+                    android:text="3000 元"
+                    android:textColor="@color/colormain"
+                    android:textSize="22dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/but_recharge"
+                    android:textColor="#ffff8904"
+                    android:background="@drawable/btn_gray_less"
+                    android:text="充值"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_4"
+                android:layout_below="@+id/ll_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="联系电话:"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:text="1872019233212"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colormain"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_5"
+                android:layout_below="@+id/ll_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="积分:"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_integral1"
+                    android:text="7000 分"
+                    android:textColor="@color/colormain"
+                    android:textSize="22dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:textColor="#ffff8904"
+                    android:id="@+id/but_dimdis"
+                    android:background="@drawable/btn_gray_less"
+                    android:text="兑换"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+                <Button
+                    android:textColor="#ffff8904"
+                    android:id="@+id/but_eductible"
+                    android:background="@drawable/btn_gray_less"
+                    android:text="抵扣"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_6"
+                android:layout_below="@+id/ll_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:text="会员生日:"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    android:text="2017-12-06"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_7"
+                android:layout_below="@+id/ll_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="通用折扣:"
+                    android:textSize="22dp"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/ed_Discount"
+                    android:inputType="numberDecimal"
+                    android:background="@color/bg_white"
+                    android:layout_gravity="center_vertical"
+                    android:hint="设置通用折扣"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_8"
+            android:layout_below="@+id/ll_7"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="开卡日期:"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:text="2017-12-06"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/ll_8"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="备注:"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:text="111111111"
+                android:textSize="22dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/but_self_discount"
+                android:textColor="#ffff8904"
+                android:background="@drawable/btn_gray_less"
+                android:text="折扣"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp" />
+
+            <Button
+                android:id="@+id/but_discount"
+                android:textColor="#ffff8904"
+                android:background="@drawable/btn_gray_less"
+                android:text="使用余额"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp" />
+
+
+
+
+            <Button
+                android:id="@+id/but_balance_paid"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_red"
+                android:text="使用余额+折扣"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:background="@drawable/radius_shape_fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/tv_t1"
+        android:layout_marginTop="20dp"
+        android:text="补充库存"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/ed_add"
+        android:hint="请输入补充库存"
+        android:digits="1234567890."
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#ffffff"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/but_add"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/but_fenlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_grade"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="480dp"
+        android:layout_height="380dp">
+
+
+        <TextView
+            android:id="@+id/tv_lv0"
+            android:text="普通价"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_lv1"
+            android:text="v1价"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_lv2"
+            android:text="v2价"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_lv3"
+            android:text="v3价"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_lv4"
+            android:text="v4价"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_lv5"
+            android:text="v5价"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

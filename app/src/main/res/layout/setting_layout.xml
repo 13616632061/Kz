@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="500dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:background="@drawable/radius_shape_fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/teltit">
+
+        <ImageView
+            android:id="@+id/im_huanghui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/huanghui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="数据库的备份"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/tv_name"
+            android:layout_alignParentRight="true"
+            android:hint="店铺名称"
+            android:textColorHint="#b4b4b4"
+            android:background="@drawable/edit_bg"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/but_backup"
+                    android:text="备份数据库"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:text="恢复数据"
+                    android:layout_toLeftOf="@+id/but_backup"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/but_restroe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_discount"
+                    android:text="全场折扣"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:id="@+id/ed_discount"
+                    android:inputType="numberDecimal"
+                    android:layout_toRightOf="@+id/tv_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#fdfdfe"
+                    android:paddingRight="20dp"
+                    android:hint="请输入全场折扣小于10"
+                    android:singleLine="true"
+                    android:textColorHint="#bcb5b5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name_map"
+                    android:text="地址"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/tv_map"
+                    android:layout_toRightOf="@+id/tv_name_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#fdfdfe"
+                    android:paddingRight="20dp"
+                    android:hint="请输入打印地址"
+                    android:singleLine="true"
+                    android:textColorHint="#bcb5b5"
+                    android:textSize="14sp" />
+
+        <EditText
+            android:visibility="gone"
+            android:background="@drawable/edit_bg"
+            android:layout_toLeftOf="@+id/im_map"
+            android:hint=""
+            android:textColorHint="#b4b4b4"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/im_map"
+            android:background="#f00"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ed_name_remarks"
+                    android:text="打印备注"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:id="@+id/ed_remarks"
+                    android:layout_toRightOf="@+id/ed_name_remarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#fdfdfe"
+                    android:paddingRight="20dp"
+                    android:hint="请输入打印的备注"
+                    android:singleLine="true"
+                    android:textColorHint="#bcb5b5"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:background="@drawable/edit_bg"
+                    android:hint="请输入打印的备注"
+                    android:textColorHint="#b4b4b4"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:background="#f00"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ed_ip"
+                    android:text="Ip地址:"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ed_mstrIp"
+                    android:layout_toRightOf="@+id/ed_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#fdfdfe"
+                    android:paddingRight="20dp"
+                    android:hint="请输入IP地址"
+                    android:singleLine="true"
+                    android:textColorHint="#bcb5b5"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="打印单价"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <widget.Switch
+                    android:id="@+id/sw_price"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switch_back_color="#747373"
+                    app:switch_circle_color="#fff"
+                    app:switch_main_color="#68b94d"/>
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:text="开机启动"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <widget.Switch
+            android:id="@+id/sw1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:switch_back_color="#747373"
+            app:switch_circle_color="#fff"
+            app:switch_main_color="#68b94d"/>
+
+
+    </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="是否开启备用金"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <widget.Switch
+            android:id="@+id/sw2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:switch_back_color="#747373"
+            app:switch_circle_color="#fff"
+            app:switch_main_color="#68b94d"/>
+
+
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:text="是否自动刷新数据"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <widget.Switch
+                    android:id="@+id/sw3"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switch_back_color="#747373"
+                    app:switch_circle_color="#fff"
+                    app:switch_main_color="#68b94d" />
+
+
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="是否自动打印小票"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <widget.Switch
+            android:id="@+id/sw5"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:switch_back_color="#747373"
+            app:switch_circle_color="#fff"
+            app:switch_main_color="#68b94d" />
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="是否自动打印订单标签"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <widget.Switch
+            android:id="@+id/sw_order_lebal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:switch_back_color="#747373"
+            app:switch_circle_color="#fff"
+            app:switch_main_color="#68b94d" />
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+            <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_print_nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="打印小票张数"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_print"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:text="保存"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <EditText
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/edit_unms"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_print"
+            android:background="@drawable/edit_frame"
+            android:layout_width="60dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@+id/edit_unms"
+            android:text="每次打印数量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="是否开启副屏二维码支付"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <widget.Switch
+            android:id="@+id/sw4"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:switch_back_color="#747373"
+            app:switch_circle_color="#fff"
+            app:switch_main_color="#68b94d" />
+
+
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="是否关闭本地计重栏"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <widget.Switch
+                    android:id="@+id/sw_weight"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switch_back_color="#747373"
+                    app:switch_circle_color="#fff"
+                    app:switch_main_color="#68b94d" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="小票小计显示折后价"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <widget.Switch
+                    android:id="@+id/sw_total"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switch_back_color="#747373"
+                    app:switch_circle_color="#fff"
+                    app:switch_main_color="#68b94d" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="微信二维码" />
+
+                <ImageView
+                    android:src="@drawable/kuozhang"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:id="@+id/rl_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="支付宝二维码"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/kuozhang"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_local"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ed_name_local_password"
+                    android:text="退货和立减密码"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <EditText
+                    android:id="@+id/ed_local_password"
+                    android:layout_toRightOf="@+id/ed_name_local_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#fdfdfe"
+                    android:paddingRight="20dp"
+                    android:hint="请输入密码"
+                    android:singleLine="true"
+                    android:textColorHint="#bcb5b5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="修改密码"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/kuozhang"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+            <RelativeLayout
+                 android:id="@+id/rl_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:text="标签打印"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/kuozhang"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+        android:id="@+id/Rl_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="设置副屏的视频"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/kuozhang"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/Rl_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="设置副屏的图片"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/kuozhang"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_self_service_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv1"
+            android:text="自助收银商品设置"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_selfservice_sure"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:text="保存"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <EditText
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/edit_selfservice_nums"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_selfservice_sure"
+            android:background="@drawable/edit_frame"
+            android:layout_width="60dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@+id/edit_selfservice_nums"
+            android:text="每次自助订单商品数量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="自助是否连接蓝牙小票机"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <widget.Switch
+            android:id="@+id/sw6"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:switch_back_color="#747373"
+            app:switch_circle_color="#fff"
+            app:switch_main_color="#68b94d" />
+
+
+    </RelativeLayout>
+            <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="是否开启餐桌"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <widget.Switch
+                    android:id="@+id/sw7"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switch_back_color="#747373"
+                    app:switch_circle_color="#fff"
+                    app:switch_main_color="#68b94d" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="支付后打印"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <widget.Switch
+                    android:id="@+id/sw8"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switch_back_color="#747373"
+                    app:switch_circle_color="#fff"
+                    app:switch_main_color="#68b94d" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/edit_name_resolving_power"
+                    android:text="设置分辨率"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_resolving_power"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:text="保存"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+
+
+                <EditText
+                    android:id="@+id/edit_resolving_power"
+                    android:layout_toRightOf="@+id/edit_name_resolving_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/btn_resolving_power"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#fdfdfe"
+                    android:paddingRight="20dp"
+                    android:digits="123"
+                    android:hint="请输入123"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:textColorHint="#bcb5b5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_zero"
+                    android:text="设置保留几位小数"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_zero"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:text="保存"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+
+
+                <EditText
+                    android:id="@+id/edit_zero"
+                    android:layout_toRightOf="@+id/tv_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/btn_zero"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#fdfdfe"
+                    android:paddingRight="20dp"
+                    android:digits="012"
+                    android:hint="请输入012"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:textColorHint="#bcb5b5"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/Rl_calculation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="计算器"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:text="商店名称"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--<EditText-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:hint="店铺名称"-->
+            <!--android:background="#f1f1f1"-->
+            <!--android:padding="5dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+    <!--</RelativeLayout>-->
+    <!--<View-->
+        <!--android:background="#f4f4f4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

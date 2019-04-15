@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/radius_shape_fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="是否开启副屏会员码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <widget.Switch
+        android:layout_toRightOf="@+id/tv_1"
+        android:id="@+id/sw_memberpaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_memberprice"
+            android:layout_toLeftOf="@+id/sw_member_price"
+            android:text="绑定会员价"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <widget.Switch
+            android:layout_alignParentRight="true"
+            android:id="@+id/sw_member_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_round_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_gravity="center"
+        android:text="搜索会员"
+
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_paw"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="请扫会员二维码或者输入手机号"
+            android:singleLine="true" />
+
+        <!--<LinearLayout-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<Button-->
+            <!--android:id="@+id/but_qixiao"-->
+            <!--android:textColor="#ffff8904"-->
+            <!--android:background="@drawable/btn_gray_less"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="新增"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginRight="40dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp" />-->
+
+            <!--<Button-->
+                <!--android:textColor="#ffff8904"-->
+                <!--android:id="@+id/but_dimdis"-->
+                <!--android:background="@drawable/btn_gray_less"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="确定"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_marginRight="40dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp" />-->
+
+        <!--</LinearLayout>-->
+
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textSize="18sp"
+                android:background="@drawable/btn_gray_less"
+                android:id="@+id/but_cancel"
+                android:text="关闭"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+            <Button
+                android:textSize="18sp"
+                android:background="@drawable/btn_gray_less"
+                android:id="@+id/but_qixiao"
+                android:text="新增"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_marginBottom="30dp"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_red"
+                android:id="@+id/but_dimdis"
+                android:text="确定"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="名字"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="会员号"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4f4f4"
+        />
+
+
+    </LinearLayout>
+</LinearLayout>

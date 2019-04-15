@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ary_incomType1" >
+        <item>全部分类</item>
+        <item>工具</item>
+        <item>化妆品</item>
+        <item>奶制品</item>
+        <item>饮料</item>
+        <item>工具</item>
+    </string-array>
+    <string-array name="ary_incomType2" >
+        <item>标签</item>
+        <item>易碎</item>
+        <item>冷藏</item>
+        <item>全部标签</item>
+    </string-array>
+    <string-array name="ary_incomType3" >
+        <item>全部商品</item>
+        <item>已上架</item>
+        <item>已下架</item>
+    </string-array>
+</resources>

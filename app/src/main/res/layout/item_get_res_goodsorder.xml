@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="60dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:layout_height="60dp">
+    <RelativeLayout
+        android:id="@+id/layout_order_item"
+        android:layout_toLeftOf="@+id/btn_ordersnotes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_nums"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffff8904"
+            android:text=""
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#00cc00"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textSize="16sp"
+        android:id="@+id/tv_tablenums"
+        android:layout_toRightOf="@+id/tv_nums"
+        android:layout_width="80dp"
+        android:lines="1"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#ff00"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/tv_dopackage"
+        android:layout_toRightOf="@+id/tv_tablenums"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content" />
+ <TextView
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:lines="1"
+        android:textSize="16sp"
+        android:id="@+id/tv_ordergoodsname"
+        android:layout_toRightOf="@+id/tv_dopackage"
+        android:layout_toLeftOf="@+id/tv_ordertime"
+         android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:id="@+id/tv_ordertime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_ordersnotes"
+        android:background="@drawable/btn_gray_less"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:text="显示备注"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_notes_info"
+        android:layout_below="@id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_notes"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="备注："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="@drawable/edit_frame"
+            android:layout_toRightOf="@+id/tv_notes"
+            android:id="@+id/tv_notesinfo"
+            android:padding="10dp"
+            android:gravity="left"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:hint="无备注信息"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/tv_notes"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <Button
+            android:background="@drawable/btn_select_red"
+            android:textColor="#ffffff"
+            android:layout_marginRight="15sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_add_ordernotes"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="添加备注"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_toLeftOf="@+id/btn_add_ordernotes"
+            android:background="@drawable/btn_gray_less"
+            android:textColor="#cdcdcd"
+            android:layout_marginRight="25sp"
+            android:id="@+id/btn_remove_order"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="作废订单"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_toLeftOf="@+id/btn_remove_order"
+            android:background="@drawable/btn_gray_less"
+            android:textColor="#ffff8049"
+            android:layout_marginRight="25sp"
+            android:id="@+id/btn_order_receipt_print"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="小票打印"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_toLeftOf="@+id/btn_order_receipt_print"
+            android:background="@drawable/btn_gray_less"
+            android:textColor="#ffff8049"
+            android:layout_marginRight="25sp"
+            android:id="@+id/btn_order_label_print"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="标签打印"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <Button
+            android:layout_toLeftOf="@+id/btn_order_label_print"
+            android:background="@drawable/btn_gray_less"
+            android:textColor="#ffff8049"
+            android:layout_marginRight="25sp"
+            android:id="@+id/btn_bookkeeping"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="记账"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btn_add_ordernotes"
+            android:background="@drawable/btn_gray_less"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+
+
+</RelativeLayout>

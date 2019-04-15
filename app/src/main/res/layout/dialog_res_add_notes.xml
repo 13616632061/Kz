@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_whilte_red"
+        android:layout_width="400dp"
+        android:layout_height="260dp">
+        <TextView
+            android:id="@+id/tv_search"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="添加备注"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_notes"
+            android:background="@drawable/edit_frame"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/tv_search"
+            android:hint="请输入内容"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <Button
+            android:textSize="18sp"
+            android:background="@drawable/btn_gray_less"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/btn_addnotes_cell"
+            android:layout_below="@+id/et_notes"
+            android:text="取消"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_red"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_addnotes_sure"
+            android:layout_below="@+id/et_notes"
+            android:text="确定"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

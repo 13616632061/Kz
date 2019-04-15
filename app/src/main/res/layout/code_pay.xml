@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/radius_shape_fff"
+        android:layout_centerInParent="true"
+        android:layout_width="400dp"
+        android:layout_height="340dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colormain"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="请选择支付宝支付还是微信支付"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_huanghui"
+            android:layout_gravity="right"
+            android:text="X"
+            android:textSize="26dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_below="@+id/tv_huanghui"
+            android:id="@+id/im_code"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/member_manage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:padding="5dp"
+            android:layout_below="@+id/im_code"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colormain"
+            android:text="￥0"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+       <RelativeLayout
+           android:layout_centerHorizontal="true"
+           android:layout_below="@+id/tv_price"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/tv_alipay"
+               android:padding="8dp"
+               android:background="@drawable/bg_member"
+               android:layout_marginRight="20dp"
+               android:text="支付宝"
+               android:textSize="20dp"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="30dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+
+           <TextView
+               android:layout_toRightOf="@+id/tv_alipay"
+               android:id="@+id/tv_wechat"
+               android:background="@drawable/bg_member"
+               android:text="微信"
+               android:textSize="20dp"
+               android:padding="8dp"
+               android:layout_marginLeft="30dp"
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+<declare-styleable name="FButton">
+    <attr name="shadowEnabled" format="boolean" />
+    <attr name="buttonColor" format="color" />
+    <attr name="shadowColor" format="color" />
+    <attr name="shadowHeight" format="dimension" />
+    <attr name="cornerRadius" format="dimension" />
+</declare-styleable>
+    <declare-styleable name="Switch">
+        <attr name="switch_back_color" format="color|reference"/>
+        <attr name="switch_circle_color" format="color|reference"/>
+        <attr name="switch_main_color" format="color|reference"/>
+    </declare-styleable>
+
+
+
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+
+    </resources>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/functionbg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--android:background="@drawable/functionbg"-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/Rl_function"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_more"-->
+            <!--android:drawableTop="@drawable/new_shangpingguangli"-->
+            <!--android:button="@null"-->
+            <!--android:onClick="onclick"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@drawable/new_text_color"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="更多"/>-->
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/but_more"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:id="@+id/ll_function_main"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="#dcdcdc"
+            android:id="@+id/Rl_more"
+            android:layout_margin="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <TextView
+                android:id="@+id/tv_function_name"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="更多"
+                android:drawableTop="@drawable/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/but_more"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/cc_di"
+                    android:text="更多"
+                    android:textColor="@color/colorFont"
+                    android:textSize="17.4sp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

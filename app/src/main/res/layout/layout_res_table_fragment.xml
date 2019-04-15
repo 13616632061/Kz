@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:background="@drawable/backgound_orange"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <TextView
+            android:id="@+id/tv_reserve"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:text="预定"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_reserve_num"
+            android:textColor="#ffffff"
+            android:text="0"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/tv_reserve"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_table_refresh"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:text="餐桌列表"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_free"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:layout_marginRight="30dp"
+            android:text="空闲0"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_res_table_sort"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_title"
+        android:background="#f1f1f1"
+        android:layout_width="80dp"
+        android:layout_height="match_parent">
+        <ListView
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:animationCache="false"
+            android:smoothScrollbar="true"
+            android:dividerHeight="1dp"
+            android:divider="@color/gray"
+            android:id="@+id/list_res_table_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_toLeftOf="@+id/layout_res_table_sort"
+        android:layout_below="@+id/layout_title"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/layout1"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:animationCache="false"
+            android:smoothScrollbar="true"
+            android:dividerHeight="1dp"
+            android:divider="@color/gray"
+            android:id="@+id/list_res_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

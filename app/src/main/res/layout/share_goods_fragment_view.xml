@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:id="@+id/btn_sharegood_sort"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/but_comm"
+            android:text="新增商品分类"
+            android:layout_width="120dp"
+            android:layout_height="35dp" />
+        <Button
+            android:layout_toRightOf="@+id/btn_sharegood_sort"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:id="@+id/btn_sharegood_edit"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/but_comm"
+            android:text="商品分类管理"
+            android:layout_width="120dp"
+            android:layout_height="35dp" />
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_sharegood_edit"
+            android:textSize="14sp"
+            android:id="@+id/btn_add_sharegoods"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/but_comm"
+            android:text="新增共享商品"
+            android:layout_width="120dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_sharegoods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="#fff89403"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_midle"
+        android:layout_below="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layout_midle_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_sharegoods_sort"
+                android:text="商品分类"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/tv_sharegoods_sort"
+                android:id="@+id/recyclerview_sharegoods_sort"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+            <View
+                android:layout_toRightOf="@+id/recyclerview_sharegoods_sort"
+                android:background="#ffff8309"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"></View>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_cell_sharegoods_sort_edit"
+                android:layout_marginBottom="15sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_red"
+                android:textSize="14sp"
+                android:text="取消"
+                android:textColor="#ffff"
+                android:layout_width="150dp"
+                android:layout_height="35dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/layout_midle_left"
+            android:id="@+id/layout_midle_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_sharegoods"
+                android:text="共享商品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/tv_sharegoods"
+                android:id="@+id/recyclerview_sharegoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

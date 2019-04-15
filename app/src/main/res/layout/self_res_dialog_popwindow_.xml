@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_gravity="center_vertical"
+            android:id="@+id/btn_standard1"
+            android:text="大杯"
+            android:background="@drawable/btn_select_gray"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_standard2"
+            android:layout_marginLeft="15dp"
+            android:text="大杯"
+            android:background="@drawable/btn_select_gray"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_standard3"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="15dp"
+            android:text="大杯"
+            android:background="@drawable/btn_select_gray"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

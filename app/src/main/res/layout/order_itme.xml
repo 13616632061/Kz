@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_itme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:visibility="gone"
+        android:text="挂单"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:id="@+id/tv_1"
+    android:text="1"
+    android:layout_centerVertical="true"
+    android:textSize="18dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@+id/tv_1"
+        android:id="@+id/tv_name"
+        android:layout_centerVertical="true"
+        android:text="汽水，火机，雪糕..."
+        android:maxEms="8"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toLeftOf="@+id/but_order"
+        android:id="@+id/tv_time"
+        android:visibility="gone"
+        android:text="15:80"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/but_order"
+        android:text="取单"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:layout_toLeftOf="@+id/but_print"
+        android:layout_gravity="right|center"
+        android:background="@drawable/btn_red"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/but_print"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:text="更多"
+            android:background="@drawable/btn_gray_less"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_tv_mark_text"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tv_mark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/but_add"
+                android:text="添加备注"
+                android:background="@drawable/btn_gray_less"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/but_cancel"
+                android:text="作废"
+                android:layout_toLeftOf="@+id/but_print_text"
+                android:background="@drawable/btn_gray_less"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/but_print_text"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="打印"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_red"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_dialog"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/whitle_icon"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="600dp"
+        android:layout_height="400dp">
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#ff00"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:text="新增餐桌"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:id="@+id/tv_res_table_nums"
+                android:layout_marginLeft="25dp"
+                android:layout_centerVertical="true"
+                android:text="餐桌号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_tablename"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="95dp"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:textColor="#ff0000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_res_table_nums"
+                android:hint="餐桌名，建议不超过4个字（必填）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cdcdcd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View><RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:id="@+id/tv_res_table_peoplenums"
+                android:layout_marginLeft="25dp"
+                android:layout_centerVertical="true"
+                android:text="人   数"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_tablenums"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="95dp"
+                android:textSize="16sp"
+                android:textColor="#ff0000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_res_table_peoplenums"
+                android:hint="餐桌使用人数（必填）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cdcdcd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View><RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:id="@+id/tv_res_table_sort"
+                android:layout_marginLeft="25dp"
+                android:layout_centerVertical="true"
+                android:text="餐桌类型"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spinner_res_table_sort"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_res_table_sort"
+                android:hint="点击选择餐桌类型（必填）"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cdcdcd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_marginLeft="25dp"
+                android:id="@+id/btn_cell"
+                android:layout_marginBottom="15dp"
+                android:textSize="16sp"
+                android:textColor="#ff0000"
+                android:background="@drawable/btn_gray_less"
+                android:text="取消"
+                android:layout_width="180dp"
+                android:layout_height="40dp" />
+        <Button
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_sure"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_red"
+            android:text="确定"
+            android:layout_width="180dp"
+            android:layout_height="40dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

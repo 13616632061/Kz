@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:onClick="onclick"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Rl_login"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login">
+
+        <TextView
+            android:id="@+id/tv_yonghu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="@string/user_login"
+            android:textColor="#707070"
+            android:textSize="22dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ed_user"
+            android:layout_marginLeft="30dp"
+            android:text="@string/account"
+            android:textColor="#707070"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/ed_user"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_yonghu"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ed_beijin"
+            android:hint="@string/enter_account_number"
+            android:padding="10dp"
+            android:textColorHint="#bebbbb" />
+
+
+        <TextView
+            android:id="@+id/tv_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ed_passwords"
+            android:layout_marginLeft="30dp"
+            android:text="@string/staff"
+            android:textColor="#707070"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/ed_passwords"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_user"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ed_beijin"
+            android:hint="@string/enter_employee_number"
+            android:padding="10dp"
+            android:textColorHint="#bebbbb" />
+
+        <TextView
+            android:id="@+id/tv_mima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ed_password"
+            android:layout_marginLeft="30dp"
+            android:text="@string/password"
+            android:textColor="#707070"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_user"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ed_beijin"
+            android:hint="@string/input_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="#bebbbb" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/business" />
+
+            <RadioButton
+                android:id="@+id/rb_clerk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/clerk" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ed_user"
+            android:layout_below="@id/ed_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="onclick"
+            android:text="@string/change_password"
+            android:textColor="#3b8cb1"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_change"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="qqqqqqqqqqqqq"
+            android:textColor="#D70D18"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/but_login"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_change"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/logpng"
+            android:onClick="onclick"
+            android:paddingBottom="3dp"
+            android:text="@string/login"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="500dp"
+    android:layout_height="530dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/teltit">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/im_finish"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:onClick="Onclick"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/huanghui" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="新增员工"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="22dp" />-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增员工"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tv_huanghui"
+            android:layout_gravity="right"
+            android:text="X"
+            android:onClick="Onclick"
+            android:textSize="26dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="是否启用" />
+
+                <widget.Switch
+                    android:id="@+id/sw_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:switch_back_color="#747373"
+                    app:switch_circle_color="#fff"
+                    app:switch_main_color="#68b94d" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="编号" />
+
+                <EditText
+                    android:id="@+id/ed_user"
+                    android:layout_toRightOf="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:hint="编号（必填）"
+                    android:padding="5dp"
+                    android:background="#fdfdfe"
+                    android:singleLine="true"
+                    android:textColorHint="#b4b4b4" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="姓名" />
+
+                <EditText
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:id="@+id/ed_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:hint="姓名（必填）"
+                    android:background="#fdfdfe"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#b4b4b4" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:id="@+id/rl_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_oldpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="密码" />
+
+                <EditText
+                    android:layout_toRightOf="@+id/tv_oldpassword"
+                    android:id="@+id/ed_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#fdfdfe"
+                    android:hint="密码（必填）"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#b4b4b4" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:id="@+id/rl_newpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_newpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="确定密码" />
+
+                <EditText
+                    android:layout_toRightOf="@+id/tv_newpassword"
+                    android:id="@+id/ed_newpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#fdfdfe"
+                    android:hint="密码（必填）"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#b4b4b4" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_newpassword_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="确定密码" />
+
+                <EditText
+                    android:layout_toRightOf="@+id/tv_newpassword_confirm"
+                    android:id="@+id/ed_newpassword_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#fdfdfe"
+                    android:hint="密码（必填）"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#b4b4b4" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="手机号码" />
+
+                <EditText
+                    android:layout_toRightOf="@+id/tv_phone"
+                    android:id="@+id/ed_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#fdfdfe"
+                    android:hint="手机号（必填）"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#b4b4b4" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="角色" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/kuozhang" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_ommissions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="销售提成" />
+
+                <EditText
+                    android:id="@+id/tv_commissions"
+                    android:layout_toRightOf="@+id/tv_ommissions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_percentage"
+                    android:background="#fdfdfe"
+                    android:hint="点击输入提成"
+                    android:singleLine="true"
+                    android:textColorHint="#b4b4b4" />
+
+                <TextView
+                    android:id="@+id/tv_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="%"
+                    android:textSize="22dp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="权限管理" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="收银端权限" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_im1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="全选" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_im2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/zidingyi1"
+                    android:gravity="center_vertical"
+                    android:onClick="Onclick"
+                    android:text="显示进货价" />
+
+                <TextView
+                    android:id="@+id/tv_im3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/zidingyi1"
+                    android:gravity="center_vertical"
+                    android:onClick="Onclick"
+                    android:text="显示利润" />
+
+                <TextView
+                    android:id="@+id/tv_im4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/zidingyi1"
+                    android:gravity="center_vertical"
+                    android:onClick="Onclick"
+                    android:text="显示库存" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_im8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/zidingyi1"
+                    android:gravity="center_vertical"
+                    android:onClick="Onclick"
+                    android:text="退货" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f4f4f4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="更多权限" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f4f4f4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="报表" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_im21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="单据流水" />
+
+                    <TextView
+                        android:id="@+id/tv_im22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="商品销售统计" />
+
+                    <TextView
+                        android:id="@+id/tv_im23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="趋势分析" />
+
+                    <TextView
+                        android:id="@+id/tv_im24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="分类占比统计" />
+
+                    <TextView
+                        android:id="@+id/tv_im25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="盘点报表" />
+
+                    <TextView
+                        android:id="@+id/tv_im26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="交接班日结" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f4f4f4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="商品管理" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_im31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="全选" />
+
+                    <TextView
+                        android:id="@+id/tv_im32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="商品分类" />
+
+                    <TextView
+                        android:id="@+id/tv_im33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="导入列表" />
+
+                    <TextView
+                        android:id="@+id/tv_im34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="导出列表" />
+
+                    <TextView
+                        android:id="@+id/tv_im35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="新增商品" />
+
+                    <TextView
+                        android:id="@+id/tv_im36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="商品编辑" />
+
+                    <TextView
+                        android:id="@+id/tv_im37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="快捷栏排序" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f4f4f4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="员工" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_im41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="全选" />
+
+                    <TextView
+                        android:id="@+id/tv_im42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="员工管理" />
+
+                    <TextView
+                        android:id="@+id/tv_im43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="角色管理" />
+
+                    <TextView
+                        android:id="@+id/tv_im44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="权限管理" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f4f4f4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="库存功能" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvv_im51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="全选" />
+
+                    <TextView
+                        android:id="@+id/tvv_im52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="报损" />
+
+                    <TextView
+                        android:id="@+id/tvv_im53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="添加报损商品" />
+
+                    <TextView
+                        android:id="@+id/tvv_im54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="报损详情" />
+
+                    <TextView
+                        android:id="@+id/tvv_im55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="盘点" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f4f4f4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvv_im61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="设置" />
+
+                    <TextView
+                        android:id="@+id/tvv_im62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/zidingyi1"
+                        android:gravity="center_vertical"
+                        android:onClick="Onclick"
+                        android:text="修改密码" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#f4f4f4"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/but_preserve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/but_fenlei"
+                    android:text="保存"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

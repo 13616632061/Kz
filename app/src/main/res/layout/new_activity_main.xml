@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_rl"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="易众云"
+                        android:background="@mipmap/company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="兰溪街店一下为什"
+                        android:maxEms="7"
+                        android:singleLine="true"
+                        android:ellipsize="middle"
+                        android:background="@mipmap/shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="2018-08-23 10:37:00"
+                        android:background="@mipmap/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/banner"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="序号"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="名称"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="单价"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:text="数量"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_smallplan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="小计"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp" />
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                    <ListView
+                        android:id="@+id/lv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/lv"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+                        <!--虚线-->
+                        <widget.DashedLine
+                            android:id="@+id/dashedline"
+                            android:layout_width="0dp"
+                            android:layout_height="20px"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1" />
+                        <!--虚线-->
+                        <widget.DashedLine
+                            android:layout_width="0dp"
+                            android:layout_height="20px"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_zonghe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_title_weight"
+                                android:text="重量:"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/tv_Symbol"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="22dp"/>
+
+                            <TextView
+                                android:id="@+id/tv_weight"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/tv_title_weight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="0.0"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#FF6501"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/tv_danwei1"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/tv_weight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kg"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#FF6501"
+                                android:textSize="30sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/tv_Totalmerchandise"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/tv_Totalmerchandise"
+                                android:text="数量:"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="22dp" />
+
+                            <TextView
+                                android:id="@+id/tv_Totalmerchandise"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:text="0"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="41.7sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_Totalamount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/tv_Symbol"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/tv_Total"
+                                android:layout_centerVertical="true"
+                                android:text="金额:"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="22dp" />
+
+                            <TextView
+                                android:id="@+id/tv_Total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="15dp"
+                                android:text="0.0"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="#FF6501"
+                                android:textSize="41.7sp" />
+
+
+                        </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/register_root_view"
+                android:background="@drawable/ji5"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/but_Quick"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/quick"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="快捷栏"
+                        android:textSize="18.1sp" />
+
+                    <RadioButton
+                        android:id="@+id/but_Cook"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cook"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="计重栏"
+                        android:textSize="18.1sp" />
+
+
+
+                </RadioGroup>
+
+                <FrameLayout
+                    android:id="@+id/Rl_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:animateLayoutChanges="true"
+                    android:background="#dcdcdc"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_function"
+                    android:layout_below="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:textSize="16sp"
+                        android:textColor="#4b8dbf"
+                        android:background="@drawable/bg_edittext_focused"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/btn_isshow_staff"
+                        android:text="员工显示"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp" />
+
+                    <Button
+                        android:textSize="16sp"
+                        android:textColor="#4b8dbf"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_edittext_focused"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/btn_sure"
+                        android:text="编辑"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp" />
+
+                    <GridView
+                        android:layout_below="@+id/btn_sure"
+                        android:id="@+id/gridview"
+                        android:numColumns="5"
+                        android:gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></GridView>
+
+                </RelativeLayout>
+
+                <include
+                    android:visibility="gone"
+                    layout="@layout/report_activity"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <include
+            layout="@layout/function_include"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_internet"
+                android:textColor="#FF6501"
+                android:text="当前无网络"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.recker.flybanner.FlyBanner
+                android:id="@+id/im_picture"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/tupian" />
+        </RelativeLayout>
+
+
+        <!--现金支付成功-->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/Rl_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/ll_shoukuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/imsucc" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="收款成功"
+                        android:textColor="#535353"
+                        android:textSize="27sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/ll_shoukuan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已收款："
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:text="￥ "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f00"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:id="@+id/tv_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20.00"
+                        android:textColor="#f00"
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付方式："
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/tv_modes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="现金支付"
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="单号："
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/tv_danhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20173232020"
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="日期："
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#535353"
+                        android:text="20170323"
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="200dp"
+                    android:text="顾客已付款"
+                    android:textColor="#f00"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colormain"
+                    android:text="1秒后关闭"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--计算机的页面-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/ll_jshuang"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/keyboard_tv_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/zhaoling"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="应收"
+                    android:textColor="#535353"
+                    android:textSize="24.3dp" />
+
+                <TextView
+                    android:id="@+id/tv_netreceipts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:text="0"
+                    android:textColor="#535353"
+                    android:textSize="34.7dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/keyboard_et_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zhaoling">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="实收"
+                    android:textColor="#535353"
+                    android:textSize="24.3dp" />
+
+                <EditText
+                    android:id="@+id/et_inputscancode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:hint="0"
+                    android:shadowColor="#ecf0f3"
+                    android:shadowRadius="0.0"
+                    android:textColor="#FF6501"
+                    android:textSize="34.7dp" />
+
+                <ImageView
+                    android:id="@+id/iv_cursor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zhaoling"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="找零"
+                    android:textColor="#959595"
+                    android:textSize="24.3dp" />
+
+                <EditText
+                    android:id="@+id/tv_Surplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="0.0"
+                    android:textColor="#535353"
+                    android:textSize="24.3dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="立减"
+                    android:id="@+id/but_reduce"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:text="折扣"
+                    android:id="@+id/but_Discount"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:text="去零"
+                    android:id="@+id/but_Remove"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:text="加价"
+                    android:id="@+id/but_add_price"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_keyoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/keyboard_et_layout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/zhaoling"
+                    android:ellipsize="middle"
+                    android:lines="2"
+                    android:text=""
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+
+                            android:orientation="horizontal">
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_seven"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="7"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton"
+                                tools:cornerRadius="5dp"
+                                tools:shadowEnabled="true"
+                                tools:shadowHeight="5dp" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_eight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="8"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_nine"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="9"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_four"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="4"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_five"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="5"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_six"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="6"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="1"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="2"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="3"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_zro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="0"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="."
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_add_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="+"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:orientation="vertical">
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/keyboardcancell_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:drawableBottom="@drawable/delete"
+                            android:onClick="onclick"
+                            android:paddingBottom="5dp"
+                            app:buttonColor="@color/colorbutton" />
+                        <!--</LinearLayout>-->
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Ten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttoncloor"
+                            android:onClick="onclick"
+                            android:text="10"
+                            android:textColor="@color/colorFont"
+                            android:textSize="20.8dp"
+                            app:buttonColor="@color/colorteishu" />
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Twenty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttoncloor"
+                            android:onClick="onclick"
+                            android:text="20"
+                            android:textColor="@color/colorFont"
+                            android:textSize="20.8dp"
+                            app:buttonColor="@color/colorteishu" />
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Fifty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttoncloor"
+                            android:onClick="onclick"
+                            android:text="50"
+                            android:textColor="@color/colorFont"
+                            android:textSize="20.8dp"
+                            app:buttonColor="@color/colorteishu" />
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Onehundred"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttoncloor"
+                            android:onClick="onclick"
+                            android:text="100"
+                            android:textColor="@color/colorFont"
+                            android:textSize="20.8dp"
+                            app:buttonColor="@color/colorteishu" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="10dp">
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:onClick="onclick"
+                        android:text="取消"
+                        android:textColor="@color/colorFont"
+                        android:textSize="20.8sp"
+                        app:buttonColor="@color/colorbutton" />
+
+                    <RelativeLayout
+                        android:id="@+id/gopay_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Cashbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="现金支付"
+                            android:textColor="@color/colorbutton"
+                            android:textSize="20.8sp"
+                            app:buttonColor="@color/colormain" />
+                    </RelativeLayout>
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/but_mobilepayment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="2"
+                        android:text="移动支付"
+                        android:textColor="@color/colorbutton"
+                        android:textSize="20.8sp"
+                        app:buttonColor="@color/colormain" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--收款流水 -->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/Rl_yidong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/im_code"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/erweima" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="应付金额:"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:text="￥"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colormain"
+                        android:textSize="30dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_yidong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="24.00"
+                        android:textColor="@color/colormain"
+                        android:textSize="30dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:text="二维码已客显" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#979393" />
+
+                <com.rey.material.widget.ProgressView
+                    android:id="@+id/pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:lpd_strokeColor="#ff0000"
+                    app:lpd_strokeSecondaryColor="#00ff00"
+                    app:pv_progressMode="buffer"
+                    app:pv_autostart="true"
+                    app:pv_circular="false"
+                    app:pv_progress="0.1"
+                    app:lpd_transformDuration="5"
+                    app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="支付方式："
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="移动支付"
+                        android:textSize="22dp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#979393" />
+                <!--android:layout_alignParentBottom="true"-->
+                <Button
+                    android:id="@+id/but_internet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colormain"
+                    android:text="无网移动收银" />
+
+                <Button
+                    android:id="@+id/but_zhifusucc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colormain"
+                    android:text="取消" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--现金支付的页面-->
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/Rl_xianjin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--android:layout_centerHorizontal="true"-->
+
+                <Button
+                    android:id="@+id/but_goback"
+                    android:text="取消"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_tishi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="收款提示"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_yishou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_tishi"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="应收:"
+                        android:textSize="22dp" />
+                    <TextView
+                        android:text="￥ "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f00"
+                        android:textSize="22dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_xianjin_netreceipt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24.00"
+                        android:textColor="#f00"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zhaoli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_yishou"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已收:"
+                        android:textSize="22dp" />
+                    <TextView
+                        android:text="￥ "
+                        android:textColor="#f00"
+                        android:textSize="22dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24.00"
+                        android:textColor="#f00"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_zhaoli"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="找零:"
+                        android:textSize="22dp" />
+                    <TextView
+                        android:text="￥ "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f00"
+                        android:textSize="22dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24.00"
+                        android:textColor="#f00"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/but_xianjin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/but_fenlei"
+                    android:text="确定"
+                    android:layout_marginTop="310dp"
+                    android:textColor="#fff"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

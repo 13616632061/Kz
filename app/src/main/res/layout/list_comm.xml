@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_xuhao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_bncode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_py"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_cat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_marketable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_store"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textColor="@color/colorFont"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/but_filtrate"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="35dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="编辑"
+            android:background="@drawable/but_main"
+            android:textColor="@color/colormain"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

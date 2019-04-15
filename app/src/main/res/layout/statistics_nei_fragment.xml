@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="#f1f1f1">
+
+        <Button
+            android:id="@+id/but_classification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/but_comm"
+            android:text="分类销售" />
+
+        <EditText
+            android:id="@+id/ed_seek"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/fubeijin"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/shousuo"
+            android:gravity="center_vertical"
+            android:hint="商品名"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColorHint="#bebbbb" />
+
+        <TextView
+            android:id="@+id/tv_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/ed_seek"
+            android:background="@drawable/spinnbeiji"
+            android:drawableRight="@drawable/spinn"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="商品分类" />
+
+        <TextView
+            android:id="@+id/tv_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/tv_classify"
+            android:background="@drawable/spinnbeiji"
+            android:drawableRight="@drawable/spinn"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="顺序" />
+
+        <TextView
+            android:id="@+id/tv_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/tv_volume"
+            android:background="@drawable/spinnbeiji"
+            android:drawableRight="@drawable/spinn"
+            android:padding="5dp"
+            android:paddingRight="5dp"
+            android:text="全部标签"
+            android:visibility="gone" />
+        <CheckBox
+            android:layout_toLeftOf="@+id/tv_volume"
+            android:text="无销售商品"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="序号" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="商品名称" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="商品条码" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="商品分类" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="现有库存" />
+
+        <TextView
+            android:id="@+id/tv_rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/rank"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="销售数量" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:drawableRight="@drawable/rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="商品总价" />
+
+        <TextView
+            android:id="@+id/tv_receipts"
+            android:drawableRight="@drawable/rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="实收金额" />
+        <!--<TextView-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="实收占比"-->
+        <!--android:padding="5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content" />-->
+        <TextView
+            android:id="@+id/tv_return"
+            android:drawableRight="@drawable/rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="利润" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="利润利"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_filtrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="筛选" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1" />
+
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        >
+
+    <ListView
+        android:layout_height="match_parent"
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+         />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/tv_tishi"
+            android:textSize="30dp"
+            android:text="没有数据"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/but_fenlei"
+            android:text="对账导出"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

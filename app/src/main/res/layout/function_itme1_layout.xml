@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#dcdcdc"
+        android:id="@+id/Rl_function"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_function_name"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="删除"
+            android:drawableTop="@drawable/breakage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/but_cc_quick"
+            android:text="0"
+            android:background="@drawable/cc_button"
+            android:textSize="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:textColor="#ffffff"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:background="@drawable/btn_whilte_gray"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/layout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/log_out"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:text="收银"
+                android:textColor="#adadad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <retail.yzx.com.Share_Tools.share_util.Color_TextView
+            android:layout_marginRight="15dp"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:text="共享工具，开启共享生活"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_goods"
+            android:layout_marginTop="10dp"
+            android:textColor="#adadad"
+            android:textSize="16sp"
+            android:text="商品："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_goods"
+            android:id="@+id/tv_goodsnums"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_goodsnums"
+            android:id="@+id/tv_total"
+            android:layout_marginTop="10dp"
+            android:textColor="#adadad"
+            android:textSize="16sp"
+            android:text="合计："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_totalmoney"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff8904"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="￥0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tv_dopackage"
+            android:layout_marginTop="15dp"
+            android:textColor="#00cc00"
+            android:textSize="25sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/list_ordergoods"
+            android:layout_above="@+id/layout_bottom"
+            android:background="@android:color/transparent"
+            android:scrollbarFadeDuration="0"
+            android:fadeScrollbars="false"
+            android:scrollingCache="false"
+            android:animationCache="false"
+            android:smoothScrollbar="true"
+            android:dividerHeight="1dp"
+            android:divider="#f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_bottom"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <Button
+                android:textSize="16sp"
+                android:id="@+id/btn_sure"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_whilte_red"
+                android:text="确  定"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

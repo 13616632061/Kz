@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="@color/colormain"-->
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/im_Cashier"
+            android:background="@drawable/home"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="280dp" >
+            <ImageView
+                android:id="@+id/im_1"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="40dp"
+                android:src="@drawable/homea"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:layout_alignBottom="@+id/im_1"
+                android:layout_toRightOf="@+id/im_1"
+                android:text="餐饮"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Rl_retail"
+            android:background="@drawable/home1"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="280dp" >
+            <ImageView
+                android:id="@+id/im_2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="40dp"
+                android:src="@drawable/homeb"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:layout_alignBottom="@+id/im_2"
+                android:layout_marginLeft="20dp"
+                android:text="商超/零售"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/home2"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="280dp" >
+
+            <ImageView
+                android:id="@+id/im_3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="40dp"
+                android:src="@drawable/homec"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:layout_alignBottom="@+id/im_3"
+                android:layout_marginLeft="20dp"
+                android:text="果蔬/粮油"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ll_home"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/home3"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="220dp" >
+
+
+
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/im_4"
+                android:src="@drawable/homed"
+                android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:text="奶茶/甜品"
+                android:layout_marginLeft="20dp"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/home4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="220dp" >
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/homee"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:text="烟酒/茶"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#fff"
+                    android:textSize="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/home5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="220dp" >
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/homrf"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:text="服装/鞋帽"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#fff"
+                    android:textSize="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/home3"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="220dp" >
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/homeg"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:text="自助餐饮"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#fff"
+                    android:textSize="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/home4"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="220dp" >
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/homeh"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:text="自助零售"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#fff"
+                    android:textSize="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+
+
+</RelativeLayout>

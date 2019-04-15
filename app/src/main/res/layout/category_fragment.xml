@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/but_newcategory"
+            android:text="新增分类"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+<ScrollView
+    android:background="#f1f1f1"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <widget.MyGirdView
+        android:id="@+id/gv_category"
+        android:numColumns="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</ScrollView>
+
+
+<RelativeLayout
+    android:background="#ffffff"
+    android:layout_marginBottom="5dp"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_a"
+        android:text="共 "
+        android:layout_marginLeft="20dp"
+       android:layout_centerVertical="true"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_category"
+        android:text="88"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_a"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="个分类"
+        android:textSize="22dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--<Button-->
+        <!--android:id="@+id/but_next"-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="下一页" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_page"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:background="@drawable/fubeijin"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/but_next"-->
+        <!--android:layout_toLeftOf="@+id/but_next"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:hint="1/5"-->
+        <!--android:textSize="22dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/tv_last"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toLeftOf="@id/tv_page"-->
+        <!--android:text="上一页" />-->
+
+    <Button
+        android:id="@+id/but_redact"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/but_fenlei"
+        android:text="编辑分类" />
+
+    <Button
+        android:id="@+id/but_delete"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/but_redact"
+        android:background="@drawable/but_fenlei"
+        android:text="删除分类" />
+
+
+
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

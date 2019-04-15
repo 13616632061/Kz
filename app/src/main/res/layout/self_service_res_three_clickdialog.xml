@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_dialog"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/whitle_icon"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="450dp">
+        <ImageView
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:id="@+id/iv_close"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/gray_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <Button
+            android:layout_marginTop="85dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_show_picture"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_orange"
+            android:text="商品有图"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_hide_picture"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_orange"
+            android:text="商品无图"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_refresh"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_orange"
+            android:text="数据刷新"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_bluetooth_printer"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_orange"
+            android:text="开启蓝牙打印"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_back"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_orange"
+            android:text="返回上一页"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

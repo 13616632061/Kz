@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv1"
+        android:textColor="#ffff8905"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="进入商品管理"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:text="密码："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_pwd"
+            android:paddingLeft="15dp"
+            android:password="true"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:hint="请输入登入密码"
+            android:background="@drawable/edit_frame"
+            android:layout_width="180dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/but_cancel"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_gray"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:textColor="#ffffff"
+            android:id="@+id/but_confirm"
+            android:text="确定"
+            android:background="@drawable/btn_orange"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</RelativeLayout>

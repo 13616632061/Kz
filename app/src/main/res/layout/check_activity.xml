@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@drawable/teltit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/im_huanghui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/huanghui"
+            android:padding="15dp"/>
+
+        <com.xw.repo.XEditText
+            android:id="@+id/ed_seek"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/shousuo"
+            android:hint="@string/please_input_a_order_num_search"
+            android:layout_gravity="center"
+            android:background="@drawable/ed_beijin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/but_seek"
+            android:text="@string/search"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<ImageView-->
+            <!--android:src="@drawable/day"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp" />-->
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/lv_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

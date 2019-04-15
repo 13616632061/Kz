@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_above="@+id/layout2"
+        android:layout_toLeftOf="@+id/layout_sort"
+        android:id="@+id/layout_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <RelativeLayout
+           android:visibility="gone"
+           android:id="@+id/layout_goods_sort"
+           android:layout_width="match_parent"
+           android:layout_height="60dp">
+           <TextView
+               android:id="@+id/tv_sort"
+               android:textSize="25sp"
+               android:layout_centerInParent="true"
+               android:text=""
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/layout_goods_sort"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:background="@android:color/transparent"
+                android:scrollbars="none"
+                android:scrollingCache="false"
+                android:animationCache="false"
+                android:smoothScrollbar="true"
+                android:dividerHeight="0dp"
+                android:divider="@null"
+                android:id="@+id/list_goods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true">
+            </ListView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_above="@+id/layout2"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layout_sort"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:text="分类"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ListView
+            android:layout_below="@+id/layout1"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:animationCache="false"
+            android:smoothScrollbar="true"
+            android:dividerHeight="1dp"
+            android:divider="@color/gray"
+            android:id="@+id/list_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:id="@+id/layout2"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/btn_ok"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:text="选好了"
+            android:background="@drawable/btn_red"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="48dp" />
+        <Button
+            android:id="@+id/btn_search"
+            android:textSize="20sp"
+            android:text="搜索"
+            android:background="@drawable/btn_gray_less"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

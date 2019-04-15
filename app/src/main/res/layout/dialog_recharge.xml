@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/radius_shape_fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<TextView-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="输入充值金额"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_width="180dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/ed_money"-->
+        <!--android:background="@drawable/ed_beijin"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:hint="输入卡号或手机号"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#f4f4f4"-->
+        <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/but_qixiao"-->
+            <!--android:textColor="#ffff8904"-->
+            <!--android:background="@drawable/btn_gray_less"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="取消"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp" />-->
+
+
+        <!--<Button-->
+            <!--android:textColor="#ffff8904"-->
+            <!--android:id="@+id/but_Recharge_amount"-->
+            <!--android:background="@drawable/btn_gray_less"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="确定"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp" />-->
+
+    <!--</LinearLayout>-->
+
+
+
+    <ListView
+        android:id="@+id/lv_recharge"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/but_indeed"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/but_fenlei"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/but_cancel"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_red"
+            android:text="取消" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

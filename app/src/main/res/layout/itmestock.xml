@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_xuhao"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="序号"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="商品名"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_stock"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="库存"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_provider"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="供应商"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_nums"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="总金额"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

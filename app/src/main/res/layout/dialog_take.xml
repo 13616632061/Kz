@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/radius_shape_fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ListView
+        android:id="@+id/lv_recharge"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:text="姓名:"
+            android:id="@+id/tv_name"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="22sp"
+                android:layout_toRightOf="@+id/tv_name"
+                android:layout_alignParentRight="true"
+                android:text="某女士"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            android:layout_below="@+id/rl_name"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="地址:"
+                android:textSize="22sp"
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="22sp"
+                android:layout_toRightOf="@+id/tv_address"
+                android:layout_alignParentRight="true"
+                android:text="广东省深圳市宝安区汇潮科技大厦"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_below="@+id/rl_address"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="电话:"
+                android:textSize="22sp"
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="22sp"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:layout_alignParentRight="true"
+                android:text="12345678901"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_emarks"
+            android:layout_below="@+id/rl_phone"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="22sp"
+                android:text="备注:"
+                android:id="@+id/tv_emarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="22sp"
+                android:layout_toRightOf="@+id/tv_emarks"
+                android:layout_alignParentRight="true"
+                android:text="到了楼下面的时候打电话"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

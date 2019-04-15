@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_dialog"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/whitle_icon"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="300dp">
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@+id/iv_close"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/gray_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_res_table_name"
+            android:textColor="#ff00"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_res_table_open"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_orange"
+            android:text="开  桌"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btn_res_table_book"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_orange"
+            android:text="预  定"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+        <Button
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/btn_res_table_close"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_orange"
+            android:text="关  桌"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/teltit">
+
+        <ImageView
+            android:id="@+id/im_huanghui"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/huanghui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/stock_status"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_normal"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/normal_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/tv_im1"
+                android:background="@color/colormain"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_abnormality"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/abnormal_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/tv_im2"
+                android:visibility="invisible"
+                android:background="@color/colormain"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_inventory"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/no_inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/tv_im3"
+                android:visibility="invisible"
+                android:background="@color/colormain"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_submit"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></ListView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/but_submit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffffff"
+            android:text="@string/submit"
+            android:layout_width="wrap_content"
+            android:background="@drawable/but_fenlei"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

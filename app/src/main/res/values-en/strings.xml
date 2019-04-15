@@ -1,0 +1,363 @@
+<resources>
+    <string name="app_name">EasyManyCloudPos</string>
+
+
+    <string name="pull_to_load">Pull up loading</string>
+    <string name="loading">Pull up loading</string>
+    <string name="release_to_load">Pull up loading</string>
+
+    <string name="register_success">Register push success.</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="recv_passthrough_message"> Receive a passthrough message. Content is \"%1$s\"</string>
+    <string name="click_notification_message"> Clicked a notification message. Content is \"%1$s\"</string>
+    <string name="arrive_notification_message"> Arrived a notification message. Content is \"%1$s\"</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="set_account_success"> Set account \"%1$s\" success.</string>
+    <string name="set_account_fail"> Set account fail for %1$s.</string>
+    <string name="unset_account_success"> Unset account \"%1$s\" success.</string>
+    <string name="unset_account_fail"> Unset account fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+
+    <string name="none_paired">No matched equipment</string>
+    <string name="scanning">search</string>
+    <string name="select_device">Select a device connection</string>
+    <string name="none_found">No equipment found</string>
+    <string name="btnSearch">Connect Bluetooth Printer</string>
+    <string name="btnSend">Print</string>
+    <string name="btn_test">print test page</string>
+    <string name="btnClose">Close</string>
+    <string name="txt_content">&quot;&quot;</string>
+    <string name="menu_settings">set</string>
+    <string name="strLang">ch</string>
+    <string name="button_scan">search</string>
+
+
+    <string name="isTest">testing environment</string>
+    <string name="Online">Online environment</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+
+    <string name="processing">Return goods handling</string>
+    <string name="undisposed">Refund processing</string>
+
+
+    <string name="permission_get_accounts_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">Without this permission, this function cannot be turned on. Please open permission.。PERMISSION</string>
+
+    <string name="shangchao_retail">Shangchao/Retail</string>
+    <string name="mobile_terminal">Mobile terminal</string>
+    <string name="restaurant">restaurant</string>
+    <string name="fruits_grain">Fruits/Grain</string>
+    <string name="milk_dessert">Milk/Desser</string>
+    <string name="smoking_drinking">Smoking/Drinking</string>
+    <string name="clothing_shoes">Slothing/Shoes</string>
+    <string name="self_catering">Self_catering</string>
+    <string name="self_retailing">Self/Retailing</string>
+    <string name="mobile_app_cashier_system">Mobile App Cashier System, free download!</string>
+    <string name="user_login">user login</string>
+    <string name="account">account</string>
+    <string name="enter_account_number">Please enter your account number.</string>
+    <string name="staff">staff</string>
+    <string name="enter_employee_number">Please enter the employee number.</string>
+    <string name="password">password</string>
+    <string name="input_password">Please input a password</string>
+    <string name="business">business</string>
+    <string name="clerk">clerk</string>
+    <string name="change_password">change password</string>
+    <string name="login">login</string>
+    <string name="input_30_characters">Please enter no more than 30 characters</string>
+    <string name="input_password_account">Please enter your account and password</string>
+    <string name="login_type">Please select the login type</string>
+    <string name="cannot_be_empty">Account or password cannot be empty！</string>
+    <string name="account_password_incorrect">The account number or password is incorrect, please re-enter it!</string>
+    <string name="logining">logining...</string>
+    <string name="bluetooth_open_successfully">Bluetooth Open Successfully</string>
+    <string name="more">More</string>
+    <string name="outlogin">outLogin</string>
+    <string name="refresh">Refresh</string>
+    <string name="catering_version">Catering Version</string>
+    <string name="Fruits">Fruits</string>
+    <string name="serial_number">Number</string>
+    <string name="name">name</string>
+    <string name="unit_price">price</string>
+    <string name="number">number</string>
+    <string name="subtotal">subtotal</string>
+    <string name="stock">stock</string>
+    <string name="purchase_price">purchase price</string>
+    <string name="profit">profit</string>
+    <string name="goods">good：</string>
+    <string name="total">total：</string>
+    <string name="put_order">putOrder</string>
+    <string name="get_order">getOrder</string>
+    <string name="return_goods">returnGoods</string>
+    <string name="cash_prize">cashPrize</string>
+    <string name="change_money">changeMoney</string>
+    <string name="member">member</string>
+    <string name="onCredit">onCredit</string>
+    <string name="retail">retail</string>
+    <string name="take_out_food">takeOutFood</string>
+    <string name="delete">delete</string>
+    <string name="shortcut_bar">shortcutBar</string>
+    <string name="weighting_column">weightingColumn</string>
+    <string name="current_no_network">Current no network</string>
+    <string name="successful_receipt">successful Receipt</string>
+    <string name="receivable">receivable:</string>
+    <string name="pay_type">payType：</string>
+    <string name="cash_payment">cashPayment：</string>
+    <string name="order_numbers">orderNumbers：</string>
+    <string name="date">date：</string>
+    <string name="customer_paid">customerPaid：</string>
+    <string name="close_after_one_econd">Close after 1 second</string>
+    <string name="amount_payable">amountPayable：</string>
+    <string name="two_code_played">Two-dimensional code displayed</string>
+    <string name="mobile_type">mobileType</string>
+    <string name="mobile_cashier_without_network">Mobile Cashier Without Network</string>
+    <string name="receivables">receivables</string>
+    <string name="netreceipts">net receipts</string>
+    <string name="give_change">Give change</string>
+    <string name="vertical_reduction">Vertical reduction</string>
+    <string name="discount">discount</string>
+    <string name="zero_suppression">zero-suppression</string>
+    <string name="tips_for_collection">Tips for collection</string>
+    <string name="accepted">Accepted</string>
+    <string name="out_order">outOrder</string>
+    <string name="previous_page">Previous page</string>
+    <string name="next_page">Next page</string>
+    <string name="Bluetooth_not_available">Bluetooth is not available</string>
+    <string name="no_reduction_without_commodities">No reduction without commodities</string>
+    <string name="activities">activities</string>
+    <string name="input_preferential_amount">Input Preferential Amount</string>
+    <string name="activities_reduction">Activity reduction</string>
+    <string name="jin">Jin</string>
+    <string name="liang">liang</string>
+    <string name="g">g</string>
+    <string name="data_wait_long_time">Does the long waiting time for synchronized data continue?</string>
+    <string name="please_input_code">Please enter the bar code</string>
+    <string name="only_one_times">Search only one at a time</string>
+    <string name="modified_quantity">Modified quantity</string>
+    <string name="please_modified_quantity">Please Modified quantity</string>
+    <string name="modified_price">Modified Price</string>
+    <string name="please_modified_price">Please Modified Price</string>
+    <!--<string name="can_not_put_order">You can't pay a prize without a bill of lading</string>-->
+    <string name="too_frequent">Your operation is too frequent</string>
+    <string name="lock_screen">Lock Screen</string>
+    <string name="cash_box_operation">Cash box operation</string>
+    <string name="open_cash_box">Open the money box</string>
+    <string name="use_other_payment_methods">No network, please use other payment methods</string>
+    <string name="current_network_is_poor">The current network is poor</string>
+    <string name="removed">removed：</string>
+    <string name="remove">remove</string>
+    <string name="no_such_commodity">There is no such commodity.</string>
+    <string name="pay_success">Pay success</string>
+    <string name="newly_increased_goods">newly increased goods</string>
+    <string name="bar_code">bar code</string>
+    <string name="no_bar_code">no bar code ?</string>
+    <string name="please_scan_or_enter_barcode">Please scan or enter barcode</string>
+    <string name="goods_name">goods name</string>
+    <string name="must_fill_goods_name">must fill goods name</string>
+    <string name="selling_price">selling price</string>
+    <string name="must_fill_selling_price">must fill selling price</string>
+    <string name="classification">classification</string>
+    <string name="default_classification">default classification</string>
+    <string name="unit">unit</string>
+    <string name="edit_more">edit more</string>
+    <string name="more_goods_info">more goods info</string>
+    <string name="upper_shelf">Upper shelf</string>
+    <string name="no_discount_on_special_price">No discount on special price</string>
+    <string name="specifications">Specifications</string>
+    <string name="place_of_production">place of production</string>
+    <string name="membership_price">Membership price</string>
+    <string name="v1price">v1 price</string>
+    <string name="v2price">v2 price</string>
+    <string name="v3price">v3 price</string>
+    <string name="v4price">v4 price</string>
+    <string name="v5price">v5 price</string>
+    <string name="unit_price_of_purchase">Unit price of purchase</string>
+    <string name="discount_of_purchase">discount of purchase</string>
+    <string name="selection_of_suppliers">Selection of suppliers</string>
+    <string name="must_fill_stock_nums">must fill stock nums</string>
+    <string name="replenish_stock">replenish stock</string>
+    <string name="stock_top_limit">stock top limit</string>
+    <string name="max_stock">max stock</string>
+    <string name="stock_lower_limit">stock lower limit</string>
+    <string name="min_stock">min stock</string>
+    <string name="return_of_goods">return of goods</string>
+    <string name="open_box">open box</string>
+    <string name="set_stock_warn_msg">Set up the inventory scope to facilitate the distribution of goods for you, and carry out inventory early warning for you.</string>
+    <string name="pinyin_code">Pinyin code</string>
+    <string name="pinyin_code_initials">The initials of a commodity name</string>
+    <string name="label">label</string>
+    <string name="date_of_manufacture">Date of manufacture</string>
+    <string name="due_date">Due date</string>
+    <string name="quality_guarantee_period">Quality guarantee period</string>
+    <string name="input_quality_guarantee_period">Please Input Quality guarantee period</string>
+    <string name="day">day</string>
+    <string name="remaining_0_days">The remaining 0 days</string>
+    <string name="commodity_description">Commodity Description</string>
+    <string name="remaining_50_words">The remaining 50 words</string>
+    <string name="print_label">print label</string>
+    <string name="del_good">delete good</string>
+    <string name="save">save</string>
+    <string name="selective_classification">Selective classification</string>
+    <string name="user_name">user name</string>
+    <string name="old_password">old password</string>
+    <string name="new_password">new password</string>
+    <string name="confirm_modify">confirm modify</string>
+    <string name="please_input_a_order_num_search">Please input a order num  search</string>
+    <string name="search">search</string>
+    <string name="collect_money">collect money</string>
+    <string name="report_form">Report form</string>
+    <string name="good">good</string>
+    <string name="put_into_stock">put or into stock</string>
+    <string name="inventory">Inventory</string>
+    <string name="loss">loss</string>
+    <string name="report_goods">Report goods</string>
+    <string name="members">Member</string>
+    <string name="about">about</string>
+    <string name="news">news</string>
+    <string name="paired_devices">Paired devices</string>
+    <string name="other_devices">other devices</string>
+    <string name="common_remarks">Common remarks</string>
+    <string name="add_common_remarks">add common remarks</string>
+    <string name="change_shifts">change shifts</string>
+    <string name="cashier">Cashier:</string>
+    <string name="mobile_income">Mobile income : </string>
+    <string name="currently_cash">currently cash : </string>
+    <string name="reserve_fund">Reserve fund : </string>
+    <string name="total_sales">Total sales: </string>
+    <string name="toatl_order_nums">Toatl order nums</string>
+    <string name="turn_over_money">turn over money : </string>
+    <string name="other_income">other income : </string>
+    <string name="remarks">Remarks:</string>
+    <string name="pleaser_input_remarks">pleaser input remarks</string>
+    <string name="stock_cash">stock cash : </string>
+    <string name="please_input_stock_cash">please stock cash</string>
+    <string name="work_time">work time: </string>
+    <string name="change_shifts_and_outlogin">change shifts and outlogin</string>
+    <string name="opened_cash_box">open cash box </string>
+    <string name="stock_status">stock status</string>
+    <string name="normal_stock">Normal stock</string>
+    <string name="no_inventory">no inventory</string>
+    <string name="submit">submit</string>
+    <!--<string name="abnormal_stock">Abnormal stock </string>-->
+    <!--<string name="abnormal_stock">Abnormal stock </string>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

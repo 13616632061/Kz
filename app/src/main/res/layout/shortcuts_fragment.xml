@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <RadioGroup
+        android:layout_marginLeft="200dp"
+        android:orientation="horizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/but_Quick"
+            android:text="快捷栏"
+            android:background="@drawable/chuwu"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/but_Cook"
+            android:text="煮物栏"
+            android:background="@drawable/chuwu"
+            android:textColor="#ffffff"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:background="@drawable/fubeijin2"
+        android:id="@+id/fl_shortcuts"
+        android:layout_marginLeft="200dp"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_yidong"
+        android:text="移动位置"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/but_fenlei"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/but_edit"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/but_fenlei"
+        android:text="编辑"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

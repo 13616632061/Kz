@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:paddingTop="-15dp"
+        android:paddingLeft="-15dp"
+        android:paddingRight="-15dp"
+        android:background="@drawable/gray_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/but_Cashier"
+                android:drawableTop="@drawable/shangpingguangli"
+                android:button="@null"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@drawable/text_color"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/collect_money"/>
+
+            <RadioButton
+                android:id="@+id/rb_statement"
+                android:drawableTop="@drawable/shangpingguangli6"
+                android:button="@null"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@drawable/text_color"
+                android:text="@string/report_form"/>
+            <RadioButton
+                android:id="@+id/but_commodity"
+                android:drawableTop="@drawable/shangpingguangli2"
+                android:button="@null"
+                android:textColor="@drawable/text_color"
+                android:gravity="center"
+                android:onClick="onclick"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/good"/>
+            <!--<RadioButton-->
+                <!--android:drawableTop="@drawable/shangpingguangli0"-->
+                <!--android:button="@null"-->
+                <!--android:onClick="onclick"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:text="查单"/>-->
+
+
+            <RadioButton
+                android:id="@+id/rl_forthe"
+                android:drawableTop="@drawable/shangpingguangli11"
+                android:button="@null"
+                android:textColor="@drawable/text_color"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/put_into_stock"/>
+
+            <View
+                android:background="#fff"
+                android:layout_width="1dp"
+                android:layout_height="50dp" />
+
+            <!--<RadioButton-->
+                <!--android:drawableTop="@drawable/shangpingguangli5"-->
+                <!--android:button="@null"-->
+                <!--android:onClick="onclick"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:text="库存"/>-->
+
+
+            <RadioButton
+                android:id="@+id/rb_check"
+                android:drawableTop="@drawable/shangpingguangli7"
+                android:button="@null"
+                android:textColor="@drawable/text_color"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/inventory"/>
+            <RadioButton
+                android:id="@+id/rb_breakage"
+                android:drawableTop="@drawable/shangpingguangli8"
+                android:button="@null"
+                android:textColor="@drawable/text_color"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/loss"/>
+            <RadioButton
+                android:id="@+id/rl_staff"
+                android:drawableTop="@drawable/shangpingguangli9"
+                android:button="@null"
+                android:textColor="@drawable/text_color"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/staff"/>
+            <RadioButton
+                android:id="@+id/rl_money"
+                android:drawableTop="@drawable/shangpingguangli10"
+                android:button="@null"
+                android:textColor="@drawable/text_color"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/report_goods"/>
+            <RadioButton
+                android:id="@+id/rl_member"
+                android:drawableTop="@drawable/shangpingguangli11"
+                android:button="@null"
+                android:textColor="@drawable/text_color"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/members"/>
+
+
+
+
+            <RadioButton
+                android:id="@+id/rb_settings"
+                android:drawableTop="@drawable/shangpingguangli3"
+                android:button="@null"
+                android:textColor="@drawable/text_color"
+                android:onClick="onclick"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/menu_settings"/>
+            <RadioButton
+                android:id="@+id/Rl_regard"
+                android:drawableTop="@drawable/shangpingguangli4"
+                android:button="@null"
+                android:onClick="onclick"
+                android:textColor="@drawable/text_color"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/about"/>
+
+
+            <RadioButton
+                android:id="@+id/rb_message"
+                android:gravity="right"
+                android:drawableTop="@drawable/shangpingguangli4"
+                android:button="@null"
+                android:onClick="onclick"
+                android:textColor="@drawable/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/news"/>
+
+        </RadioGroup>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_refresh"
+            android:textSize="20sp"
+            android:text="@string/refresh"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_select_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_loginout"
+            android:textSize="20sp"
+            android:text="@string/outlogin"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_select_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

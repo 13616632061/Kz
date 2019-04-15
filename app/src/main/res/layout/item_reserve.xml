@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="60dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:minHeight="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/ll_edit"
+            android:layout_toLeftOf="@+id/btn_ordersnotes"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nums"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textColor="#ffff8904"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/tv_nums"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="张生"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2"
+                android:text="***********"
+                android:textColor="#ff00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="2"
+                android:lines="1"
+                android:text="2018/12/18"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:textColor="#00cc00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:text="00.00" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ordersnotes"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_orange"
+            android:text="绑定桌号" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout_notes_info"
+        android:layout_below="@id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_notes"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="备注："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="@drawable/edit_frame"
+            android:layout_toRightOf="@+id/tv_notes"
+            android:id="@+id/tv_notesinfo"
+            android:padding="10dp"
+            android:gravity="left"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:hint="无备注信息"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/tv_notes"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <Button
+            android:background="@drawable/btn_select_red"
+            android:textColor="#ffffff"
+            android:layout_marginRight="15sp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_add_ordernotes"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="添加备注"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_toLeftOf="@+id/btn_add_ordernotes"
+            android:background="@drawable/btn_gray_less"
+            android:textColor="#cdcdcd"
+            android:layout_marginRight="25sp"
+            android:id="@+id/btn_remove_order"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="作废订单"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_toLeftOf="@+id/btn_remove_order"
+            android:background="@drawable/btn_gray_less"
+            android:textColor="#ffff8049"
+            android:layout_marginRight="25sp"
+            android:id="@+id/btn_order_receipt_print"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="小票打印"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_toLeftOf="@+id/btn_order_receipt_print"
+            android:background="@drawable/btn_gray_less"
+            android:textColor="#ffff8049"
+            android:layout_marginRight="25sp"
+            android:id="@+id/btn_order_label_print"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view1"
+            android:text="标签打印"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <View
+            android:id="@+id/view2"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btn_add_ordernotes"
+            android:background="@drawable/btn_gray_less"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+    <View
+        android:background="#a19e9e"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</RelativeLayout>

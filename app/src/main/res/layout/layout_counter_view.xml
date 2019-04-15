@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_jishuang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_internet"
+            android:textColor="#FF6501"
+            android:text="当前无网络"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.recker.flybanner.FlyBanner
+            android:id="@+id/im_picture"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tupian" />
+        <!--现金支付成功-->
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/Rl_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/ll_shoukuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/imsucc" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="收款成功"
+                        android:textColor="#535353"
+                        android:textSize="27sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/ll_shoukuan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已收款："
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:text="￥ "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f00"
+                        android:textSize="24sp"/>
+                    <TextView
+                        android:id="@+id/tv_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="#f00"
+                        android:textSize="25sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_1"
+                    android:layout_marginTop="60dp">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付方式："
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/tv_modes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="移动支付"
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_2"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="单号："
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_danhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_3"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="时间："
+                        android:textColor="#535353"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#535353"
+                        android:text=""
+                        android:textSize="24sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="200dp"
+                    android:text="顾客已付款"
+                    android:textColor="#f00"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/but_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colormain"
+                    android:text="手动关闭（3秒后自动关闭）"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--收款流水 -->
+        <RelativeLayout
+            android:visibility="gone"
+            android:background="#FFFFFF"
+            android:id="@+id/Rl_yidong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_process_bar"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+                    <ProgressBar
+                        android:id="@+id/center_process_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="95dp"
+                        android:layout_centerVertical="true"
+                        style="@style/ProgressBar.Loading" />
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="#f00"
+                        android:gravity="left|center"
+                        android:id="@+id/top_process_promot"
+                        android:paddingLeft="15.0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="95.0dip"
+                        android:text="请稍等..."
+                        android:layout_toRightOf="@id/center_process_bar"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/im_code"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="应付金额:"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:text="￥"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colormain"
+                        android:textSize="30dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_yidong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colormain"
+                        android:textSize="30dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:text="二维码已客显" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#979393" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_paying"
+                        android:textSize="20sp"
+                        android:textColor="#f00"
+                        android:text="支付中"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                <com.rey.material.widget.ProgressView
+                    android:layout_toRightOf="@+id/tv_paying"
+                    android:id="@+id/pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    app:lpd_strokeColor="#ff0000"
+                    app:lpd_strokeSecondaryColor="#00ff00"
+                    app:pv_progressMode="buffer"
+                    app:pv_autostart="true"
+                    app:pv_circular="false"
+                    app:pv_progress="0.1"
+                    app:lpd_transformDuration="5"
+                    app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+                    android:layout_marginBottom="10dp"
+                    />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="支付方式："
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="移动支付"
+                        android:textSize="22dp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#979393" />
+                <!--android:layout_alignParentBottom="true"-->
+                <Button
+                    android:visibility="invisible"
+                    android:textColor="#ffffff"
+                    android:id="@+id/but_internet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_select_red"
+                    android:text="无网移动收银" />
+
+                <Button
+                    android:textColor="#ffffff"
+                    android:id="@+id/btn_mobile_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_select_red"
+                    android:text="取消" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--计算机-->
+        <LinearLayout
+            android:id="@+id/ll_jshuang"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/keyboard_tv_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/zhaoling"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="应收"
+                    android:textColor="#535353"
+                    android:textSize="24.3dp" />
+                <TextView
+                    android:id="@+id/tv_netreceipts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:text="0"
+                    android:textColor="#535353"
+                    android:textSize="34.7dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/keyboard_et_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zhaoling">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="实收"
+                    android:textColor="#535353"
+                    android:textSize="24.3dp" />
+
+                <EditText
+                    android:id="@+id/et_inputscancode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:hint="0"
+                    android:shadowColor="#ecf0f3"
+                    android:shadowRadius="0.0"
+                    android:textColor="#FF6501"
+                    android:textSize="34.7dp" />
+
+                <ImageView
+                    android:id="@+id/iv_cursor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/zhaoling"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="找零"
+                    android:textColor="#959595"
+                    android:textSize="24.3dp" />
+
+                <EditText
+                    android:id="@+id/tv_Surplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="0.0"
+                    android:textColor="#535353"
+                    android:textSize="24.3dp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="立减"
+                    android:id="@+id/but_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:visibility="gone"
+                    android:text="折扣"
+                    android:id="@+id/but_Discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:visibility="gone"
+                    android:text="去零"
+                    android:id="@+id/but_Remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                android:id="@+id/et_keyoard"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/keyboard_et_layout"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/zhaoling"
+                android:ellipsize="middle"
+                android:lines="2"
+                android:text=""
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_seven"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="7"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton"
+                                tools:cornerRadius="5dp"
+                                tools:shadowEnabled="true"
+                                tools:shadowHeight="5dp" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_eight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="8"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_nine"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="9"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_four"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="4"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_five"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="5"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_six"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="6"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="1"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="2"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_three"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="3"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_zro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="0"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="."
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                            <info.hoang8f.widget.FButton
+                                android:id="@+id/keyboard_add_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="onclick"
+                                android:text="+"
+                                android:textColor="@color/colorFont"
+                                android:textSize="27.8sp"
+                                app:buttonColor="@color/colorbutton" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:orientation="vertical">
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/keyboardcancell_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:drawableBottom="@drawable/delete"
+                            android:onClick="onclick"
+                            android:paddingBottom="5dp"
+                            app:buttonColor="@color/colorbutton" />
+                        <!--</LinearLayout>-->
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Ten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttoncloor"
+                            android:onClick="onclick"
+                            android:text="10"
+                            android:textColor="@color/colorFont"
+                            android:textSize="20.8dp"
+                            app:buttonColor="@color/colorteishu" />
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Twenty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttoncloor"
+                            android:onClick="onclick"
+                            android:text="20"
+                            android:textColor="@color/colorFont"
+                            android:textSize="20.8dp"
+                            app:buttonColor="@color/colorteishu" />
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Fifty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttoncloor"
+                            android:onClick="onclick"
+                            android:text="50"
+                            android:textColor="@color/colorFont"
+                            android:textSize="20.8dp"
+                            app:buttonColor="@color/colorteishu" />
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Onehundred"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/buttoncloor"
+                            android:onClick="onclick"
+                            android:text="100"
+                            android:textColor="@color/colorFont"
+                            android:textSize="20.8dp"
+                            app:buttonColor="@color/colorteishu" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="10dp">
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:onClick="onclick"
+                        android:text="取消"
+                        android:textColor="@color/colorFont"
+                        android:textSize="20.8sp"
+                        app:buttonColor="@color/colorbutton" />
+
+                    <RelativeLayout
+                        android:id="@+id/gopay_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <info.hoang8f.widget.FButton
+                            android:id="@+id/but_Cashbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="现金支付"
+                            android:textColor="@color/colorbutton"
+                            android:textSize="20.8sp"
+                            app:buttonColor="@color/colormain" />
+                    </RelativeLayout>
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/but_mobilepayment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="2"
+                        android:text="移动支付"
+                        android:textColor="@color/colorbutton"
+                        android:textSize="20.8sp"
+                        app:buttonColor="@color/colormain" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/Rl_xianjin"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--android:layout_centerHorizontal="true"-->
+                <TextView
+                    android:id="@+id/tv_tishi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="收款提示"
+                    android:textSize="30dp" />
+                <LinearLayout
+                    android:id="@+id/ll_yishou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_tishi"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="100dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="应收:"
+                        android:textSize="22dp" />
+                    <TextView
+                        android:text="￥ "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f00"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:id="@+id/tv_xianjin_netreceipt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#f00"
+                        android:textSize="30dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_zhaoli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_yishou"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="100dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已收:"
+                        android:textSize="22dp" />
+                    <TextView
+                        android:text="￥ "
+                        android:textColor="#f00"
+                        android:textSize="22dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#f00"
+                        android:textSize="30dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_zhaoli"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="100dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="找零:"
+                        android:textSize="22dp" />
+                    <TextView
+                        android:text="￥ "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f00"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:id="@+id/tv_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#f00"
+                        android:textSize="30dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/but_cash_sure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/but_fenlei"
+                android:text="确定"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

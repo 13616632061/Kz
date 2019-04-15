@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/radius_shape_fff"
+    android:layout_width="500dp"
+    android:layout_height="480dp">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="380dp">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_title"
+        android:text="短信"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll_surplus"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="剩余"
+            android:layout_marginLeft="10dp"
+            android:gravity="clip_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_nums"
+            android:text="0"
+            android:layout_marginLeft="10dp"
+            android:gravity="clip_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/tv_2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_recharge"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/but_Recharge"
+            android:text="充值"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ll_surplus"
+        android:id="@+id/tv_front"
+        android:text="尊敬的会员用户,双十二即来,本店火爆促销!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:gravity="left"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_front"
+        android:id="@+id/ed_context"
+        android:hint="请输入发送的内容"
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_after"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ed_context"
+        android:text=",期待您的光临!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/tv_after"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_red"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/but_submit"
+        android:text="保存并发生"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:text="使用记录"
+            android:textColor="#08bccc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:layout_below="@+id/but_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:elevation="8dp"
+        android:translationZ="6dp"
+        android:background="@drawable/itme"
+        android:layout_margin="5dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    <Button
+        android:visibility="gone"
+        android:id="@+id/but_shuliang"
+        android:text="0"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/cc_button"
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:lines="3"
+        android:ellipsize="end"
+        android:id="@+id/tv_name"
+        android:text="白菜"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:maxEms="6"
+        android:textColor="@color/primary_color"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_jiage"
+        android:text="￥8.0"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

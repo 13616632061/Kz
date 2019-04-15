@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/gray1">
+
+        <Button
+            android:id="@+id/but_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/but_comm"
+            android:text="新增供应商" />
+
+        <EditText
+            android:id="@+id/tv_seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ed_beijin"
+            android:drawableRight="@drawable/shousuo"
+            android:hint="条码/名字/拼音码"
+            android:imeOptions="actionSearch"
+            android:padding="5dp"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:text="序号"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="编号"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="供应商名字"
+        android:layout_weight="1.5"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="联系人"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="电话"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_provide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

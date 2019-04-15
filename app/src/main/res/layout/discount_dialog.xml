@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/radius_shape_fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/ed_discount"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:inputType="number|numberDecimal"
+        android:hint="请输入折扣"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_height="40dp" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="18sp"
+            android:background="@drawable/btn_gray_less"
+            android:id="@+id/but_abolish"
+            android:text="取消"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_red"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/btn_cell_dialog"
+            android:id="@+id/but_submit"
+            android:text="确定"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/btn_whilte_gray"
+    android:minHeight="60dp"
+    android:layout_height="60dp">
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_goodsnums"
+        android:layout_marginRight="15dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:lines="1"
+        android:id="@+id/tv_goodsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:id="@+id/tv_goodsprice"
+        android:text=""
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_goodsnums"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/tv_goodsprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="14sp"
+        android:id="@+id/tv_goods_size"
+        android:lines="1"
+        android:textColor="#00cc00"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@+id/tv_goods_size"
+        android:textSize="14sp"
+        android:id="@+id/tv_goodsnotes"
+        android:lines="1"
+        android:textColor="#00cc00"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

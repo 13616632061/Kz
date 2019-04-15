@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp">
+
+    <LinearLayout
+        android:id="@+id/ll_listitme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_xuhao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="18.8sp" />
+
+        <TextView
+            android:id="@+id/tv_caimane"
+            android:textColor="#3b3a3a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="火鸡火鸡火鸡火鸡火鸡火鸡火鸡火鸡火鸡火鸡"
+            android:textSize="16.8sp" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_jiage"
+            android:text="3"
+            android:textColor="#212121"
+            android:textSize="16.8sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_lv"
+                android:textColor="#ff0000"
+                android:text="v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/reductionof"
+                android:visibility="gone"
+                android:id="@+id/im_reductionof"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/ed_shuliang"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:textColor="#212121"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:textSize="16.8sp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/add"
+                android:layout_marginRight="5dp"
+                android:id="@+id/im_add"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="18dp"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_xiaoji"
+            android:text="80.0"
+            android:textColor="#212121"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="16.8sp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_store"
+            android:gravity="center"
+            android:textSize="16.8sp"
+            android:text="100"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_jinjia"
+            android:text="8.00"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16.8sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_lirun"
+            android:layout_width="0dp"
+            android:text="4.00"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16.8sp" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_lirunli"
+        android:text="33%"
+        android:textSize="12.8sp"
+        android:layout_alignParentRight="true"
+        android:textColor="#bcbaba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

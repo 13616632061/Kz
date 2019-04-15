@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_round_white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:textSize="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colormain"
+        android:text="您有一个外卖订单"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_display"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="18sp"
+            android:background="@drawable/btn_gray_less"
+            android:id="@+id/but_qixiao"
+            android:textColor="#000000"
+            android:text="我知道了"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_red"
+            android:id="@+id/but_dimdis"
+            android:text="详情"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

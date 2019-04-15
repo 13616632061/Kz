@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/btn_whilte_red"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="@drawable/radius_shape_fff"-->
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="500dp"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="155dp"
+            android:id="@+id/tv_credit"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginTop="25dp"
+            android:text="搜索商品"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_credit"
+            android:id="@+id/ed_mark_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="8dp"
+            android:hint="商品名/拼音码/条码"
+            android:gravity="center"
+            android:selectAllOnFocus="true"
+            android:lines="1"
+            android:background="@drawable/edit_frame"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginBottom="60dp"
+                android:textSize="18sp"
+                android:background="@drawable/btn_gray_less"
+                android:id="@+id/btn_cell_dialog"
+                android:text="取消"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_marginBottom="30dp"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_red"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/btn_cell_dialog"
+                android:id="@+id/btn_sure_dialog"
+                android:text="确定"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <widget.MylistView
+        android:layout_marginBottom="30dp"
+        android:id="@+id/lv_fuzzy"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

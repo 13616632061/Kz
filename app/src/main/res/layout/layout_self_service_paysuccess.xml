@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/success_green"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:text="支付成功！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_paymoney"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/layout1"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_timecell"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:text="3秒后关闭"
+        android:background="@drawable/btn_gray"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="48dp" />
+    <TextView
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/btn_timecell"
+        android:layout_centerHorizontal="true"
+        android:textColor="#adadad"
+        android:textSize="20sp"
+        android:text=""
+        android:id="@+id/tv_orderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/tv_orderid"
+        android:layout_centerHorizontal="true"
+        android:textColor="#adadad"
+        android:text=""
+        android:textSize="20sp"
+        android:id="@+id/tv_ordertime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

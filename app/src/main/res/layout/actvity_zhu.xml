@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colormain"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cocorbutton"
+            android:text="更多" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="西乡天虹店"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="李冰冰"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="登出"
+            android:textColor="#b5916a"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017/3/7"
+                android:textSize="22dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_below="@+id/ll_name"
+        android:background="@drawable/fubeijin"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="序号"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="名称"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="单价"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="数量"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="小计"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="进价"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="利润"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_below="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <!--虚线-->
+    <widget.DashedLine
+        android:id="@+id/dashedline"
+        android:layout_width="match_parent"
+        android:layout_height="20px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_zonghe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:layout_alignBaseline="@+id/tv_Totalmerchandise"
+            android:layout_toLeftOf="@+id/tv_Totalmerchandise"
+            android:text="共计商品："
+            android:textSize="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_Totalmerchandise"
+            android:layout_toLeftOf="@+id/tv_Totalamount"
+            android:text="3"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_Totalamount"
+            android:layout_toLeftOf="@+id/tv_Symbol"
+            android:layout_alignBaseline="@+id/tv_Symbol"
+            android:text="合计："
+            android:textSize="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_Symbol"
+            android:text="￥"
+            android:layout_toLeftOf="@+id/tv_Total"
+            android:textColor="@color/colormoney"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_Total"
+            android:text="8.00"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colormoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#716f6f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/but_Guadan"
+                android:layout_margin="10dp"
+                android:text="挂单"
+                android:background="@drawable/circularbutton1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/but_Takeasingle"
+                android:layout_toRightOf="@+id/but_Guadan"
+                android:text="取单"
+                android:layout_margin="10dp"
+                android:background="@drawable/circularbutton1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/but_Check"
+                android:layout_toRightOf="@+id/but_Takeasingle"
+                android:text="查单"
+                android:layout_margin="10dp"
+                android:background="@drawable/circularbutton1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/but_Lockscreen"
+                android:layout_toRightOf="@+id/but_Check"
+                android:text="锁屏"
+                android:layout_margin="10dp"
+                android:background="@drawable/circularbutton1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/but_Cashbox"
+                android:text="钱箱"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/but_Lockscreen"
+                android:background="@drawable/circularbutton1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/but_Print"
+                android:text="打印"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/but_Cashbox"
+                android:background="@drawable/circularbutton1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+
+            <Button
+                android:id="@+id/but_Delete"
+                android:text="删除"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circularbutton1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

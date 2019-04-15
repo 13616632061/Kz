@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#f2f2f2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_fuhe"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:text="收银员"
+                    android:textSize="22dp" />
+
+                <Button
+                    android:id="@+id/but_xiansi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="全部" />
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <widget.MyGirdView
+                    android:id="@+id/gv_1"
+                    android:numColumns="4"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"></widget.MyGirdView>
+            </ScrollView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="支付方式"
+                    android:textSize="22dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="全部" />
+
+
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <widget.MyGirdView
+                    android:id="@+id/gv_2"
+                    android:numColumns="4"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"></widget.MyGirdView>
+            </ScrollView>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="所以订单"
+                    android:layout_centerVertical="true"
+                    android:textSize="22dp" />
+
+                <Button
+                    android:text="全部"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+            <!--<TableRow-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp">-->
+
+            <!--<CheckBox-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="易碎"-->
+            <!--android:textSize="22dp" />-->
+
+            <!--<CheckBox-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="冷藏"-->
+            <!--android:textSize="22dp" />-->
+
+
+
+            <!--<CheckBox-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:text="饮料"-->
+            <!--android:textSize="22dp" />-->
+            <!--</TableRow>-->
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <widget.MyGirdView
+                    android:id="@+id/gv_3"
+                    android:numColumns="4"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"></widget.MyGirdView>
+            </ScrollView>
+
+        </LinearLayout>
+        <View
+            android:background="#f4f4f4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/but_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="今天"
+                    android:textSize="22dp" />
+
+                <RadioButton
+                    android:id="@+id/but_triduum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="近三天"
+                    android:textSize="22dp" />
+
+                <RadioButton
+                    android:id="@+id/but_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="近七天"
+                    android:textSize="22dp" />
+
+                <RadioButton
+                    android:id="@+id/but_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="本月"
+                    android:textSize="22dp" />
+
+                <RadioButton
+                    android:id="@+id/but_lastmonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="上月"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="起始时间" />
+
+                <TextView
+                    android:background="@drawable/fubeijin"
+                    android:padding="5dp"
+                    android:id="@+id/tv_timestart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="2017年03月30日 08：08：08" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="结束时间" />
+
+                <TextView
+                    android:background="@drawable/fubeijin"
+                    android:padding="5dp"
+                    android:id="@+id/tv_timeend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="2017年03月30日 08：08：08" />
+
+            </LinearLayout>
+
+
+            <!--<org.feezu.liuli.timeselector.view.PickerView-->
+            <!--android:id="@+id/month_pv"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="160dp"-->
+            <!--app:isLoop="true"-->
+            <!--/>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/but_reset"
+            android:text="重置"
+            android:background="@drawable/buttoncloor1"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/but_seek"
+            android:text="确定"
+            android:background="@drawable/buttoncloor1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

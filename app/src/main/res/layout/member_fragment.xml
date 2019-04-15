@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f4f4f4"
+        android:layout_width="137dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="会员"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="37dp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/but_member"
+                android:text="会员管理"
+                android:button="@null"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textColor="@drawable/text_color"
+                android:layout_width="137dp"
+                android:layout_height="37dp" />
+            <ImageView
+                android:id="@+id/im_di1"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/but_di"/>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="137dp"
+                android:layout_height="1dp"/>
+
+            <RadioButton
+                android:id="@+id/but_integral"
+                android:text="积分兑换"
+                android:button="@null"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textColor="@drawable/text_color"
+                android:layout_width="137dp"
+                android:layout_height="37dp" />
+            <ImageView
+                android:id="@+id/im_di3"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/but_di"/>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="137dp"
+                android:layout_height="1dp"/>
+
+
+            <RadioButton
+                android:id="@+id/but_eductible"
+                android:text="抵扣规格"
+                android:button="@null"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textColor="@drawable/text_color"
+                android:layout_width="137dp"
+                android:layout_height="37dp" />
+            <ImageView
+                android:id="@+id/im_di5"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/but_di"/>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="137dp"
+                android:layout_height="1dp"/>
+
+
+            <RadioButton
+                android:id="@+id/but_specification"
+                android:text="充值规格"
+                android:button="@null"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textColor="@drawable/text_color"
+                android:layout_width="137dp"
+                android:layout_height="37dp" />
+            <ImageView
+                android:id="@+id/im_di4"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/but_di"/>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="137dp"
+                android:layout_height="1dp"/>
+
+
+            <RadioButton
+                android:id="@+id/but_detail"
+                android:text="明细报表"
+                android:button="@null"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textColor="@drawable/text_color"
+                android:layout_width="137dp"
+                android:layout_height="37dp" />
+            <ImageView
+                android:id="@+id/im_di2"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/but_di"/>
+            <View
+                android:background="#f4f4f4"
+                android:layout_width="137dp"
+                android:layout_height="1dp"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

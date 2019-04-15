@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="680dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_Member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="标签大小"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_Size"
+                android:text="输入格式为70*38"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="#ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_Size"
+                android:digits="1234567890*"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="70*38"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="店铺名"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_nameshopX"
+                android:text="X轴距离"
+                android:id="@+id/tv_distanceshopX"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:hint="40"
+                android:inputType="number"
+                android:background="#fdfdfe"
+                android:id="@+id/ed_nameshopsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="打印字体大小"
+                android:id="@+id/tv_nameshopsize"
+                android:layout_toLeftOf="@+id/ed_nameshopsize"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_nameshopX"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_nameshopsize"
+                android:layout_centerInParent="true"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="15"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_nameshopY"
+                android:text="Y轴距离"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_nameshopY"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_distanceshopX"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="260"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="商品名字"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_nameX"
+                android:text="X轴距离"
+                android:id="@+id/tv_distanceX"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:hint="40"
+                android:inputType="number"
+                android:background="#fdfdfe"
+                android:id="@+id/ed_namesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="打印字体大小"
+                android:id="@+id/tv_namesize"
+                android:layout_toLeftOf="@+id/ed_namesize"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_nameX"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_namesize"
+                android:layout_centerInParent="true"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="65"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_nameY"
+                android:text="Y轴距离"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_nameY"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_distanceX"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="95"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="价格"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_namepriceX"
+                android:text="X轴距离"
+                android:id="@+id/tv_distancepriceX"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:hint="100"
+                android:inputType="number"
+                android:background="#fdfdfe"
+                android:id="@+id/ed_namepricesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="打印字体大小"
+                android:id="@+id/tv_namepricesize"
+                android:layout_toLeftOf="@+id/ed_namepricesize"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_namepriceX"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_namepricesize"
+                android:layout_centerInParent="true"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="180"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_namepriceY"
+                android:text="Y轴距离"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_namepriceY"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_distancepriceX"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="400"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/tv_memberprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="会员价"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_memberpriceX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ed_memberpriceX"
+                android:padding="10dp"
+                android:text="X轴距离"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_memberpricesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:background="#fdfdfe"
+                android:hint="30"
+                android:inputType="number"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_memberpricesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ed_memberpricesize"
+                android:padding="10dp"
+                android:text="打印字体大小"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_memberpriceX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_memberpricesize"
+                android:background="#fdfdfe"
+                android:hint="请输入X轴距离"
+                android:inputType="numberDecimal"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ed_memberpriceY"
+                android:padding="10dp"
+                android:text="Y轴距离"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_memberpriceY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_memberpriceX"
+                android:background="#fdfdfe"
+                android:hint="请输入Y轴距离"
+                android:inputType="numberDecimal"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="单位"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_namecompanyX"
+                android:text="X轴距离"
+                android:id="@+id/tv_distancecompanyX"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="20"
+                android:inputType="number"
+                android:background="#fdfdfe"
+                android:id="@+id/ed_namecompanysize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+            <TextView
+                android:text="打印字体大小"
+                android:id="@+id/tv_namecompanysize"
+                android:layout_toLeftOf="@+id/ed_namecompanysize"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_namecompanyX"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_namecompanysize"
+                android:layout_centerInParent="true"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="125"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_namecompanyY"
+                android:text="Y轴距离"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_namecompanyY"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_distancecompanyX"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="220"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_specifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="规格"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_namespecificationsX"
+                android:text="X轴距离"
+                android:id="@+id/tv_distancespecificationsX"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="20"
+                android:inputType="number"
+                android:background="#fdfdfe"
+                android:id="@+id/ed_namespecificationssize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+            <TextView
+                android:text="打印字体大小"
+                android:id="@+id/tv_namespecificationssize"
+                android:layout_toLeftOf="@+id/ed_namespecificationssize"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_namespecificationsX"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_namespecificationssize"
+                android:layout_centerInParent="true"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="155"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_namespecificationsY"
+                android:text="Y轴距离"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_namespecificationsY"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_distancespecificationsX"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="85"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_produce_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="产地"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_nameproduce_addrX"
+                android:text="X轴距离"
+                android:id="@+id/tv_distanceproduce_addrX"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="20"
+                android:inputType="number"
+                android:background="#fdfdfe"
+                android:id="@+id/ed_nameproduce_addrsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+            <TextView
+                android:text="打印字体大小"
+                android:id="@+id/tv_nameproduce_addrsize"
+                android:layout_toLeftOf="@+id/ed_nameproduce_addrsize"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_nameproduce_addrX"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_nameproduce_addrsize"
+                android:layout_centerInParent="true"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="155"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_nameproduce_addrY"
+                android:text="Y轴距离"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_nameproduce_addrY"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_distanceproduce_addrX"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="85"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="条码"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_namecodeX"
+                android:text="X轴距离"
+                android:id="@+id/tv_distancecodeX"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_namecodeX"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="30dp"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="220"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_toLeftOf="@+id/ed_namecodeY"
+                android:text="Y轴距离"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ed_namecodeY"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/tv_distancecodeX"
+                android:background="#fdfdfe"
+                android:paddingRight="20dp"
+                android:hint="80"
+                android:singleLine="true"
+                android:textColorHint="#bcb5b5"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_red"
+            android:layout_marginRight="40dp"
+            android:id="@+id/but_baochun"
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

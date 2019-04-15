@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/radius_shape_fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        android:textSize="20px"
+        android:layout_centerHorizontal="true"
+        android:text="模板选择"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_toRightOf="@+id/sw6"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@+id/sw_order"
+        android:text="打印顺序"
+        android:layout_toLeftOf="@+id/sw_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <widget.Switch
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sw_order"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:switch_back_color="#747373"
+        app:switch_circle_color="#fff"
+        app:switch_main_color="#68b94d" />
+
+
+    <CheckBox
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/cc_box1"
+        android:textSize="18px"
+        android:text="模板一"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <CheckBox
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/cc_box1"
+        android:id="@+id/cc_box2"
+        android:textSize="18px"
+        android:text="模板二"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <CheckBox
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@+id/cc_box1"
+        android:id="@+id/cc_box3"
+        android:textSize="18px"
+        android:text="模板三"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <CheckBox
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@+id/cc_box2"
+        android:layout_toRightOf="@+id/cc_box3"
+        android:id="@+id/cc_box4"
+        android:textSize="18px"
+        android:text="自定义"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

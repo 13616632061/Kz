@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_self__service__play_orders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/gray"
+    tools:context="retail.yzx.com.supper_self_service.Self_Service_PlayOrdersActivity">
+    <RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:background="#E60012"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_centerVertical="true"
+                android:src="@drawable/iv_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <TextView
+                android:singleLine="true"
+                android:textSize="25sp"
+                android:textColor="#ffffff"
+                android:text=""
+                android:id="@+id/tv_sellername"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:text=""
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:background="#ffffff"
+            android:layout_below="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="23sp"
+                android:text="共"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_totalnums"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv_1"
+                android:textSize="28sp"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@+id/tv_totalnums"
+                android:textSize="23sp"
+                android:text="件商品，金额"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#ff0000"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/tv_totalnums"
+                android:layout_alignParentRight="true"
+                android:text="￥0.00"
+                android:id="@+id/tv_totalprice"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:background="@android:color/transparent"
+                android:scrollbars="none"
+                android:scrollingCache="false"
+                android:animationCache="false"
+                android:smoothScrollbar="true"
+                android:dividerHeight="1dp"
+                android:divider="@color/gray"
+                android:id="@+id/list_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+            <TextView
+                android:textColor="#adadad"
+                android:id="@+id/tv_bottom"
+                android:textSize="25sp"
+                android:layout_marginBottom="25dp"
+                android:layout_centerHorizontal="true"
+                android:text="智慧生活，自助买单，诚信支付"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginLeft="1dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/layout_select_ok"
+            layout="@layout/layout_select_ok"></include>
+        <include
+            android:visibility="gone"
+            android:id="@+id/layout_scancodepay"
+            layout="@layout/scancodepay"></include>
+        <include
+            android:visibility="gone"
+            android:id="@+id/layout_paysuccess"
+            layout="@layout/layout_self_service_paysuccess"></include>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/radius_shape_fff"
+    android:layout_width="400dp"
+    android:layout_height="300dp">
+
+
+    <TextView
+        android:id="@+id/tv_kg"
+        android:text="千克"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_jin"
+        android:text="斤"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_two"
+        android:text="两"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_g"
+        android:text="克"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

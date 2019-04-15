@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- 填充的颜色 -->
+    <itme >
+
+        <solid android:color="#FFFFFF"/>
+         <!-- 设置按钮的四个角为弧形 -->
+         <!-- android:radius 弧形的半径 -->
+    <corners android:radius="360dip"/>
+    <size android:width="20dp"
+        android:height="20dp"/>
+       </itme>
+         <!-- padding: Button 里面的文字与Button边界的间隔 -->
+
+
+    <!--<corners android:radius="15dp" />  -->
+    <!--            <solid android:color="#fff" />  -->
+    <!--            <size-->
+                <!--android:width="30dp"-->
+                <!--android:height="30dp" /> -->
+           
+</shape>

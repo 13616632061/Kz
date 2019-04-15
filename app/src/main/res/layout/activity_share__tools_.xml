@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_share__tools_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="retail.yzx.com.Share_Tools.activity.Share_Tools_Activity">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/layout_share_tools_order_view"
+            layout="@layout/layout_share_tools_order_view"></include>
+    </RelativeLayout>
+    <View
+        android:background="@drawable/gray_zhu"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"></View>
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_above="@+id/layout_midle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_above="@+id/layout_midle"
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/layout_res_goods_view"
+                layout="@layout/layout_res_goods_view"></include>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_midle"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <include
+                android:id="@+id/layout_res_midle_bottom"
+                layout="@layout/layout_res_midle_bottom"></include>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <View
+        android:background="@drawable/gray_zhu"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"></View>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_counter_view"></include>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

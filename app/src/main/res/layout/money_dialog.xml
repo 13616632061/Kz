@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_marginTop="20dp"
+        android:text="11111"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_nums"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:digits="1234567890."
+            android:hint="请输入报货数"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tv_Prompt"
+            android:text="原报货数"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:id="@+id/tv_oldnums"
+            android:text="100"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/but_goto"
+            android:text="确定"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/but_fenlei"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            />
+        <Button
+            android:id="@+id/but_abolish"
+            android:layout_marginLeft="10dp"
+            android:text="取消"
+            android:background="@drawable/but_fenlei"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
