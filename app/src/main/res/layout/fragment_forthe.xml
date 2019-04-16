@@ -14,7 +14,7 @@
             android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/but_outbound"
-                android:text="出库"
+                android:text="@string/Out_of_stock"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"
@@ -35,7 +35,7 @@
 
             <RadioButton
                 android:id="@+id/but_warehousing"
-                android:text="入库"
+                android:text="@string/Warehousing"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"
@@ -56,7 +56,7 @@
 
             <RadioButton
                 android:id="@+id/but_Thereport"
-                android:text="报表"
+                android:text="@string/report_form"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"

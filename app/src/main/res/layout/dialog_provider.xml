@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:text="供应商编号:" />
+            android:text="@string/Supplier_number_" />
         <EditText
             android:id="@+id/ed_bncode"
             android:layout_toRightOf="@+id/tv_bncode"
@@ -25,7 +25,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="16dp"
-            android:hint="供应商编号(必填)" />
+            android:hint="@string/Supplier_number_required" />
 
         <Button
             android:id="@+id/but_bncode"
@@ -37,7 +37,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/but_fenlei"
             android:textColor="#fff"
-            android:text="点击生成" />
+            android:text="@string/Click_generation" />
 
     </RelativeLayout>
     <View
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:text="供应商名称:" />
+            android:text="@string/Name_of_supplier_" />
         <EditText
             android:id="@+id/ed_name"
             android:layout_toRightOf="@+id/tv_name"
@@ -65,7 +65,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="16dp"
-            android:hint="供应商名称(必填)" />
+            android:hint="@string/Name_of_supplier_required" />
 
     </RelativeLayout>
     <View
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:text="拼音码:" />
+            android:text="@string/Pinyin_code_" />
         <EditText
             android:id="@+id/ed_py"
             android:layout_toRightOf="@+id/tv_py"
@@ -93,7 +93,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="16dp"
-            android:hint="根据供应商名生成" />
+            android:hint="@string/Generation_based_on_supplier_name" />
 
     </RelativeLayout>
     <View
@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:text="联系人:" />
+            android:text="@string/Contacts_" />
         <EditText
             android:id="@+id/ed_linkman"
             android:layout_toRightOf="@+id/tv_linkman"
@@ -120,7 +120,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="16dp"
-            android:hint="请输入联系人名字" />
+            android:hint="@string/Please_enter_the_contact_name" />
 
     </RelativeLayout>
     <View
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:text="联系电话:" />
+            android:text="@string/Contact_number_" />
         <EditText
             android:id="@+id/ed_phone"
             android:layout_toRightOf="@+id/tv_phone"
@@ -147,7 +147,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="16dp"
-            android:hint="请输入电话号码" />
+            android:hint="@string/Please_enter_your_telephone_number" />
 
     </RelativeLayout>
     <View
@@ -163,7 +163,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:text="结算账号:" />
+            android:text="@string/Settlement_account_" />
         <EditText
             android:id="@+id/ed_account"
             android:layout_toRightOf="@+id/tv_account"
@@ -174,7 +174,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="16dp"
-            android:hint="请输入结算账号:" />
+            android:hint="@string/Please_enter_a_settlement_account_" />
 
     </RelativeLayout>
     <View
@@ -190,7 +190,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:text="地址:" />
+            android:text="@string/Address_" />
         <EditText
             android:id="@+id/ed_address"
             android:layout_toRightOf="@+id/tv_address"
@@ -201,7 +201,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="16dp"
-            android:hint="请输入地址" />
+            android:hint="@string/Please_enter_your_address" />
 
     </RelativeLayout>
     <View
@@ -217,7 +217,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:text="备注:" />
+            android:text="@string/remark_" />
         <EditText
             android:id="@+id/ed_remark"
             android:layout_toRightOf="@+id/tv_remark"
@@ -228,7 +228,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="16dp"
-            android:hint="请输入备注" />
+            android:hint="@string/pleaser_input_remarks" />
 
     </RelativeLayout>
     <View
@@ -256,7 +256,7 @@
                 android:layout_marginRight="20dp"
                 android:textColor="#fff"
                 android:background="@drawable/but_fenlei"
-                android:text="新增供应商" />
+                android:text="@string/New_suppliers" />
             <Button
                 android:id="@+id/but_delete_provide"
                 android:layout_width="wrap_content"
@@ -265,7 +265,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/but_fenlei"
-                android:text="删除会员"
+                android:text="@string/Delete_member"
                 android:textColor="#fff"
                 android:visibility="gone" />
 

@@ -14,7 +14,7 @@
 
     <EditText
         android:id="@+id/ed_add"
-        android:hint="请输入条码"
+        android:hint="@string/please_input_code"
         android:inputType="number"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -26,7 +26,7 @@
 
     <Button
         android:id="@+id/but_add"
-        android:text="确定"
+        android:text="@string/confirm"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"

@@ -16,7 +16,7 @@
             android:layout_marginLeft="25dp"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:text="支付成功！"
+            android:text="@string/pay_success"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -37,7 +37,7 @@
         android:id="@+id/btn_timecell"
         android:textSize="25sp"
         android:textColor="#ffffff"
-        android:text="3秒后关闭"
+        android:text="@string/Close_after_3_seconds"
         android:background="@drawable/btn_gray"
         android:layout_centerInParent="true"
         android:layout_width="300dp"

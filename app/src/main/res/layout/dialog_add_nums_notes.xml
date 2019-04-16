@@ -14,7 +14,7 @@
            android:textSize="20sp"
            android:textColor="#000000"
            android:layout_marginTop="25dp"
-           android:text="商品名字"
+           android:text="@string/Commodity_name"
            android:lines="1"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
@@ -27,7 +27,7 @@
             <TextView
                 android:textSize="16sp"
                 android:layout_marginLeft="45dp"
-                android:text="数量："
+                android:text="@string/numbers_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <Button
@@ -67,12 +67,12 @@
             <TextView
                 android:textSize="16sp"
                 android:layout_marginLeft="45dp"
-                android:text="备注："
+                android:text="@string/remark_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
                 android:textSize="16sp"
-                android:hint="请输入备注内容"
+                android:hint="@string/pleaser_input_remarks"
                 android:layout_marginLeft="25dp"
                 android:gravity="center"
                 android:selectAllOnFocus="true"
@@ -89,7 +89,7 @@
             android:background="@drawable/btn_gray_less"
             android:layout_marginLeft="60dp"
             android:id="@+id/btn_cell_dialog"
-            android:text="取消"
+            android:text="@string/cancel"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
         <Button
@@ -101,7 +101,7 @@
             android:layout_marginLeft="60dp"
             android:layout_toRightOf="@+id/btn_cell_dialog"
             android:id="@+id/btn_sure_dialog"
-            android:text="确定"
+            android:text="@string/confirm"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
 
@@ -112,7 +112,7 @@
             android:background="@drawable/btn_red"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="25dp"
-            android:text="删除"
+            android:text="@string/delete"
             android:layout_marginRight="200dp"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
@@ -125,7 +125,7 @@
             android:layout_marginRight="200dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="100dp"
-            android:text="常用备注:"
+            android:text="@string/Common_remarks_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <GridView

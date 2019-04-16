@@ -10,7 +10,7 @@
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:textColor="@color/colormain"
-        android:text="您有一个外卖订单"
+        android:text="@string/you_have_a_takeaway_order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -25,7 +25,7 @@
             android:background="@drawable/btn_gray_less"
             android:id="@+id/but_qixiao"
             android:textColor="#000000"
-            android:text="我知道了"
+            android:text="@string/i_konw"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
         <Button
@@ -34,7 +34,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/btn_red"
             android:id="@+id/but_dimdis"
-            android:text="详情"
+            android:text="@string/details"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
     </RelativeLayout>

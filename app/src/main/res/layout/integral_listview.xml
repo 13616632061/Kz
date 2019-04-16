@@ -14,7 +14,7 @@
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="条码"
+            android:text="@string/bar_code"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -24,7 +24,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="商品名称"
+            android:text="@string/goods_name"
             android:ellipsize="end"
             android:maxLines="1"
             android:textSize="20dp"
@@ -36,7 +36,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="零售价"
+            android:text="@string/retail_price"
             android:ellipsize="end"
             android:maxLines="1"
             android:textSize="20dp"
@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="兑换积分"
+            android:text="@string/Exchange_points"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -58,7 +58,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="已兑换"
+            android:text="@string/Convertibility"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -70,7 +70,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="编辑"
+            android:text="@string/edit"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>

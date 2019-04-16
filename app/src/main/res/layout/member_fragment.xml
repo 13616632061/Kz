@@ -10,7 +10,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:text="会员"
+            android:text="@string/members"
             android:textSize="18dp"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/but_member"
-                android:text="会员管理"
+                android:text="@string/Membership_management"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"
@@ -41,7 +41,7 @@
 
             <RadioButton
                 android:id="@+id/but_integral"
-                android:text="积分兑换"
+                android:text="@string/exchange"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"
@@ -63,7 +63,7 @@
 
             <RadioButton
                 android:id="@+id/but_eductible"
-                android:text="抵扣规格"
+                android:text="@string/Deduction_specifications"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"
@@ -85,7 +85,7 @@
 
             <RadioButton
                 android:id="@+id/but_specification"
-                android:text="充值规格"
+                android:text="@string/Recharge_specifications"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"
@@ -107,7 +107,7 @@
 
             <RadioButton
                 android:id="@+id/but_detail"
-                android:text="明细报表"
+                android:text="@string/Detailed_statement"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"

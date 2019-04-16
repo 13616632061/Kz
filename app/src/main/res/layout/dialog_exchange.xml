@@ -12,7 +12,7 @@
 
         <TextView
             android:gravity="center"
-            android:text="商品条码"
+            android:text="@string/Commodity_bar_code"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="0dp"
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:gravity="center"
-            android:text="商品名"
+            android:text="@string/goods_name"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="0dp"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:gravity="center"
-            android:text="价格"
+            android:text="@string/price"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="0dp"
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:gravity="center"
-            android:text="积分"
+            android:text="@string/integral"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="0dp"
@@ -72,7 +72,7 @@
             android:layout_marginRight="20dp"
             android:textColor="#fff"
             android:background="@drawable/but_fenlei"
-            android:text="确定" />
+            android:text="@string/confirm" />
 
         <Button
             android:id="@+id/but_cancel"
@@ -84,7 +84,7 @@
             android:layout_marginRight="20dp"
             android:textColor="#fff"
             android:background="@drawable/but_fenlei"
-            android:text="取消" />
+            android:text="@string/cancel" />
 
 
 

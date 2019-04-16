@@ -22,7 +22,7 @@
                 android:textSize="20sp"
                 android:textColor="#ffffff"
                 android:layout_centerInParent="true"
-                android:text="新增餐桌"
+                android:text="@string/New_table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -35,7 +35,7 @@
                 android:id="@+id/tv_res_table_nums"
                 android:layout_marginLeft="25dp"
                 android:layout_centerVertical="true"
-                android:text="餐桌号"
+                android:text="@string/Table_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
@@ -48,7 +48,7 @@
                 android:textColor="#ff0000"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/tv_res_table_nums"
-                android:hint="餐桌名，建议不超过4个字（必填）"
+                android:hint="@string/Table_name_recommended_no_more_than_4_words"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -66,7 +66,7 @@
                 android:id="@+id/tv_res_table_peoplenums"
                 android:layout_marginLeft="25dp"
                 android:layout_centerVertical="true"
-                android:text="人   数"
+                android:text="@string/table_person_Number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
@@ -79,7 +79,7 @@
                 android:textColor="#ff0000"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/tv_res_table_peoplenums"
-                android:hint="餐桌使用人数（必填）"
+                android:hint="@string/Number_of_table_users"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -97,7 +97,7 @@
                 android:id="@+id/tv_res_table_sort"
                 android:layout_marginLeft="25dp"
                 android:layout_centerVertical="true"
-                android:text="餐桌类型"
+                android:text="@string/Table_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <Spinner
@@ -107,7 +107,7 @@
                 android:textSize="16sp"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/tv_res_table_sort"
-                android:hint="点击选择餐桌类型（必填）"
+                android:hint="@string/Click_to_select_the_table_type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -128,7 +128,7 @@
                 android:textSize="16sp"
                 android:textColor="#ff0000"
                 android:background="@drawable/btn_gray_less"
-                android:text="取消"
+                android:text="@string/cancel"
                 android:layout_width="180dp"
                 android:layout_height="40dp" />
         <Button
@@ -139,7 +139,7 @@
             android:textSize="16sp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_red"
-            android:text="确定"
+            android:text="@string/confirm"
             android:layout_width="180dp"
             android:layout_height="40dp" />
 

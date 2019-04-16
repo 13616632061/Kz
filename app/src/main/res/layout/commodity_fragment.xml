@@ -14,7 +14,7 @@
             android:background="@drawable/but_shangping"
             android:layout_width="137dp"
             android:layout_height="37dp"
-            android:text="商品管理" />
+            android:text="@string/Commodity_management" />
 
         <RadioGroup
             android:orientation="vertical"
@@ -30,7 +30,7 @@
                 android:gravity="center"
                 android:layout_height="37dp"
                 android:button="@null"
-                android:text="商品列表" />
+                android:text="@string/List_of_commodities" />
             <ImageView
                 android:id="@+id/im_di1"
                 android:layout_width="100dp"
@@ -51,7 +51,7 @@
                 android:background="#ffffff"
                 android:textColor="@drawable/text_color"
                 android:gravity="center"
-                android:text="商品分类" />
+                android:text="@string/Commodity_classification" />
             <ImageView
                 android:id="@+id/im_di2"
                 android:layout_width="100dp"
@@ -72,7 +72,7 @@
                 android:background="#ffffff"
                 android:textColor="@drawable/text_color"
                 android:gravity="center"
-                android:text="快捷栏编辑" />
+                android:text="@string/Quick_Bar_Editor" />
             <ImageView
                 android:id="@+id/im_di3"
                 android:layout_width="100dp"
@@ -93,7 +93,7 @@
                 android:background="#ffffff"
                 android:textColor="@drawable/text_color"
                 android:gravity="center"
-                android:text="餐桌管理" />
+                android:text="@string/Table_Manager" />
             <ImageView
                 android:id="@+id/im_di4"
                 android:layout_width="100dp"
@@ -114,7 +114,7 @@
                 android:background="#ffffff"
                 android:textColor="@drawable/text_color"
                 android:gravity="center"
-                android:text="供应商" />
+                android:text="@string/Supplier" />
             <!--共享商品-->
 
             <ImageView

@@ -43,7 +43,7 @@
             android:id="@+id/tv_biaoti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="会员"
+            android:text="@string/members"
             android:textSize="24dp" />
 
 
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="会员号" />
+            android:text="@string/Member_ID" />
 
         <TextView
             android:id="@+id/ed_member_bncoder"
@@ -81,7 +81,7 @@
             android:layout_centerVertical="true"
             android:gravity="center"
             android:background="#ffffff"
-            android:hint="自动生成" />
+            android:hint="@string/Automatic_generation" />
 
     </RelativeLayout>
     <View
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="会员名" />
+            android:text="@string/Member_name" />
 
 
         <TextView
@@ -124,7 +124,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:paddingLeft="10dp"
-            android:hint="请输入会员名" />
+            android:hint="@string/Please_enter_the_membership_name" />
 
     </RelativeLayout>
     <View
@@ -142,7 +142,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="手机" />
+            android:text="@string/Mobile_phone" />
 
         <TextView
             android:id="@+id/tv_phone_asterisk"
@@ -164,7 +164,7 @@
             android:layout_centerVertical="true"
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
-            android:hint="请输入手机号(必填)"
+            android:hint="@string/Please_enter_your_cell_phone_number"
             android:paddingLeft="10dp"
             android:inputType="number" />
 
@@ -178,7 +178,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="免密"
+            android:text="@string/Density_free"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -212,7 +212,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="初始余额" />
+            android:text="@string/Initial_balance" />
         <EditText
             android:id="@+id/ed_money"
             android:layout_toRightOf="@+id/tv_money"
@@ -242,7 +242,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="初始积分" />
+            android:text="@string/Initial_integral" />
         <EditText
             android:id="@+id/ed_score"
             android:layout_toRightOf="@+id/tv_jifen"
@@ -285,7 +285,7 @@
            android:layout_height="wrap_content">
 
            <TextView
-               android:text="每消费"
+               android:text="@string/Every_consumption"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
@@ -294,7 +294,7 @@
                android:layout_width="50dp"
                android:layout_height="wrap_content" />
            <TextView
-               android:text="元,积一分"
+               android:text="@string/Yuan_product_one_point"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
@@ -324,7 +324,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:padding="10dp"
-                android:text="会员等级"/>
+                android:text="@string/Membership_level"/>
 
             <TextView
                 android:visibility="gone"
@@ -343,7 +343,7 @@
             <TextView
                 android:id="@+id/tv_grade"
                 android:layout_toRightOf="@+id/tv_required3"
-                android:text="普通会员"
+                android:text="@string/Ordinary_member"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -379,7 +379,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:padding="10dp"
-                android:text="享受会员价" />
+                android:text="@string/Enjoy_membership_price" />
 
             <ImageView
                 android:id="@+id/im_unit"
@@ -419,7 +419,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="折扣" />
+            android:text="@string/discount" />
 
         <EditText
             android:id="@+id/ed_discount_rate"
@@ -449,7 +449,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="会员密码" />
+            android:text="@string/Membership_password" />
 
         <EditText
             android:id="@+id/ed_password"
@@ -459,7 +459,7 @@
             android:layout_centerVertical="true"
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
-            android:hint="密码(必填)"
+            android:hint="@string/Password_required"
             android:inputType="numberDecimal" />
     </RelativeLayout>
     <View
@@ -477,7 +477,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="会员生日" />
+            android:text="@string/Member_birthday" />
         <TextView
             android:id="@+id/ed_birthday"
             android:layout_toRightOf="@+id/tv_birthday"
@@ -488,7 +488,7 @@
             android:layout_centerVertical="true"
             android:gravity="center"
             android:background="#ffffff"
-            android:hint="生日"
+            android:hint="@string/birthday"
             />
     </RelativeLayout>
     <View
@@ -506,7 +506,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="开卡日期" />
+            android:text="@string/Date_of_opening_card" />
 
         <TextView
             android:id="@+id/tv_day"
@@ -547,7 +547,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:text="备注" />
+            android:text="@string/remark_" />
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -572,7 +572,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_red"
-            android:text="新增会员" />
+            android:text="@string/New_member" />
         <Button
             android:id="@+id/but_delete_members"
             android:textColor="#ffffff"
@@ -582,7 +582,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_gray_less"
-            android:text="删除会员"
+            android:text="@string/Delete_member"
             android:visibility="gone" />
 
 
@@ -595,7 +595,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/btn_gray_less"
-                android:text="发送短信"
+                android:text="@string/Sending_SMS"
                 android:visibility="gone" />
 
         </LinearLayout>

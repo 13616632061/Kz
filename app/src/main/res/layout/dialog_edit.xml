@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
 <TextView
-    android:text="分类"
+    android:text="@string/classification"
     android:layout_marginTop="20dp"
     android:layout_gravity="center_horizontal"
     android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content" />
 
     <EditText
-        android:hint="请输入ip地址"
+        android:hint="@string/Please_enter_the_IP_address"
         android:layout_marginTop="10dp"
         android:id="@+id/ed_mstrIp"
         android:layout_marginLeft="50dp"
@@ -37,13 +37,13 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/but_edquxiao"
-            android:text="取消"
+            android:text="@string/cancel"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
 
         <Button
             android:id="@+id/but_editqueding"
-            android:text="确定"
+            android:text="@string/confirm"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />

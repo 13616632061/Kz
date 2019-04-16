@@ -108,7 +108,7 @@
             android:layout_height="35dp"
             android:layout_weight="1.2"
             android:gravity="center"
-            android:text="编辑"
+            android:text="@string/edit"
             android:background="@drawable/but_main"
             android:textColor="@color/colormain"
             android:textSize="14dp" />

@@ -18,7 +18,7 @@
             android:layout_marginRight="20dp"
             android:layout_centerVertical="true"
             android:background="@drawable/but_fenlei"
-            android:text="全部发送" />
+            android:text="@string/Send_all" />
 
         <EditText
             android:id="@+id/tv_seek"
@@ -27,7 +27,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/ed_beijin"
             android:drawableRight="@drawable/shousuo"
-            android:hint="手机号"
+            android:hint="@string/phone_number"
             android:imeOptions="actionSearch"
             android:padding="5dp"
             android:singleLine="true" />
@@ -53,7 +53,7 @@
             android:gravity="center_horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -63,7 +63,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="会员名"
+            android:text="@string/Member_name"
             android:ellipsize="end"
             android:maxLines="1"
             android:textSize="20dp"
@@ -75,7 +75,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="时间"
+            android:text="@string/time"
             android:ellipsize="end"
             android:maxLines="1"
             android:textSize="20dp"
@@ -87,7 +87,7 @@
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="手机号"
+            android:text="@string/phone_number"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -97,7 +97,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="积分"
+            android:text="@string/integral"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -107,7 +107,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="余额"
+            android:text="@string/Balance_"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -118,7 +118,7 @@
             android:layout_weight="1.5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="等级"
+            android:text="@string/level"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -129,7 +129,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="折扣率"
+            android:text="@string/Discount_rate"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -138,7 +138,7 @@
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="编辑"
+            android:text="@string/edit"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -166,7 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
-            android:text="共"
+            android:text="@string/common"
             android:textSize="16dp" />
 
         <TextView
@@ -183,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/tv_shuliang"
-            android:text="会员"
+            android:text="@string/members"
             android:layout_centerVertical="true"
             android:textSize="16dp" />
         <Button
@@ -195,7 +195,7 @@
             android:layout_marginRight="20dp"
             android:layout_centerVertical="true"
             android:background="@drawable/but_fenlei"
-            android:text="新增会员" />
+            android:text="@string/New_member" />
 
         <Button
             android:id="@+id/but_lv_member"
@@ -205,7 +205,7 @@
             android:layout_marginRight="20dp"
             android:layout_centerVertical="true"
             android:background="@drawable/but_fenlei"
-            android:text="会员等级" />
+            android:text="@string/Membership_level" />
 
         <TextView
             android:visibility="gone"
@@ -224,7 +224,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_zong"
-            android:text="总进价:"
+            android:text="@string/Total_purchase_price"
             android:layout_centerVertical="true"
             android:textSize="16dp" />
 
@@ -246,7 +246,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_jinjia"
-            android:hint="总售价:"
+            android:hint="@string/Total_selling_price"
             android:layout_centerVertical="true"
             android:textSize="16dp" />
 
@@ -264,7 +264,7 @@
         <!--android:background="@drawable/last"-->
         <Button
             android:id="@+id/but_next"
-            android:text="下一页"
+            android:text="@string/next_page"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
@@ -289,7 +289,7 @@
         <!--android:background="@drawable/next"-->
         <Button
             android:id="@+id/but_last"
-            android:text="上一页"
+            android:text="@string/previous_page"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
@@ -307,7 +307,7 @@
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@+id/but_last"
             android:background="@drawable/but_fenlei"
-            android:text="导出模板" />
+            android:text="@string/Export_template" />
 
         <Button
             android:id="@+id/but_derive"
@@ -318,7 +318,7 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/but_tolead"
             android:background="@drawable/but_fenlei"
-            android:text="导入会员" />
+            android:text="@string/Import_member" />
 
 
     </RelativeLayout>

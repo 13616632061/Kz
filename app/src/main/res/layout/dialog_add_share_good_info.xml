@@ -21,7 +21,7 @@
                 android:textSize="20sp"
                 android:textColor="#ffffff"
                 android:layout_centerInParent="true"
-                android:text="新增商品"
+                android:text="@string/newly_increased_goods"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -33,7 +33,7 @@
                 android:layout_gravity="center_vertical"
                 android:textSize="16sp"
                 android:layout_marginLeft="40dp"
-                android:text="商品名称"
+                android:text="@string/Trade_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
@@ -42,7 +42,7 @@
                 android:background="@drawable/edit_bg"
                 android:textSize="14sp"
                 android:paddingLeft="15dp"
-                android:hint="请输入商品名字"
+                android:hint="@string/Please_enter_the_name_of_the_product"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="45dp"
                 android:layout_width="match_parent"
@@ -56,7 +56,7 @@
                 android:layout_gravity="center_vertical"
                 android:textSize="16sp"
                 android:layout_marginLeft="40dp"
-                android:text="编        号"
+                android:text="@string/bianhao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
@@ -65,7 +65,7 @@
                 android:background="@drawable/edit_bg"
                 android:textSize="14sp"
                 android:inputType="number"
-                android:hint="请输入商品编号"
+                android:hint="@string/Please_enter_the_commodity_number"
                 android:paddingLeft="15dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="45dp"
@@ -80,14 +80,14 @@
                 android:layout_gravity="center_vertical"
                 android:textSize="16sp"
                 android:layout_marginLeft="40dp"
-                android:text="分        类"
+                android:text="@string/Classification_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <Spinner
                 android:id="@+id/Spinner_sharegoods_sort"
                 android:layout_gravity="center_vertical"
                 android:textSize="16sp"
-                android:hint="请输入商品分类"
+                android:hint="@string/Please_enter_commodity_classification"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="45dp"
                 android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                 android:layout_gravity="center_vertical"
                 android:textSize="16sp"
                 android:layout_marginLeft="40dp"
-                android:text="库        存"
+                android:text="@string/stock_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
@@ -111,7 +111,7 @@
                 android:textSize="14sp"
                 android:paddingLeft="15dp"
                 android:inputType="number"
-                android:hint="请输入商品库存"
+                android:hint="@string/Please_enter_commodity_inventory"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="45dp"
                 android:layout_width="match_parent"
@@ -125,7 +125,7 @@
                 android:layout_gravity="center_vertical"
                 android:textSize="16sp"
                 android:layout_marginLeft="40dp"
-                android:text="价        格"
+                android:text="@string/price_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
@@ -135,7 +135,7 @@
                 android:textSize="14sp"
                 android:paddingLeft="15dp"
                 android:digits="0123456789."
-                android:hint="请输入商品价格"
+                android:hint="@string/Please_enter_commodity_price"
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="45dp"
                 android:layout_width="match_parent"
@@ -149,7 +149,7 @@
                 android:layout_gravity="center_vertical"
                 android:textSize="16sp"
                 android:layout_marginLeft="40dp"
-                android:text="开        启"
+                android:text="@string/open_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <widget.Switch
@@ -180,7 +180,7 @@
     <TextView
         android:textSize="16sp"
         android:layout_gravity="center_vertical"
-        android:text="小时内免费，之后每隔"
+        android:text="@string/Free_within_hours_every_other_time_after"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <EditText
@@ -197,7 +197,7 @@
     <TextView
         android:textSize="16sp"
         android:layout_gravity="center_vertical"
-        android:text="小时，收费"
+        android:text="@string/Hours_fees"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <EditText
@@ -214,7 +214,7 @@
     <TextView
         android:textSize="16sp"
         android:layout_gravity="center_vertical"
-        android:text="元"
+        android:text="@string/yuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
         </LinearLayout>
@@ -230,7 +230,7 @@
                 android:textSize="16sp"
                 android:textColor="#ff0000"
                 android:background="@drawable/btn_gray_less"
-                android:text="取消"
+                android:text="@string/cancel"
                 android:layout_width="150dp"
                 android:layout_height="40dp" />
             <Button
@@ -241,7 +241,7 @@
                 android:textSize="16sp"
                 android:textColor="#ffffff"
                 android:background="@drawable/btn_red"
-                android:text="确定"
+                android:text="@string/confirm"
                 android:layout_width="150dp"
                 android:layout_height="40dp" />
 

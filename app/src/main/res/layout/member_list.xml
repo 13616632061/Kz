@@ -23,7 +23,7 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:padding="5dp"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:textSize="16dp"/>
         <TextView
             android:id="@+id/tv_name"
@@ -35,7 +35,7 @@
             android:gravity="center_horizontal"
             android:maxLines="1"
             android:padding="5dp"
-            android:text="会员名"
+            android:text="@string/Member_name"
             android:textSize="16dp"/>
         <TextView
             android:id="@+id/tv_time"
@@ -47,7 +47,7 @@
             android:gravity="center_horizontal"
             android:maxLines="1"
             android:padding="5dp"
-            android:text="时间"
+            android:text="@string/time"
             android:textSize="16dp"/>
         <TextView
             android:id="@+id/tv_phone"
@@ -57,7 +57,7 @@
             android:layout_weight="2"
             android:gravity="center_horizontal"
             android:padding="5dp"
-            android:text="手机号"
+            android:text="@string/phone_number"
             android:textSize="16dp"/>
         <TextView
             android:id="@+id/tv_score"
@@ -67,7 +67,7 @@
             android:layout_weight="2"
             android:gravity="center_horizontal"
             android:padding="5dp"
-            android:text="积分"
+            android:text="@string/integral"
             android:textSize="16dp"/>
 
         <TextView
@@ -76,7 +76,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="余额"
+            android:text="@string/Balance_"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -87,7 +87,7 @@
             android:layout_weight="1.5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="普通会员"
+            android:text="@string/Ordinary_member"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -100,7 +100,7 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:padding="5dp"
-            android:text="折扣率"
+            android:text="@string/Discount_rate"
             android:textSize="16dp"/>
         <Button
             android:id="@+id/but_edit"
@@ -110,7 +110,7 @@
             android:layout_weight="2"
             android:gravity="center_horizontal|center_vertical"
             android:padding="5dp"
-            android:text="编辑"
+            android:text="@string/edit"
             android:textSize="16dp"/>
 
 

@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv_name"
-            android:text="商品名称"
+            android:text="@string/Trade_name"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -23,7 +23,7 @@
 
         <EditText
             android:id="@+id/ed_bncode"
-            android:hint="商品条码"
+            android:hint="@string/Commodity_bar_code"
             android:background="@drawable/fubeijin"
             android:imeOptions="actionSearch"
             android:singleLine="true"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:layout_centerVertical="true"
-            android:text="申请数量"
+            android:text="@string/Number_of_applications"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
@@ -86,13 +86,13 @@
             android:id="@+id/tv_title"
             android:layout_marginTop="5dp"
             android:layout_centerHorizontal="true"
-            android:text="问题描述"
+            android:text="@string/Problem_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/ed_content"
             android:background="#ffffff"
-            android:hint="请输入问题描述"
+            android:hint="@string/Please_enter_a_description_of_the_problem"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/tv_title"
             android:gravity="left"
@@ -103,7 +103,7 @@
             android:id="@+id/but_submit"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
-            android:text="提交"
+            android:text="@string/submit"
             android:textColor="#ffffff"
             android:layout_below="@+id/ed_content"
             android:background="@drawable/but_fenlei"

@@ -14,7 +14,7 @@
             android:padding="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:hint="条码/拼音码/编号"
+            android:hint="@string/Bar_Code_or_Pinyin_Code_or_Number"
             android:imeOptions="actionSearch"
             android:singleLine="true"
             android:textColorHint="#d7d4d4"
@@ -35,28 +35,28 @@
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="2"
-            android:text="报损时间"
+            android:text="@string/Reporting_time"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="2"
-            android:text="商品条码"
+            android:text="@string/Commodity_bar_code"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="2"
-            android:text="商品名称"
+            android:text="@string/Trade_name"
             android:ellipsize="end"
             android:maxLines="1"
             android:layout_width="0dp"
@@ -65,28 +65,28 @@
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="进货价"
+            android:text="@string/buying_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="数量"
+            android:text="@string/number"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="报损金额"
+            android:text="@string/Amount_of_loss_reported"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="报损人"
+            android:text="@string/Report_person"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
@@ -94,7 +94,7 @@
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="筛选"
+            android:text="@string/screen"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
@@ -115,7 +115,7 @@
 
         <TextView
             android:id="@+id/tv_Total"
-            android:text="报损总金额:"
+            android:text="@string/Total_amount_of_loss_reported"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -140,7 +140,7 @@
             android:textColor="#ffffff"
             android:layout_alignParentRight="true"
             android:background="@drawable/but_fenlei"
-            android:text="添加报损" />
+            android:text="@string/Add_report_loss" />
 
         <Button
             android:layout_toLeftOf="@+id/but_addbreakage"
@@ -151,7 +151,7 @@
             android:layout_height="35dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/but_fenlei"
-            android:text="传到邮箱"/>
+            android:text="@string/To_the_mailbox"/>
 
 
     </RelativeLayout>

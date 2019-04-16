@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/tv_title"
          android:layout_gravity="center_horizontal"
-        android:text="确定反结账？"
+        android:text="@string/Determine_the_counter_settlement"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:layout_width="wrap_content"
@@ -22,14 +22,14 @@
 
         <TextView
             android:id="@+id/tv_refund"
-            android:text="退款方式:"
+            android:text="@string/Method_of_refund"
             android:layout_marginRight="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/tv_cash"
-            android:text="现金"
+            android:text="@string/cash"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -44,14 +44,14 @@
 
         <Button
             android:id="@+id/but_cancel"
-            android:text="取消"
+            android:text="@string/cancel"
             android:layout_marginRight="20dp"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
 
         <Button
             android:id="@+id/but_confirm"
-            android:text="确定"
+            android:text="@string/confirm"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />

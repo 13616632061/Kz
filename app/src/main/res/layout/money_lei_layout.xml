@@ -22,7 +22,7 @@
             android:gravity="center_horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -32,7 +32,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="商品名"
+            android:text="@string/Trade_name"
             android:ellipsize="end"
             android:maxLines="1"
             android:textSize="20dp"
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="条形码"
+            android:text="@string/bar_code"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -54,7 +54,7 @@
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="数量"
+            android:text="@string/number"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
@@ -64,14 +64,14 @@
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="进货价"
+            android:text="@string/buying_price"
             android:textSize="20dp"
             android:padding="5dp"
             android:layout_margin="5dp"/>
 
         <CheckBox
             android:id="@+id/cc_select"
-            android:text="是否自动报货"
+            android:text="@string/Whether_to_report_goods_automatically_or_not"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -98,12 +98,12 @@
             android:padding="5dp"
             android:layout_marginLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="全选"/>
+            android:text="@string/All_election"/>
 
         <TextView
             android:id="@+id/tv_cc"
             android:layout_toRightOf="@+id/cc_box"
-            android:text="已选中"
+            android:text="@string/Selected"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -129,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="共"
+                android:text="@string/common"
                 android:textSize="16dp" />
             <TextView
                 android:id="@+id/tv_total"
@@ -142,7 +142,7 @@
             <TextView
                 android:layout_marginLeft="10dp"
                 android:layout_centerVertical="true"
-                android:text="件"
+                android:text="@string/piece"
                 android:textSize="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -161,7 +161,7 @@
                 android:layout_height="35dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/but_fenlei"
-                android:text="添加报货商品" />
+                android:text="@string/Adding_commodities_to_the_list" />
             <Button
                 android:visibility="gone"
                 android:id="@+id/but_shuliang"
@@ -192,7 +192,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:background="@drawable/but_fenlei"
-            android:text="报货" />
+            android:text="@string/report_goods" />
         </LinearLayout>
         <Button
             android:visibility="gone"
@@ -203,7 +203,7 @@
         android:layout_height="35dp"
         android:layout_margin="10dp"
         android:background="@drawable/but_fenlei"
-        android:text="选择供应商" />
+        android:text="@string/selection_of_suppliers" />
 
     </RelativeLayout>
 

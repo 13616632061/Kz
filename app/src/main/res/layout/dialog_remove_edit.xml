@@ -24,7 +24,7 @@
             android:layout_marginTop="25dp"
             android:layout_marginLeft="60dp"
             android:id="@+id/btn_notes_remove"
-            android:text="删除"
+            android:text="@string/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
@@ -37,7 +37,7 @@
             android:layout_marginRight="60dp"
             android:layout_alignParentRight="true"
             android:id="@+id/btn_notes_edits"
-            android:text="编辑"
+            android:text="@string/edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

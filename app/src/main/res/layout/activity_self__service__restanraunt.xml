@@ -56,7 +56,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="15dp"
                 android:textSize="23sp"
-                android:text="共"
+                android:text="@string/common"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
@@ -73,7 +73,7 @@
             <TextView
                 android:layout_toRightOf="@+id/tv_totalnums"
                 android:textSize="23sp"
-                android:text="件商品，金额"
+                android:text="@string/Goods_amount"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -114,7 +114,7 @@
                 android:textSize="25sp"
                 android:layout_marginBottom="25dp"
                 android:layout_centerHorizontal="true"
-                android:text="智慧生活，自助买单，诚信支付"
+                android:text="@string/Wisdom_Life_Self_help_Payment_Honest_Payment"
                 android:layout_alignParentBottom="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

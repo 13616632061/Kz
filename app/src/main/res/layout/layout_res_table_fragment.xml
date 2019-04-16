@@ -16,7 +16,7 @@
             android:layout_marginLeft="10dp"
             android:padding="5dp"
             android:layout_centerVertical="true"
-            android:text="预定"
+            android:text="@string/Reserve_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -36,7 +36,7 @@
             android:id="@+id/tv_table_refresh"
             android:layout_centerInParent="true"
             android:textColor="#ffffff"
-            android:text="餐桌列表"
+            android:text="@string/Table_list"
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -47,7 +47,7 @@
             android:layout_centerVertical="true"
             android:textColor="#ffffff"
             android:layout_marginRight="30dp"
-            android:text="空闲0"
+            android:text="@string/free"
             android:textSize="18dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

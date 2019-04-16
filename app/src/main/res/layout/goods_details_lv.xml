@@ -9,7 +9,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv_bncode"
-            android:text="条码"
+            android:text="@string/bar_code"
             android:textSize="16sp"
             android:textColor="@color/color333"
             android:layout_margin="5dp"
@@ -19,7 +19,7 @@
             android:layout_height="match_parent" />
         <TextView
             android:id="@+id/tv_name"
-            android:text="商品名"
+            android:text="@string/goods_name"
             android:layout_margin="5dp"
             android:gravity="center"
             android:textSize="16sp"
@@ -31,7 +31,7 @@
             android:layout_height="match_parent" />
         <TextView
             android:id="@+id/tv_tagname"
-            android:text="分类"
+            android:text="@string/classification"
             android:textSize="16sp"
             android:textColor="@color/color333"
             android:ellipsize="end"
@@ -43,7 +43,7 @@
             android:layout_height="match_parent" />
         <TextView
             android:id="@+id/tv_nums"
-            android:text="报货数量"
+            android:text="@string/Quantity_of_goods_reported"
             android:gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
@@ -53,7 +53,7 @@
             android:layout_height="match_parent" />
         <TextView
             android:id="@+id/tv_before_nums"
-            android:text="验收数量"
+            android:text="@string/Acceptance_quantity"
             android:gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
@@ -64,7 +64,7 @@
         <TextView
             android:visibility="gone"
             android:id="@+id/tv_price"
-            android:text="价格"
+            android:text="@string/price"
             android:gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
@@ -72,7 +72,7 @@
             android:layout_height="match_parent" />
         <Button
             android:id="@+id/but_acceptance"
-            android:text="验收"
+            android:text="@string/acceptance"
             android:textSize="16sp"
             android:textColor="@color/color333"
             android:gravity="center"

@@ -15,7 +15,7 @@
       <TextView
           android:id="@+id/tv_category"
           android:background="@drawable/gv_beijin"
-          android:text="分类"
+          android:text="@string/classification"
           android:textSize="22dp"
           android:gravity="center"
           android:layout_width="100dp"

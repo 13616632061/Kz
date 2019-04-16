@@ -15,7 +15,7 @@
             android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
-            android:text="关闭斤"
+            android:text="@string/Close_Jin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -39,7 +39,7 @@
             android:padding="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
-            android:text="斤"
+            android:text="@string/jin"
             android:textSize="18dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -50,7 +50,7 @@
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
             android:textSize="20sp"
-            android:text="商品名称"
+            android:text="@string/Trade_name"
             android:layout_centerHorizontal="true"
             android:textColor="@color/color333"
             android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
 
         <Button
             android:id="@+id/but_cancel_cancel"
-            android:text="非记重"
+            android:text="@string/Non_weight"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
             android:layout_gravity="center_horizontal"
             android:textSize="20sp"
             android:gravity="center_vertical"
-            android:text="单价："
+            android:text="@string/Unit_Price"
             android:textColor="@color/color333"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -109,7 +109,7 @@
             android:layout_marginTop="10dp"
             android:textSize="20sp"
             android:gravity="center_vertical"
-            android:text="重量："
+            android:text="@string/weight_"
             android:textColor="@color/color333"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -132,7 +132,7 @@
             android:layout_marginTop="10dp"
             android:textSize="20sp"
             android:gravity="center_vertical"
-            android:text="斤"
+            android:text="@string/jin"
             android:textColor="@color/color333"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -157,7 +157,7 @@
             android:layout_marginTop="10dp"
             android:textSize="20sp"
             android:gravity="center_vertical"
-            android:text="金额："
+            android:text="@string/Amount_of_money"
             android:textColor="@color/color333"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

@@ -24,7 +24,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="5dp"
                 android:textSize="20sp"
-                android:text="扫商品条码"
+                android:text="@string/Sweeping_barcode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -51,7 +51,7 @@
                 android:layout_alignParentBottom="true"
                 android:textSize="20sp"
                 android:layout_marginBottom="5dp"
-                android:text="扫码支付"
+                android:text="@string/Sweep_code_payment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -78,7 +78,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="5dp"
                 android:textSize="20sp"
-                android:text="支付成功"
+                android:text="@string/pay_success"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -99,7 +99,7 @@
             android:id="@+id/btn_ok"
             android:textSize="25sp"
             android:textColor="#ffffff"
-            android:text="选好了"
+            android:text="@string/SelectedOK"
             android:background="@drawable/btn_red"
             android:layout_centerInParent="true"
             android:layout_width="300dp"

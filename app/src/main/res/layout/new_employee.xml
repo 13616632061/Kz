@@ -39,7 +39,7 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="新增员工"
+            android:text="@string/New_employees"
             android:textSize="24dp" />
 
         <TextView
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="是否启用" />
+                    android:text="@string/Is_it_enabled" />
 
                 <widget.Switch
                     android:id="@+id/sw_start"
@@ -105,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="编号" />
+                    android:text="@string/number_" />
 
                 <EditText
                     android:id="@+id/ed_user"
@@ -115,7 +115,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:hint="编号（必填）"
+                    android:hint="@string/Number_required"
                     android:padding="5dp"
                     android:background="#fdfdfe"
                     android:singleLine="true"
@@ -139,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="姓名" />
+                    android:text="@string/name_" />
 
                 <EditText
                     android:layout_toRightOf="@+id/tv_name"
@@ -149,7 +149,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:hint="姓名（必填）"
+                    android:hint="@string/Name_required"
                     android:background="#fdfdfe"
                     android:padding="5dp"
                     android:singleLine="true"
@@ -174,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="密码" />
+                    android:text="@string/password" />
 
                 <EditText
                     android:layout_toRightOf="@+id/tv_oldpassword"
@@ -185,7 +185,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:background="#fdfdfe"
-                    android:hint="密码（必填）"
+                    android:hint="@string/Password_required"
                     android:inputType="textPassword"
                     android:padding="5dp"
                     android:singleLine="true"
@@ -210,7 +210,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="确定密码" />
+                    android:text="@string/Confirm_password" />
 
                 <EditText
                     android:layout_toRightOf="@+id/tv_newpassword"
@@ -221,7 +221,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:background="#fdfdfe"
-                    android:hint="密码（必填）"
+                    android:hint="@string/Password_required"
                     android:inputType="textPassword"
                     android:padding="5dp"
                     android:singleLine="true"
@@ -241,7 +241,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="确定密码" />
+                    android:text="@string/Confirm_password" />
 
                 <EditText
                     android:layout_toRightOf="@+id/tv_newpassword_confirm"
@@ -252,7 +252,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:background="#fdfdfe"
-                    android:hint="密码（必填）"
+                    android:hint="@string/Password_required"
                     android:inputType="textPassword"
                     android:padding="5dp"
                     android:singleLine="true"
@@ -271,7 +271,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="手机号码" />
+                    android:text="@string/phone_number" />
 
                 <EditText
                     android:layout_toRightOf="@+id/tv_phone"
@@ -282,7 +282,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:background="#fdfdfe"
-                    android:hint="手机号（必填）"
+                    android:hint="@string/Mobile_phone_number_required"
                     android:padding="5dp"
                     android:singleLine="true"
                     android:textColorHint="#b4b4b4" />
@@ -304,7 +304,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="角色" />
+                    android:text="@string/role" />
 
                 <ImageView
                     android:layout_width="40dp"
@@ -333,7 +333,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="销售提成" />
+                    android:text="@string/Sales_commission" />
 
                 <EditText
                     android:id="@+id/tv_commissions"
@@ -343,7 +343,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@+id/tv_percentage"
                     android:background="#fdfdfe"
-                    android:hint="点击输入提成"
+                    android:hint="@string/Click_on_the_input_Commission"
                     android:singleLine="true"
                     android:textColorHint="#b4b4b4" />
 
@@ -376,7 +376,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="权限管理" />
+                    android:text="@string/Privilege_management" />
             </RelativeLayout>
 
             <View
@@ -394,7 +394,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="收银端权限" />
+                    android:text="@string/Cashier_authority" />
             </RelativeLayout>
 
             <View
@@ -422,7 +422,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="全选" />
+                        android:text="@string/All_election" />
 
                 </LinearLayout>
 
@@ -436,7 +436,7 @@
                     android:drawableRight="@drawable/zidingyi1"
                     android:gravity="center_vertical"
                     android:onClick="Onclick"
-                    android:text="显示进货价" />
+                    android:text="@string/Display_purchase_price" />
 
                 <TextView
                     android:id="@+id/tv_im3"
@@ -448,7 +448,7 @@
                     android:drawableRight="@drawable/zidingyi1"
                     android:gravity="center_vertical"
                     android:onClick="Onclick"
-                    android:text="显示利润" />
+                    android:text="@string/Show_profits" />
 
                 <TextView
                     android:id="@+id/tv_im4"
@@ -460,7 +460,7 @@
                     android:drawableRight="@drawable/zidingyi1"
                     android:gravity="center_vertical"
                     android:onClick="Onclick"
-                    android:text="显示库存" />
+                    android:text="@string/Display_inventory" />
 
                 <TextView
                     android:visibility="gone"
@@ -473,7 +473,7 @@
                     android:drawableRight="@drawable/zidingyi1"
                     android:gravity="center_vertical"
                     android:onClick="Onclick"
-                    android:text="退货" />
+                    android:text="@string/return_goods" />
 
 
             </LinearLayout>
@@ -493,7 +493,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:padding="10dp"
-                    android:text="更多权限" />
+                    android:text="@string/More_authority" />
             </RelativeLayout>
 
             <LinearLayout
@@ -511,7 +511,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="报表" />
+                    android:text="@string/report_form" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -527,7 +527,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="单据流水" />
+                        android:text="@string/Document_flow" />
 
                     <TextView
                         android:id="@+id/tv_im22"
@@ -538,7 +538,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="商品销售统计" />
+                        android:text="@string/Commodity_sales_statistics" />
 
                     <TextView
                         android:id="@+id/tv_im23"
@@ -549,7 +549,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="趋势分析" />
+                        android:text="@string/trend_analysis" />
 
                     <TextView
                         android:id="@+id/tv_im24"
@@ -560,7 +560,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="分类占比统计" />
+                        android:text="@string/Statistics_of_Classified_Proportion" />
 
                     <TextView
                         android:id="@+id/tv_im25"
@@ -571,7 +571,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="盘点报表" />
+                        android:text="@string/Inventory_report" />
 
                     <TextView
                         android:id="@+id/tv_im26"
@@ -582,7 +582,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="交接班日结" />
+                        android:text="@string/Handover_day_closure" />
                 </LinearLayout>
 
                 <View
@@ -594,7 +594,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="商品管理" />
+                    android:text="@string/Commodity_management" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -610,7 +610,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="全选" />
+                        android:text="@string/All_election" />
 
                     <TextView
                         android:id="@+id/tv_im32"
@@ -621,7 +621,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="商品分类" />
+                        android:text="@string/Commodity_classification" />
 
                     <TextView
                         android:id="@+id/tv_im33"
@@ -632,7 +632,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="导入列表" />
+                        android:text="@string/Import_list" />
 
                     <TextView
                         android:id="@+id/tv_im34"
@@ -643,7 +643,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="导出列表" />
+                        android:text="@string/Export_list" />
 
                     <TextView
                         android:id="@+id/tv_im35"
@@ -654,7 +654,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="新增商品" />
+                        android:text="@string/newly_increased_goods" />
 
                     <TextView
                         android:id="@+id/tv_im36"
@@ -665,7 +665,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="商品编辑" />
+                        android:text="@string/Commodity_editor" />
 
                     <TextView
                         android:id="@+id/tv_im37"
@@ -676,7 +676,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="快捷栏排序" />
+                        android:text="@string/Quick_Bar_Sorting" />
                 </LinearLayout>
 
                 <View
@@ -688,7 +688,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="员工" />
+                    android:text="@string/staff" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -704,7 +704,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="全选" />
+                        android:text="@string/All_election" />
 
                     <TextView
                         android:id="@+id/tv_im42"
@@ -715,7 +715,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="员工管理" />
+                        android:text="@string/Staff_management" />
 
                     <TextView
                         android:id="@+id/tv_im43"
@@ -726,7 +726,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="角色管理" />
+                        android:text="@string/Role_management" />
 
                     <TextView
                         android:id="@+id/tv_im44"
@@ -737,7 +737,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="权限管理" />
+                        android:text="@string/Privilege_management" />
                 </LinearLayout>
 
                 <View
@@ -749,7 +749,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="库存功能" />
+                    android:text="@string/Inventory_function" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -765,7 +765,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="全选" />
+                        android:text="@string/All_election" />
 
                     <TextView
                         android:id="@+id/tvv_im52"
@@ -776,7 +776,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="报损" />
+                        android:text="@string/loss" />
 
                     <TextView
                         android:id="@+id/tvv_im53"
@@ -787,7 +787,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="添加报损商品" />
+                        android:text="@string/Adding_Damaged_Commodities" />
 
                     <TextView
                         android:id="@+id/tvv_im54"
@@ -798,7 +798,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="报损详情" />
+                        android:text="@string/Details_of_loss_reporting" />
 
                     <TextView
                         android:id="@+id/tvv_im55"
@@ -809,7 +809,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="盘点" />
+                        android:text="@string/inventory" />
                 </LinearLayout>
 
                 <View
@@ -831,7 +831,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="设置" />
+                        android:text="@string/menu_settings" />
 
                     <TextView
                         android:id="@+id/tvv_im62"
@@ -842,7 +842,7 @@
                         android:drawableRight="@drawable/zidingyi1"
                         android:gravity="center_vertical"
                         android:onClick="Onclick"
-                        android:text="修改密码" />
+                        android:text="@string/change_password" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -859,7 +859,7 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/but_fenlei"
-                    android:text="保存"
+                    android:text="@string/save"
                     android:textColor="#ffffff" />
 
             </LinearLayout>

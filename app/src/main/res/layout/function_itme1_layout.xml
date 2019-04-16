@@ -14,7 +14,7 @@
             android:id="@+id/tv_function_name"
             android:layout_centerInParent="true"
             android:gravity="center_horizontal"
-            android:text="删除"
+            android:text="@string/delete"
             android:drawableTop="@drawable/breakage2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

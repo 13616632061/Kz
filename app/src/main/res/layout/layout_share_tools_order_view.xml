@@ -24,7 +24,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:textSize="16sp"
-                android:text="收银"
+                android:text="@string/collect_money"
                 android:textColor="#adadad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -33,7 +33,7 @@
             android:layout_marginRight="15dp"
             android:textSize="20sp"
             android:layout_alignParentRight="true"
-            android:text="共享工具，开启共享生活"
+            android:text="@string/Sharing_Tools_Open_Sharing_Life"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RelativeLayout>
@@ -49,7 +49,7 @@
             android:layout_marginTop="10dp"
             android:textColor="#adadad"
             android:textSize="16sp"
-            android:text="商品："
+            android:text="@string/goods"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -70,7 +70,7 @@
             android:layout_marginTop="10dp"
             android:textColor="#adadad"
             android:textSize="16sp"
-            android:text="合计："
+            android:text="@string/total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -130,7 +130,7 @@
                 android:id="@+id/btn_sure"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/btn_whilte_red"
-                android:text="确  定"
+                android:text="@string/confirm"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="45dp" />

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv_xuhao"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
@@ -18,7 +18,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_timestart"
-            android:text="开始时间"
+            android:text="@string/start_time"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="2"
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_timeend"
-            android:text="结束时间"
+            android:text="@string/End_time"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="2"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_cashier"
-            android:text="收银员"
+            android:text="@string/Cashiers"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1.5"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_Total"
-            android:text="收银总额"
+            android:text="@string/Total_cash_collection"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1.5"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_cash"
-            android:text="现金支付"
+            android:text="@string/Cash_payment"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1.5"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_micro"
-            android:text="移动支付"
+            android:text="@string/mobile_type"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1.5"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_standby"
-            android:text="备用金"
+            android:text="@string/reserve_fund"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1.5"
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_money"
-            android:text="上缴金额"
+            android:text="@string/turn_over_money"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_other"
-            android:text="其他金额"
+            android:text="@string/Other_amount"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_cash_hand"
-            android:text="库存现金"
+            android:text="@string/stock_cash"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"

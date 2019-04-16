@@ -84,7 +84,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="序号"
+                        android:text="@string/serial_number"
                         android:textColor="@color/colorFont"
                         android:textSize="18sp" />
 
@@ -93,7 +93,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:gravity="center"
-                        android:text="名称"
+                        android:text="@string/name"
                         android:textColor="@color/colorFont"
                         android:textSize="18sp" />
 
@@ -103,7 +103,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="单价"
+                        android:text="@string/unit_price"
                         android:textColor="@color/colorFont"
                         android:textSize="18sp" />
 
@@ -112,7 +112,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2.5"
                         android:gravity="center"
-                        android:text="数量"
+                        android:text="@string/number"
                         android:textColor="@color/colorFont"
                         android:textSize="18sp" />
 
@@ -122,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:gravity="center"
-                        android:text="小计"
+                        android:text="@string/subtotal"
                         android:textColor="@color/colorFont"
                         android:textSize="18sp" />
 
@@ -177,7 +177,7 @@
 
                             <TextView
                                 android:id="@+id/tv_title_weight"
-                                android:text="重量:"
+                                android:text="@string/weight_"
                                 android:layout_centerVertical="true"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -218,7 +218,7 @@
                                 android:layout_alignBaseline="@+id/tv_Totalmerchandise"
                                 android:layout_marginRight="10dp"
                                 android:layout_toLeftOf="@+id/tv_Totalmerchandise"
-                                android:text="数量:"
+                                android:text="@string/number_"
                                 android:layout_marginBottom="5dp"
                                 android:textSize="22dp" />
 
@@ -242,7 +242,7 @@
                                 android:layout_marginRight="10dp"
                                 android:layout_toLeftOf="@+id/tv_Total"
                                 android:layout_centerVertical="true"
-                                android:text="金额:"
+                                android:text="@string/Amount_of_money"
                                 android:layout_marginBottom="5dp"
                                 android:textSize="22dp" />
 
@@ -293,7 +293,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="快捷栏"
+                        android:text="@string/shortcut_bar"
                         android:textSize="18.1sp" />
 
                     <RadioButton
@@ -305,7 +305,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="计重栏"
+                        android:text="@string/weighting_column"
                         android:textSize="18.1sp" />
 
 
@@ -340,7 +340,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="10dp"
                         android:id="@+id/btn_isshow_staff"
-                        android:text="员工显示"
+                        android:text="@string/Staff_display"
                         android:layout_width="wrap_content"
                         android:layout_height="37dp" />
 
@@ -353,7 +353,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="10dp"
                         android:id="@+id/btn_sure"
-                        android:text="编辑"
+                        android:text="@string/edit"
                         android:layout_width="wrap_content"
                         android:layout_height="37dp" />
 
@@ -397,7 +397,7 @@
                 android:visibility="gone"
                 android:id="@+id/tv_internet"
                 android:textColor="#FF6501"
-                android:text="当前无网络"
+                android:text="@string/current_no_network"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -445,7 +445,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_gravity="center_vertical"
-                        android:text="收款成功"
+                        android:text="@string/successful_receipt"
                         android:textColor="#535353"
                         android:textSize="27sp" />
                 </LinearLayout>
@@ -460,7 +460,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="已收款："
+                        android:text="@string/receivable"
                         android:textColor="#535353"
                         android:textSize="24sp" />
                     <TextView
@@ -488,7 +488,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="支付方式："
+                        android:text="@string/pay_type_"
                         android:textColor="#535353"
                         android:textSize="24sp" />
                     <TextView
@@ -496,7 +496,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="现金支付"
+                        android:text="@string/Cash_payment"
                         android:textColor="#535353"
                         android:textSize="24sp" />
                 </LinearLayout>
@@ -512,7 +512,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
-                        android:text="单号："
+                        android:text="@string/order_numbers"
                         android:textColor="#535353"
                         android:textSize="24sp" />
                     <TextView
@@ -534,7 +534,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="日期："
+                        android:text="@string/date"
                         android:textColor="#535353"
                         android:textSize="24sp" />
                     <TextView
@@ -552,7 +552,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:layout_marginBottom="200dp"
-                    android:text="顾客已付款"
+                    android:text="@string/customer_paid"
                     android:textColor="#f00"
                     android:textSize="24sp" />
 
@@ -561,7 +561,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/colormain"
-                    android:text="1秒后关闭"
+                    android:text="@string/close_after_one_econd"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
@@ -593,7 +593,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="应收"
+                    android:text="@string/receivables"
                     android:textColor="#535353"
                     android:textSize="24.3dp" />
 
@@ -632,7 +632,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:padding="10dp"
-                    android:text="实收"
+                    android:text="@string/netreceipts"
                     android:textColor="#535353"
                     android:textSize="24.3dp" />
 
@@ -674,7 +674,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="找零"
+                    android:text="@string/give_change"
                     android:textColor="#959595"
                     android:textSize="24.3dp" />
 
@@ -699,14 +699,14 @@
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:text="立减"
+                    android:text="@string/vertical_reduction"
                     android:id="@+id/but_reduce"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content" />
 
                 <Button
-                    android:text="折扣"
+                    android:text="@string/discount"
                     android:id="@+id/but_Discount"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -714,7 +714,7 @@
 
 
                 <Button
-                    android:text="去零"
+                    android:text="@string/Zero_elimination"
                     android:id="@+id/but_Remove"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -722,7 +722,7 @@
 
 
                 <Button
-                    android:text="加价"
+                    android:text="@string/Markup"
                     android:id="@+id/but_add_price"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -1050,7 +1050,7 @@
                         android:layout_weight="1.5"
                         android:gravity="center"
                         android:onClick="onclick"
-                        android:text="取消"
+                        android:text="@string/cancel"
                         android:textColor="@color/colorFont"
                         android:textSize="20.8sp"
                         app:buttonColor="@color/colorbutton" />
@@ -1069,7 +1069,7 @@
                             android:id="@+id/but_Cashbox"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="现金支付"
+                            android:text="@string/Cash_payment"
                             android:textColor="@color/colorbutton"
                             android:textSize="20.8sp"
                             app:buttonColor="@color/colormain" />
@@ -1081,7 +1081,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:layout_weight="2"
-                        android:text="移动支付"
+                        android:text="@string/mobile_type"
                         android:textColor="@color/colorbutton"
                         android:textSize="20.8sp"
                         app:buttonColor="@color/colormain" />
@@ -1127,7 +1127,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="应付金额:"
+                        android:text="@string/amount_payable"
                         android:textSize="30dp" />
                     <TextView
                         android:text="￥"
@@ -1152,7 +1152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="30dp"
-                    android:text="二维码已客显" />
+                    android:text="@string/two_code_played" />
 
                 <View
                     android:layout_width="match_parent"
@@ -1187,7 +1187,7 @@
                         android:layout_marginBottom="5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="5dp"
-                        android:text="支付方式："
+                        android:text="@string/pay_type_"
                         android:textSize="22dp" />
 
                     <TextView
@@ -1197,7 +1197,7 @@
                         android:layout_marginBottom="5dp"
                         android:layout_marginRight="20dp"
                         android:layout_marginTop="5dp"
-                        android:text="移动支付"
+                        android:text="@string/mobile_type"
                         android:textSize="22dp" />
 
                 </RelativeLayout>
@@ -1217,7 +1217,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/colormain"
-                    android:text="无网移动收银" />
+                    android:text="@string/mobile_cashier_without_network" />
 
                 <Button
                     android:id="@+id/but_zhifusucc"
@@ -1228,7 +1228,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/colormain"
-                    android:text="取消" />
+                    android:text="@string/cancel" />
             </LinearLayout>
 
         </RelativeLayout>
@@ -1249,7 +1249,7 @@
 
                 <Button
                     android:id="@+id/but_goback"
-                    android:text="取消"
+                    android:text="@string/cancel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -1258,7 +1258,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="收款提示"
+                    android:text="@string/tips_for_collection"
                     android:textSize="30dp" />
 
                 <LinearLayout
@@ -1273,7 +1273,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="应收:"
+                        android:text="@string/receivables"
                         android:textSize="22dp" />
                     <TextView
                         android:text="￥ "
@@ -1303,7 +1303,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="已收:"
+                        android:text="@string/accepted"
                         android:textSize="22dp" />
                     <TextView
                         android:text="￥ "
@@ -1332,7 +1332,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="找零:"
+                        android:text="@string/give_change"
                         android:textSize="22dp" />
                     <TextView
                         android:text="￥ "
@@ -1356,7 +1356,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:background="@drawable/but_fenlei"
-                    android:text="确定"
+                    android:text="@string/confirm"
                     android:layout_marginTop="310dp"
                     android:textColor="#fff"
                     android:textSize="30dp" />

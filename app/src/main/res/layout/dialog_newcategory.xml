@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="新增分类"
+        android:text="@string/Add_classification"
         android:layout_gravity="center_horizontal"
         android:textSize="18dp"
         android:layout_width="wrap_content"
@@ -13,7 +13,7 @@
     <EditText
         android:id="@+id/ed_new"
         android:layout_margin="15dp"
-        android:hint="请输入分类名称"
+        android:hint="@string/Please_enter_the_category_name"
         android:layout_gravity="center_horizontal"
         android:layout_width="270dp"
         android:layout_height="wrap_content" />
@@ -24,13 +24,13 @@
 
         <Button
             android:id="@+id/but_newquxiao"
-            android:text="取消"
+            android:text="@string/cancel"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/but_newqueding"
-            android:text="确定"
+            android:text="@string/confirm"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
             android:layout_width="wrap_content"

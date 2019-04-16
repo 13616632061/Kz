@@ -24,7 +24,7 @@
         android:textSize="20sp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
-        android:text="请输入密码"
+        android:text="@string/Please_input_a_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -42,7 +42,7 @@
 
     <EditText
         android:id="@+id/ed_password"
-        android:hint="请输入密码"
+        android:hint="@string/Please_input_a_password"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
@@ -70,7 +70,7 @@
             android:id="@+id/but_cancel"
             android:background="@drawable/but_fenlei"
             android:textSize="20sp"
-            android:text="取消"
+            android:text="@string/cancel"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_width="wrap_content"
@@ -83,7 +83,7 @@
         android:id="@+id/but_lock"
         android:background="@drawable/but_fenlei"
         android:textSize="20sp"
-        android:text="确定"
+        android:text="@string/confirm"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_width="wrap_content"

@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/but_comm"
-            android:text="新增商品" />
+            android:text="@string/newly_increased_goods" />
 
         <Button
             android:id="@+id/but_label"
@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/but_ItemAdd"
             android:background="@drawable/but_comm"
-            android:text="标签" />
+            android:text="@string/label" />
 
         <Button
             android:id="@+id/but_unit"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/but_label"
             android:background="@drawable/but_comm"
-            android:text="单位" />
+            android:text="@string/unit" />
 
         <Button
             android:id="@+id/but_provider"
@@ -39,14 +39,14 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/but_unit"
             android:background="@drawable/but_comm"
-            android:text="供应商" />
+            android:text="@string/Supplier" />
         <Button
             android:id="@+id/btn_common_notes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/but_provider"
             android:background="@drawable/but_comm"
-            android:text="常用备注" />
+            android:text="@string/common_remarks" />
 
         <EditText
             android:id="@+id/tv_seek"
@@ -55,7 +55,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/ed_beijin"
             android:drawableRight="@drawable/shousuo"
-            android:hint="条码/名字/拼音码"
+            android:hint="@string/Barcode_Name_Pinyin_Code"
             android:imeOptions="actionSearch"
             android:padding="5dp"
             android:singleLine="true" />
@@ -70,7 +70,7 @@
             android:drawableRight="@drawable/spinn"
             android:gravity="center"
             android:paddingRight="5dp"
-            android:text="全部分类"
+            android:text="@string/All_categories"
              />
 
         <TextView
@@ -83,7 +83,7 @@
             android:drawableRight="@drawable/spinn"
             android:gravity="center"
             android:paddingRight="5dp"
-            android:text="全部标签"
+            android:text="@string/All_tags"
              />
 
         <TextView
@@ -97,7 +97,7 @@
             android:entries="@array/ary_incomType3"
             android:gravity="center"
             android:paddingRight="5dp"
-            android:text="全部状态" />
+            android:text="@string/All_States" />
 
     </RelativeLayout>
 
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -121,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="商品条码"
+            android:text="@string/Commodity_bar_code"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="商品名称"
+            android:text="@string/Trade_name"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -139,7 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="拼音码"
+            android:text="@string/pinyin_code"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -148,7 +148,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="分类"
+            android:text="@string/classification"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -157,7 +157,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="单位"
+            android:text="@string/unit"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -166,7 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="状态"
+            android:text="@string/States"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -177,7 +177,7 @@
             android:layout_weight="1"
             android:drawableRight="@drawable/rank"
             android:gravity="center"
-            android:text="库存"
+            android:text="@string/stock"
             android:textSize="16dp" />
 
         <TextView
@@ -187,7 +187,7 @@
             android:layout_weight="1.5"
             android:drawableRight="@drawable/rank"
             android:gravity="center"
-            android:text="进货价"
+            android:text="@string/buying_price"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -198,7 +198,7 @@
             android:layout_weight="1.5"
             android:drawableRight="@drawable/rank"
             android:gravity="center"
-            android:text="销售价"
+            android:text="@string/Selling_price"
             android:textColor="@color/colorFont"
             android:textSize="16dp" />
 
@@ -213,7 +213,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="筛选"
+            android:text="@string/screen"
             android:textColor="@color/colorFont"
             android:textSize="16dp"
             android:visibility="gone" />
@@ -248,7 +248,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:text="共"
+            android:text="@string/common"
             android:textSize="16dp" />
 
         <TextView
@@ -266,7 +266,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/tv_shuliang"
-            android:text="商品"
+            android:text="@string/good"
             android:textSize="16dp" />
 
         <TextView
@@ -286,7 +286,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_zong"
-            android:text="总进价:"
+            android:text="@string/Total_purchase_price"
             android:textSize="16dp"
             android:visibility="gone" />
 
@@ -308,7 +308,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_jinjia"
-            android:hint="总售价:"
+            android:hint="@string/Total_selling_price"
             android:textSize="16dp"
             android:visibility="gone" />
 
@@ -333,7 +333,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="20dp"
             android:padding="10dp"
-            android:text="下一页"
+            android:text="@string/next_page"
             />
 
         <TextView
@@ -357,7 +357,7 @@
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@id/tv_page"
             android:padding="10dp"
-            android:text="上一页"
+            android:text="@string/previous_page"
              />
 
         <Button
@@ -369,7 +369,7 @@
             android:layout_toLeftOf="@+id/but_last"
             android:background="@drawable/but_fenlei"
             android:onClick="but_import"
-            android:text="导出模板" />
+            android:text="@string/Export_template" />
 
         <Button
             android:id="@+id/but_derive"
@@ -380,7 +380,7 @@
             android:layout_toLeftOf="@+id/but_tolead"
             android:background="@drawable/but_fenlei"
             android:onClick="but_export"
-            android:text="导入商品" />
+            android:text="@string/Import_commodity" />
 
 
     </RelativeLayout>

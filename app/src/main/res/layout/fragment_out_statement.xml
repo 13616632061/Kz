@@ -18,12 +18,12 @@
             <TextView
                 android:id="@+id/tv_time"
                 android:layout_marginLeft="10dp"
-                android:text="今日数据"
+                android:text="@string/Data_today"
                 android:textColor="#ffffff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
-                android:text="出库单"
+                android:text="@string/Outbound_order"
                 android:textColor="#ffffff"
                 android:layout_centerVertical="true"
                 android:textSize="22dp"
@@ -57,7 +57,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:text="入库单"
+                android:text="@string/Warehouse_receipt"
                 android:textColor="#ffffff"
                 android:layout_centerVertical="true"
                 android:textSize="22dp"
@@ -92,12 +92,12 @@
             android:textSize="18dp"
             android:layout_margin="5dp"
             android:gravity="center"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="订单号"
+            android:text="@string/Order_number"
             android:textSize="18dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -105,7 +105,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="下单时间"
+            android:text="@string/Order_time"
             android:textSize="18dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -113,7 +113,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="收银员"
+            android:text="@string/cashier"
             android:textSize="18dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -121,7 +121,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="类型"
+            android:text="@string/type"
             android:textSize="18dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -129,7 +129,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="金额"
+            android:text="@string/Amount_of_money"
             android:textSize="18dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -138,7 +138,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_seek"
-            android:text="筛选"
+            android:text="@string/screen"
             android:textSize="18dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -162,7 +162,7 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/but_next"
-            android:text="下一页"
+            android:text="@string/next_page"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -179,7 +179,7 @@
 
         <Button
             android:id="@+id/but_previous"
-            android:text="上一页"
+            android:text="@string/previous_page"
             android:layout_toLeftOf="@+id/tv_page"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -187,7 +187,7 @@
         <Button
             android:visibility="gone"
             android:layout_toLeftOf="@+id/but_previous"
-            android:text="对账导出"
+            android:text="@string/Reconciliation_export"
             android:layout_marginRight="10dp"
             android:layout_centerVertical="true"
             android:background="@drawable/but_fenlei"
@@ -246,7 +246,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="流水号："
+                        android:text="@string/Serial_number_"
                         android:textSize="18dp" />
 
                     <TextView
@@ -266,7 +266,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="时间："
+                        android:text="@string/time_"
                         android:textSize="18dp" />
 
                     <TextView
@@ -286,14 +286,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="类型："
+                        android:text="@string/type_"
                         android:textSize="18dp" />
 
                     <TextView
                         android:id="@+id/tv_lei_mode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="出库"
+                        android:text="@string/Out_of_stock"
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -306,7 +306,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="操作员："
+                        android:text="@string/Operator_"
                         android:textSize="18dp" />
 
                     <TextView
@@ -326,14 +326,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="备注："
+                        android:text="@string/remark_"
                         android:textSize="18dp" />
 
                     <TextView
                         android:id="@+id/tv_beizhu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="没有备注"
+                        android:text="@string/No_notes"
                         android:textSize="18dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -358,7 +358,7 @@
                         android:id="@+id/tv_name"
                         android:gravity="center"
                         android:layout_weight="2"
-                        android:text="名字"
+                        android:text="@string/title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -371,7 +371,7 @@
                         android:ellipsize="end"
                         android:gravity="center"
                         android:layout_weight="2"
-                        android:text="条码"
+                        android:text="@string/bar_code"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" />
 
@@ -382,7 +382,7 @@
                         android:ellipsize="end"
                         android:gravity="center"
                         android:layout_weight="1"
-                        android:text="供应商"
+                        android:text="@string/Supplier"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content" />
 
@@ -392,7 +392,7 @@
                         android:id="@+id/tv_inout"
                         android:gravity="center"
                         android:layout_weight="2"
-                        android:text="出入库数量"
+                        android:text="@string/Number_of_entries_and_exits"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -402,7 +402,7 @@
                         android:id="@+id/tv_cost"
                         android:gravity="center"
                         android:layout_weight="1"
-                        android:text="价格"
+                        android:text="@string/price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -426,7 +426,7 @@
                     <Button
                         android:id="@+id/but_print"
                         android:layout_toLeftOf="@+id/but_refund"
-                        android:text="打印"
+                        android:text="@string/btnSend"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -434,7 +434,7 @@
                         android:visibility="gone"
                         android:layout_marginRight="10dp"
                         android:id="@+id/but_refund"
-                        android:text="反结账"
+                        android:text="@string/Reverse_checkout"
                         android:layout_alignParentRight="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />

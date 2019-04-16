@@ -27,14 +27,14 @@
             android:layout_marginTop="20dp"
             android:layout_width="150dp"
             android:digits="1234567890."
-            android:hint="请输入报货数"
+            android:hint="@string/Please_enter_the_quotation_number"
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:layout_height="40dp" />
 
         <TextView
             android:id="@+id/tv_Prompt"
-            android:text="原报货数"
+            android:text="@string/FOriginal_number"
             android:textSize="18dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
@@ -63,7 +63,7 @@
 
         <Button
             android:id="@+id/but_goto"
-            android:text="确定"
+            android:text="@string/confirm"
             android:layout_marginLeft="10dp"
             android:background="@drawable/but_fenlei"
             android:layout_width="wrap_content"
@@ -72,7 +72,7 @@
         <Button
             android:id="@+id/but_abolish"
             android:layout_marginLeft="10dp"
-            android:text="取消"
+            android:text="@string/cancel"
             android:background="@drawable/but_fenlei"
             android:layout_width="wrap_content"
             android:layout_height="40dp"

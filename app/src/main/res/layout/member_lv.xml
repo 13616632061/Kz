@@ -8,7 +8,7 @@
     <EditText
         android:background="#ffffff"
         android:id="@+id/tv_lv0"
-        android:text="普通价"
+        android:text="@string/Ordinary_price"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
@@ -19,7 +19,7 @@
     <EditText
         android:background="#ffffff"
         android:id="@+id/tv_lv1"
-        android:text="v1价"
+        android:text="@string/v1price"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
@@ -30,7 +30,7 @@
     <EditText
         android:background="#ffffff"
         android:id="@+id/tv_lv2"
-        android:text="v2价"
+        android:text="@string/v2price"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
@@ -41,7 +41,7 @@
     <EditText
         android:background="#ffffff"
         android:id="@+id/tv_lv3"
-        android:text="v3价"
+        android:text="@string/v3price"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
@@ -52,7 +52,7 @@
     <EditText
         android:background="#ffffff"
         android:id="@+id/tv_lv4"
-        android:text="v4价"
+        android:text="@string/v4price"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
@@ -63,7 +63,7 @@
     <EditText
         android:background="#ffffff"
         android:id="@+id/tv_lv5"
-        android:text="v5价"
+        android:text="@string/v5price"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
@@ -80,6 +80,6 @@
         android:visibility="gone"
         android:layout_centerVertical="true"
         android:background="@drawable/but_fenlei"
-        android:text="会员等级" />
+        android:text="@string/Membership_level" />
 
 </LinearLayout>

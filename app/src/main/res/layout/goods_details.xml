@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="商品详情"
+        android:text="@string/Commodity_details"
         android:padding="5dp"
         android:layout_margin="5dp"
         android:gravity="center"
@@ -19,35 +19,35 @@
         android:layout_width="600dp"
         android:layout_height="40dp">
         <TextView
-            android:text="条码"
+            android:text="@string/bar_code"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <TextView
-            android:text="商品名"
+            android:text="@string/goods_name"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <TextView
-            android:text="分类"
+            android:text="@string/classification"
             android:gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <TextView
-            android:text="报货数量"
+            android:text="@string/Quantity_of_goods_reported"
             android:gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <TextView
-            android:text="验收数量"
+            android:text="@string/Acceptance_quantity"
             android:gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
@@ -56,14 +56,14 @@
 
         <TextView
             android:visibility="gone"
-            android:text="价格"
+            android:text="@string/price"
             android:gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent" />
         <TextView
-            android:text="操作"
+            android:text="@string/operation"
             android:gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
@@ -88,7 +88,7 @@
             <TextView
                 android:layout_centerVertical="true"
                 android:id="@+id/tv_1"
-                android:text="共"
+                android:text="@string/common"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -104,7 +104,7 @@
             <TextView
                 android:id="@+id/tv_2"
                 android:layout_centerVertical="true"
-                android:text="件商品,"
+                android:text="@string/Commodity_"
                 android:layout_toRightOf="@+id/tv_nums"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
             <TextView
                 android:visibility="gone"
                 android:id="@+id/tv_3"
-                android:text="金额合计:￥"
+                android:text="@string/Total_amount_￥"
                 android:layout_toRightOf="@+id/tv_2"
                 android:textSize="20dp"
                 android:layout_centerVertical="true"
@@ -132,7 +132,7 @@
 
             <Button
                 android:id="@+id/but_acceptance"
-                android:text="全部验收"
+                android:text="@string/Full_acceptance"
                 android:layout_alignParentRight="true"
                 android:background="@drawable/btn_select_gray"
                 android:layout_width="60dp"
@@ -143,7 +143,7 @@
             <Button
                 android:id="@+id/but_cancel"
                 android:layout_toLeftOf="@+id/but_acceptance"
-                android:text="取消"
+                android:text="@string/cancel"
                 android:background="@drawable/btn_select_gray"
                 android:layout_width="60dp"
                 android:layout_marginLeft="10dp"
@@ -151,7 +151,7 @@
 
             <Button
                 android:layout_toLeftOf="@+id/but_cancel"
-                android:text="打印"
+                android:text="@string/btnSend"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/btn_select_gray"
                 android:layout_width="60dp"

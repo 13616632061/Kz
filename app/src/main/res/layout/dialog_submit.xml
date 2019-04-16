@@ -9,7 +9,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv_1"
-            android:text="共"
+            android:text="@string/common"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:layout_toRightOf="@+id/tv_total"
-            android:text="件商品"
+            android:text="@string/Commodity"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
 
         <TextView
             android:id="@+id/tv_2"
-            android:text="件"
+            android:text="@string/piece"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:layout_alignParentRight="true"
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="已盘点"
+            android:text="@string/Stocktaking"
             android:layout_toLeftOf="@+id/tv_inventory_nums"
             android:padding="5dp"
             android:layout_margin="5dp"
@@ -74,7 +74,7 @@
         <TextView
             android:padding="5dp"
             android:layout_margin="5dp"
-            android:text="件商品库存正确"
+            android:text="@string/Proper_stock_of_items"
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -100,7 +100,7 @@
         <TextView
             android:padding="5dp"
             android:layout_margin="5dp"
-            android:text="件商品库存修改"
+            android:text="@string/Modification_of_item_inventory"
             android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -126,7 +126,7 @@
         <TextView
             android:padding="5dp"
             android:layout_margin="5dp"
-            android:text="件商品未盘点"
+            android:text="@string/Uncounted_items"
             android:textSize="26dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -150,7 +150,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:textColor="#ffffff"
-                android:text="取消"
+                android:text="@string/cancel"
                 android:layout_width="wrap_content"
                 android:background="@drawable/but_fenlei"
                 android:layout_height="35dp" />
@@ -161,7 +161,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:textColor="#ffffff"
-        android:text="提交"
+        android:text="@string/submit"
         android:layout_width="wrap_content"
         android:background="@drawable/but_fenlei"
         android:layout_height="35dp" />

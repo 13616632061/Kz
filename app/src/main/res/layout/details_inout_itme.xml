@@ -16,7 +16,7 @@
             android:ellipsize="end"
             android:gravity="center"
             android:layout_weight="2"
-            android:text="名字"
+            android:text="@string/title"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
@@ -28,7 +28,7 @@
             android:ellipsize="end"
             android:gravity="center"
             android:layout_weight="2"
-            android:text="条码"
+            android:text="@string/bar_code"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
@@ -39,7 +39,7 @@
             android:ellipsize="end"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="供应商"
+            android:text="@string/Supplier"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
@@ -49,7 +49,7 @@
             android:id="@+id/tv_inout"
             android:gravity="center"
             android:layout_weight="2"
-            android:text="出入库数量"
+            android:text="@string/Number_of_entries_and_exits"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
@@ -58,7 +58,7 @@
             android:id="@+id/tv_cost"
             android:gravity="center"
             android:layout_weight="1"
-            android:text="库存"
+            android:text="@string/stock"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
 

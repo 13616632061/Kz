@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
-            android:text="共"
+            android:text="@string/common"
             android:textSize="16dp" />
 
         <TextView
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/tv_shuliang"
-            android:text="会员"
+            android:text="@string/members"
             android:layout_centerVertical="true"
             android:textSize="16dp" />
         <Button
@@ -50,7 +50,7 @@
             android:layout_marginRight="20dp"
             android:layout_centerVertical="true"
             android:background="@drawable/but_fenlei"
-            android:text="新增" />
+            android:text="@string/Newly_added" />
 
 
         <TextView
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_zong"
-            android:text="总进价:"
+            android:text="@string/Total_purchase_price_"
             android:layout_centerVertical="true"
             android:textSize="16dp" />
 
@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_jinjia"
-            android:hint="总售价:"
+            android:hint="@string/Total_selling_price"
             android:layout_centerVertical="true"
             android:textSize="16dp" />
 

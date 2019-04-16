@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/tv_context"
         android:layout_gravity="center"
-        android:text="您有单据未处理"
+        android:text="@string/You_have_documents_unprocessed"
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:layout_marginBottom="35dp"
@@ -27,7 +27,7 @@
         android:id="@+id/but_dimdis"
         android:background="@drawable/btn_gray_less"
         android:layout_marginTop="10dp"
-        android:text="去处理"
+        android:text="@string/To_handle"
         android:layout_marginBottom="20dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"

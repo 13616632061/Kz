@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/but_newcategory"
-            android:text="新增分类"
+            android:text="@string/Add_classification"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -40,7 +40,7 @@
 
     <TextView
         android:id="@+id/tv_a"
-        android:text="共 "
+        android:text="@string/common"
         android:layout_marginLeft="20dp"
        android:layout_centerVertical="true"
         android:textSize="22dp"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:text="个分类"
+        android:text="@string/a_categories"
         android:textSize="22dp"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/tv_category"
@@ -96,7 +96,7 @@
         android:layout_marginRight="20dp"
         android:layout_alignParentRight="true"
         android:background="@drawable/but_fenlei"
-        android:text="编辑分类" />
+        android:text="@string/Editing_classification" />
 
     <Button
         android:id="@+id/but_delete"
@@ -105,7 +105,7 @@
         android:layout_marginRight="20dp"
         android:layout_toLeftOf="@+id/but_redact"
         android:background="@drawable/but_fenlei"
-        android:text="删除分类" />
+        android:text="@string/Delete_categories" />
 
 
 

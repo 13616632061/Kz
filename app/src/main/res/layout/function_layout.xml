@@ -33,7 +33,7 @@
                 android:textSize="35dp"
                 android:layout_alignBottom="@+id/im_1"
                 android:layout_toRightOf="@+id/im_1"
-                android:text="餐饮"
+                android:text="@string/restaurant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -60,7 +60,7 @@
                 android:textSize="35dp"
                 android:layout_alignBottom="@+id/im_2"
                 android:layout_marginLeft="20dp"
-                android:text="商超/零售"
+                android:text="@string/shangchao_retail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -88,7 +88,7 @@
                 android:textSize="35dp"
                 android:layout_alignBottom="@+id/im_3"
                 android:layout_marginLeft="20dp"
-                android:text="果蔬/粮油"
+                android:text="@string/fruits_grain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -127,7 +127,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_height="100dp" />
             <TextView
-                android:text="奶茶/甜品"
+                android:text="@string/milk_dessert"
                 android:layout_marginLeft="20dp"
                 android:textColor="#fff"
                 android:textSize="35dp"
@@ -156,7 +156,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_height="100dp" />
                 <TextView
-                    android:text="烟酒/茶"
+                    android:text="@string/smoking_drinking"
                     android:layout_marginLeft="20dp"
                     android:textColor="#fff"
                     android:textSize="35dp"
@@ -188,7 +188,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_height="100dp" />
                 <TextView
-                    android:text="服装/鞋帽"
+                    android:text="@string/clothing_shoes"
                     android:layout_marginLeft="20dp"
                     android:textColor="#fff"
                     android:textSize="35dp"
@@ -219,7 +219,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_height="100dp" />
                 <TextView
-                    android:text="自助餐饮"
+                    android:text="@string/self_catering"
                     android:layout_marginLeft="20dp"
                     android:textColor="#fff"
                     android:textSize="35dp"
@@ -248,7 +248,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_height="100dp" />
                 <TextView
-                    android:text="自助零售"
+                    android:text="@string/self_retailing"
                     android:layout_marginLeft="20dp"
                     android:textColor="#fff"
                     android:textSize="35dp"

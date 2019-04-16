@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:text="登录环境的切换"
+        android:text="@string/Switching_of_login_environment"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/colormain"
@@ -43,14 +43,14 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/but_cancel"
-            android:text="取消"
+            android:text="@string/cancel"
             android:background="@drawable/but_fenlei"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
         <Button
             android:id="@+id/but_confirm"
-            android:text="确定"
+            android:text="@string/confirm"
             android:background="@drawable/but_fenlei"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"

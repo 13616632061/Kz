@@ -12,7 +12,7 @@
         android:padding="10dp"
         android:layout_gravity="center_horizontal"
         android:id="@+id/cc_print"
-        android:text="小票打印"
+        android:text="@string/Small_ticket_printing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -23,7 +23,7 @@
         android:padding="10dp"
         android:layout_gravity="center_horizontal"
         android:id="@+id/cc_print_kitchen"
-        android:text="厨房打印"
+        android:text="@string/Kitchen_printing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

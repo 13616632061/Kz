@@ -11,7 +11,7 @@
         android:layout_marginTop="30dp"
         android:layout_width="150dp"
         android:inputType="number|numberDecimal"
-        android:hint="请输入折扣"
+        android:hint="@string/Please_enter_a_discount"
         android:layout_gravity="center_horizontal"
         android:background="#ffffff"
         android:layout_height="40dp" />
@@ -30,7 +30,7 @@
             android:textSize="18sp"
             android:background="@drawable/btn_gray_less"
             android:id="@+id/but_abolish"
-            android:text="取消"
+            android:text="@string/cancel"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
         <Button
@@ -40,7 +40,7 @@
             android:layout_marginLeft="60dp"
             android:layout_toRightOf="@+id/btn_cell_dialog"
             android:id="@+id/but_submit"
-            android:text="确定"
+            android:text="@string/confirm"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
 

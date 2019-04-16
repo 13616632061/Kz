@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/but_comm"
-            android:text="待对账订单" />
+            android:text="@string/Pending_reconciliation_order" />
 
         <Button
             android:id="@+id/but_settle"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/but_reconciliation"
             android:background="@drawable/but_comm"
-            android:text="带结账订单" />
+            android:text="@string/Checkout_order" />
 
 
         <EditText
@@ -32,7 +32,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/ed_beijin"
             android:drawableRight="@drawable/shousuo"
-            android:hint="货流单号"
+            android:hint="@string/Cargo_number"
             android:imeOptions="actionSearch"
             android:padding="5dp"
             android:singleLine="true" />
@@ -47,7 +47,7 @@
             android:drawableRight="@drawable/spinn"
             android:gravity="center"
             android:paddingRight="5dp"
-            android:text="筛选"
+            android:text="@string/screen"
             />
 
         <TextView
@@ -60,7 +60,7 @@
             android:drawableRight="@drawable/spinn"
             android:gravity="center"
             android:paddingRight="5dp"
-            android:text="全部标签"
+            android:text="@string/All_tags"
             />
 
         <TextView
@@ -74,7 +74,7 @@
             android:entries="@array/ary_incomType3"
             android:gravity="center"
             android:paddingRight="5dp"
-            android:text="全部状态" />
+            android:text="@string/All_States" />
 
     </RelativeLayout>
 
@@ -93,7 +93,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="供应商"
+            android:text="@string/Supplier"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -101,7 +101,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="货流单号"
+            android:text="@string/Cargo_number"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -109,7 +109,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="下单时间"
+            android:text="@string/Order_time"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -117,7 +117,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="货流量"
+            android:text="@string/Cargo_flow_volume"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -125,7 +125,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="联系人"
+            android:text="@string/Contacts"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -133,7 +133,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="电话"
+            android:text="@string/Telephone"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -141,16 +141,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="总价"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:gravity="center"
-            android:padding="3dp"
-            android:layout_margin="5dp"
-            android:text="订单状态"
+            android:text="@string/Total_price"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -159,7 +150,16 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="操作"
+            android:text="@string/Order_status"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:text="@string/operation"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -186,12 +186,12 @@
             android:padding="5dp"
             android:layout_marginLeft="10dp"
             android:layout_height="wrap_content"
-            android:text="全选"/>
+            android:text="@string/All_election"/>
 
         <TextView
             android:id="@+id/tv_cc"
             android:layout_toRightOf="@+id/cc_box"
-            android:text="已选中"
+            android:text="@string/Selected"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -219,7 +219,7 @@
                 android:layout_height="35dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/but_fenlei"
-                android:text="确定对账" />
+                android:text="@string/Confirm_reconciliation" />
 
         </LinearLayout>
 

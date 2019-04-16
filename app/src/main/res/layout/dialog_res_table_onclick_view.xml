@@ -34,7 +34,7 @@
             android:id="@+id/btn_res_table_ban"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="禁  桌"
+            android:text="@string/Forbidden_table"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -43,7 +43,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="空  闲"
+            android:text="@string/Idle_time"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -52,7 +52,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="编  辑"
+            android:text="@string/edit"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -61,7 +61,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="删  除"
+            android:text="@string/delete"
             android:layout_width="120dp"
             android:layout_height="40dp" />
     </LinearLayout>

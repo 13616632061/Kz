@@ -16,27 +16,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/cocorbutton"
-            android:text="更多" />
+            android:text="@string/more" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="西乡天虹店"
+            android:text=""
             android:textSize="22dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="李冰冰"
+            android:text=""
             android:textSize="22dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="登出"
+            android:text="@string/outlogin"
             android:textColor="#b5916a"
             android:textSize="22dp" />
 
@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017/3/7"
+                android:text=""
                 android:textSize="22dp" />
         </LinearLayout>
     </LinearLayout>
@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="序号"
+            android:text="@string/serial_number"
             android:gravity="center"
             android:textSize="22dp"
             android:layout_weight="1"
@@ -72,42 +72,42 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:text="名称"
+            android:text="@string/name"
             android:gravity="center"
             android:layout_weight="3"
             android:textSize="22dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="单价"
+            android:text="@string/unit_price"
             android:gravity="center"
             android:layout_weight="1"
             android:textSize="22dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="数量"
+            android:text="@string/number"
             android:gravity="center"
             android:layout_weight="3"
             android:textSize="22dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="小计"
+            android:text="@string/subtotal"
             android:gravity="center"
             android:layout_weight="2"
             android:textSize="22dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="进价"
+            android:text="@string/purchase_price"
             android:gravity="center"
             android:layout_weight="1"
             android:textSize="22dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="利润"
+            android:text="@string/profit"
             android:gravity="center"
             android:layout_weight="1"
             android:textSize="22dp"
@@ -143,7 +143,7 @@
         <TextView
             android:layout_alignBaseline="@+id/tv_Totalmerchandise"
             android:layout_toLeftOf="@+id/tv_Totalmerchandise"
-            android:text="共计商品："
+            android:text="@string/Total_commodities"
             android:textSize="22dp"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
@@ -162,7 +162,7 @@
             android:id="@+id/tv_Totalamount"
             android:layout_toLeftOf="@+id/tv_Symbol"
             android:layout_alignBaseline="@+id/tv_Symbol"
-            android:text="合计："
+            android:text="@string/total"
             android:textSize="22dp"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
@@ -206,7 +206,7 @@
             <Button
                 android:id="@+id/but_Guadan"
                 android:layout_margin="10dp"
-                android:text="挂单"
+                android:text="@string/put_order"
                 android:background="@drawable/circularbutton1"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
@@ -214,7 +214,7 @@
             <Button
                 android:id="@+id/but_Takeasingle"
                 android:layout_toRightOf="@+id/but_Guadan"
-                android:text="取单"
+                android:text="@string/get_order"
                 android:layout_margin="10dp"
                 android:background="@drawable/circularbutton1"
                 android:layout_width="40dp"
@@ -222,7 +222,7 @@
             <Button
                 android:id="@+id/but_Check"
                 android:layout_toRightOf="@+id/but_Takeasingle"
-                android:text="查单"
+                android:text="@string/Check_order"
                 android:layout_margin="10dp"
                 android:background="@drawable/circularbutton1"
                 android:layout_width="40dp"
@@ -230,14 +230,14 @@
             <Button
                 android:id="@+id/but_Lockscreen"
                 android:layout_toRightOf="@+id/but_Check"
-                android:text="锁屏"
+                android:text="@string/lock_screen"
                 android:layout_margin="10dp"
                 android:background="@drawable/circularbutton1"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
             <Button
                 android:id="@+id/but_Cashbox"
-                android:text="钱箱"
+                android:text="@string/Cash_box"
                 android:layout_margin="10dp"
                 android:layout_toRightOf="@+id/but_Lockscreen"
                 android:background="@drawable/circularbutton1"
@@ -246,7 +246,7 @@
 
             <Button
                 android:id="@+id/but_Print"
-                android:text="打印"
+                android:text="@string/btnSend"
                 android:layout_margin="10dp"
                 android:layout_toRightOf="@+id/but_Cashbox"
                 android:background="@drawable/circularbutton1"
@@ -256,7 +256,7 @@
 
             <Button
                 android:id="@+id/but_Delete"
-                android:text="删除"
+                android:text="@string/delete"
                 android:layout_margin="10dp"
                 android:layout_alignParentRight="true"
                 android:background="@drawable/circularbutton1"

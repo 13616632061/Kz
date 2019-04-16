@@ -14,7 +14,7 @@
         android:layout_margin="5dp"
         android:padding="5dp"
         android:layout_gravity="center_horizontal"
-        android:text="会员信息"
+        android:text="@string/Membership_information"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:padding="5dp"
-                android:text="卡号:" />
+                android:text="@string/Card_number" />
 
             <TextView
                 android:id="@+id/tv_card_number"
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:padding="5dp"
-                android:text="折扣:" />
+                android:text="@string/discount" />
 
             <TextView
                 android:id="@+id/tv_discount"
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="会员名字:"
+                android:text="@string/Membership_name_"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:layout_width="wrap_content"
@@ -104,7 +104,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="余额:"
+                android:text="@string/Balance_"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
                 android:id="@+id/but_recharge"
                 android:textColor="#ffff8904"
                 android:background="@drawable/btn_gray_less"
-                android:text="充值"
+                android:text="@string/Recharge"
                 android:layout_marginLeft="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp" />
@@ -140,7 +140,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="联系电话:"
+                android:text="@string/Contact_number_"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:layout_width="wrap_content"
@@ -162,7 +162,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="积分:"
+                android:text="@string/Integral_"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:layout_width="wrap_content"
@@ -180,7 +180,7 @@
                 android:textColor="#ffff8904"
                 android:id="@+id/but_dimdis"
                 android:background="@drawable/btn_gray_less"
-                android:text="兑换"
+                android:text="@string/exchange"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp" />
@@ -189,7 +189,7 @@
                 android:textColor="#ffff8904"
                 android:id="@+id/but_eductible"
                 android:background="@drawable/btn_gray_less"
-                android:text="抵扣"
+                android:text="@string/Deduction"
                 android:layout_marginLeft="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp" />
@@ -211,7 +211,7 @@
 
 
             <TextView
-                android:text="会员生日:"
+                android:text="@string/Member_birthday_"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:layout_width="wrap_content"
@@ -236,7 +236,7 @@
             <TextView
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:text="通用折扣:"
+                android:text="@string/General_discount_"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:layout_width="wrap_content"
@@ -247,7 +247,7 @@
                 android:inputType="numberDecimal"
                 android:background="@color/bg_white"
                 android:layout_gravity="center_vertical"
-                android:hint="设置通用折扣"
+                android:hint="@string/set_General_discount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -271,7 +271,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="开卡日期:"
+            android:text="@string/Date_of_opening_card_"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:layout_width="wrap_content"
@@ -295,7 +295,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="备注:"
+            android:text="@string/remark_"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:layout_width="wrap_content"
@@ -323,7 +323,7 @@
             android:id="@+id/but_discount"
             android:textColor="#ffff8904"
             android:background="@drawable/btn_gray_less"
-            android:text="使用余额"
+            android:text="@string/Use_balance"
             android:padding="5dp"
             android:layout_marginLeft="30dp"
             android:layout_width="wrap_content"
@@ -334,7 +334,7 @@
             android:id="@+id/but_self_discount"
             android:textColor="#ffff8904"
             android:background="@drawable/btn_gray_less"
-            android:text="使用折扣"
+            android:text="@string/Use_discount"
             android:padding="5dp"
             android:layout_marginLeft="30dp"
             android:layout_width="wrap_content"
@@ -344,7 +344,7 @@
             android:id="@+id/but_balance_paid"
             android:textColor="#ffffff"
             android:background="@drawable/btn_red"
-            android:text="使用余额+折扣"
+            android:text="@string/Use_Balance_and_Discount"
             android:layout_marginRight="30dp"
             android:padding="5dp"
             android:layout_marginLeft="30dp"

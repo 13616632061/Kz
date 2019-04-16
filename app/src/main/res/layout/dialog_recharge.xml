@@ -101,7 +101,7 @@
             android:layout_marginRight="20dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_red"
-            android:text="取消" />
+            android:text="@string/cancel" />
 
 
 

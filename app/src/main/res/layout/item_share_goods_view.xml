@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="100dp">
         <TextView
-            android:text="编号"
+            android:text="@string/number_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -30,7 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="100dp">
         <TextView
-            android:text="商品名称"
+            android:text="@string/goods_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -50,7 +50,7 @@
         android:layout_width="0dp"
         android:layout_height="100dp">
         <TextView
-            android:text="库存"
+            android:text="@string/stock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -70,7 +70,7 @@
         android:layout_width="0dp"
         android:layout_height="100dp">
         <TextView
-            android:text="价格"
+            android:text="@string/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -90,7 +90,7 @@
         android:layout_width="0dp"
         android:layout_height="100dp">
         <TextView
-            android:text="状态"
+            android:text="@string/States"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -112,7 +112,7 @@
         <Button
             android:id="@+id/btn_edit"
             android:textColor="#00f"
-            android:text="编辑"
+            android:text="@string/edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -125,7 +125,7 @@
         <Button
             android:id="@+id/btn_del"
             android:textColor="#ff00"
-            android:text="删除"
+            android:text="@string/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

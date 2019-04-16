@@ -13,7 +13,7 @@
         android:layout_height="30dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/dengchu"
-        android:text="关闭"
+        android:text="@string/btnClose"
         android:layout_gravity="right"
         android:textColor="#626262"
         android:textSize="18.9sp" />
@@ -26,7 +26,7 @@
             android:padding="5dp"
             android:textSize="22dp"
             android:layout_gravity="center_horizontal"
-            android:text="会员信息"
+            android:text="@string/Membership_information"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="会员:"
+            android:text="@string/members"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:textSize="22dp"
@@ -71,7 +71,7 @@
                     android:layout_margin="5dp"
                     android:textSize="22dp"
                     android:padding="5dp"
-                    android:text="折扣:" />
+                    android:text="@string/discount" />
 
                 <TextView
                     android:id="@+id/tv_discount"
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="等级:"
+            android:text="@string/level"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:textSize="22dp"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:text="余额:"
+                    android:text="@string/Balance_"
                     android:textSize="22dp"
                     android:layout_margin="5dp"
                     android:padding="5dp"
@@ -142,7 +142,7 @@
                     android:id="@+id/but_recharge"
                     android:textColor="#ffff8904"
                     android:background="@drawable/btn_gray_less"
-                    android:text="充值"
+                    android:text="@string/Recharge_specifications"
                     android:textSize="22dp"
                     android:layout_marginLeft="30dp"
                     android:layout_width="wrap_content"
@@ -156,7 +156,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:text="联系电话:"
+                    android:text="@string/Contact_number_"
                     android:layout_margin="5dp"
                     android:padding="5dp"
                     android:textSize="22dp"
@@ -182,7 +182,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:text="积分:"
+                    android:text="@string/Integral_"
                     android:layout_margin="5dp"
                     android:padding="5dp"
                     android:textSize="22dp"
@@ -203,7 +203,7 @@
                     android:textColor="#ffff8904"
                     android:id="@+id/but_dimdis"
                     android:background="@drawable/btn_gray_less"
-                    android:text="兑换"
+                    android:text="@string/Exchange"
                     android:textSize="22dp"
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
@@ -213,7 +213,7 @@
                     android:textColor="#ffff8904"
                     android:id="@+id/but_eductible"
                     android:background="@drawable/btn_gray_less"
-                    android:text="抵扣"
+                    android:text="@string/Deduction"
                     android:textSize="22dp"
                     android:layout_marginLeft="15dp"
                     android:layout_width="wrap_content"
@@ -230,7 +230,7 @@
 
 
                 <TextView
-                    android:text="会员生日:"
+                    android:text="@string/Member_birthday_"
                     android:layout_margin="5dp"
                     android:padding="5dp"
                     android:textSize="22dp"
@@ -258,7 +258,7 @@
                 <TextView
                     android:focusable="true"
                     android:focusableInTouchMode="true"
-                    android:text="通用折扣:"
+                    android:text="@string/General_discount_"
                     android:textSize="22dp"
                     android:layout_margin="5dp"
                     android:padding="5dp"
@@ -270,7 +270,7 @@
                     android:inputType="numberDecimal"
                     android:background="@color/bg_white"
                     android:layout_gravity="center_vertical"
-                    android:hint="设置通用折扣"
+                    android:hint="@string/set_General_discount"
                     android:textSize="22dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -288,7 +288,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="开卡日期:"
+                android:text="@string/Date_of_opening_card_"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:textSize="22dp"
@@ -315,7 +315,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="备注:"
+                android:text="@string/remark_"
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:textSize="22dp"
@@ -345,7 +345,7 @@
                 android:id="@+id/but_self_discount"
                 android:textColor="#ffff8904"
                 android:background="@drawable/btn_gray_less"
-                android:text="折扣"
+                android:text="@string/discount"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="8dp"
@@ -357,7 +357,7 @@
                 android:id="@+id/but_discount"
                 android:textColor="#ffff8904"
                 android:background="@drawable/btn_gray_less"
-                android:text="使用余额"
+                android:text="@string/Use_balance"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
@@ -372,7 +372,7 @@
                 android:id="@+id/but_balance_paid"
                 android:textColor="#ffffff"
                 android:background="@drawable/btn_red"
-                android:text="使用余额+折扣"
+                android:text="@string/Use_Balance_and_Discount"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="10dp"

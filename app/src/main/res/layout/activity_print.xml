@@ -26,7 +26,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="打印机MAC地址"
+            android:hint="@string/MAC_address_of_printer"
             android:singleLine="true"
             android:id="@+id/printnum"/>
         <RelativeLayout
@@ -50,7 +50,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="自动打印"
+                    android:text="@string/Automatic_printing"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true" />
             </RelativeLayout>
@@ -63,12 +63,12 @@
             android:layout_marginBottom="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="选择已配对的蓝牙打印机....."
+            android:text="@string/Select_the_Bluetooth_printer_that_has_been_paired"
             android:layout_below="@+id/auto_print_rl" />
 
         <Button
             android:id="@+id/btn_test"
-            android:text="连接打印机"
+            android:text="@string/Connect_Printer"
             android:layout_width="fill_parent"
             android:layout_height="54.0dip"
             android:layout_alignParentBottom="true"

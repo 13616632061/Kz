@@ -22,14 +22,14 @@
                 android:textSize="20sp"
                 android:textColor="#ffffff"
                 android:layout_centerInParent="true"
-                android:text="餐桌预定"
+                android:text="@string/Table_reservation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_marginRight="15dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:text="编辑"
+                android:text="@string/edit"
                 android:id="@+id/tv_edit"
                 android:textSize="20sp"
                 android:textColor="#ffffff"
@@ -45,7 +45,7 @@
                 android:id="@+id/tv_book_table_people"
                 android:layout_marginLeft="25dp"
                 android:layout_centerVertical="true"
-                android:text="预定人"
+                android:text="@string/Reservations"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <EditText
@@ -58,7 +58,7 @@
                 android:textColor="#ff0000"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/tv_book_table_people"
-                android:hint="预定人姓名"
+                android:hint="@string/Name_of_Reservation_Person"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -76,7 +76,7 @@
             android:id="@+id/tv_book_table_phone"
             android:layout_marginLeft="25dp"
             android:layout_centerVertical="true"
-            android:text="联系方式"
+            android:text="@string/Contact_information"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
@@ -89,7 +89,7 @@
             android:textColor="#ff0000"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/tv_book_table_phone"
-            android:hint="预定人电话"
+            android:hint="@string/Reservation_call"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RelativeLayout>
@@ -108,7 +108,7 @@
             android:id="@+id/tv_book_table_peoplenums"
             android:layout_marginLeft="25dp"
             android:layout_centerVertical="true"
-            android:text="就餐人数"
+            android:text="@string/Number_of_people_eating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
@@ -121,7 +121,7 @@
             android:textColor="#ff0000"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/tv_book_table_peoplenums"
-            android:hint="输入就餐人数"
+            android:hint="@string/Input_number_of_meals"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RelativeLayout>
@@ -141,7 +141,7 @@
             android:id="@+id/tv_book_table_time"
             android:layout_marginLeft="25dp"
             android:layout_centerVertical="true"
-            android:text="就餐时间"
+            android:text="@string/meal_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -154,7 +154,7 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/tv_book_table_time"
             android:textColor="#0000ff"
-            android:text="选择就餐时间"
+            android:text="@string/Choose_a_meal_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -174,7 +174,7 @@
             android:id="@+id/tv_table_book_money"
             android:layout_marginLeft="25dp"
             android:layout_centerVertical="true"
-            android:text="定金"
+            android:text="@string/Earnest_money"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
@@ -187,7 +187,7 @@
             android:textColor="#ff0000"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/tv_table_book_money"
-            android:hint="输入预定定金（没有定金，请输入0）"
+            android:hint="@string/Enter_a_deposit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RelativeLayout>
@@ -208,7 +208,7 @@
                 android:textSize="16sp"
                 android:textColor="#ff0000"
                 android:background="@drawable/btn_gray_less"
-                android:text="取消"
+                android:text="@string/cancel"
                 android:layout_width="180dp"
                 android:layout_height="40dp" />
             <Button
@@ -219,7 +219,7 @@
                 android:textSize="16sp"
                 android:textColor="#ffffff"
                 android:background="@drawable/btn_red"
-                android:text="确定"
+                android:text="@string/confirm"
                 android:layout_width="180dp"
                 android:layout_height="40dp" />
 

@@ -19,7 +19,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="供应商"
+            android:text="@string/Supplier"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -28,7 +28,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="货流单号"
+            android:text="@string/Cargo_number"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -37,7 +37,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="下单时间"
+            android:text="@string/Order_time"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -46,7 +46,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="货流量"
+            android:text="@string/Cargo_flow_volume"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -55,7 +55,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="联系人"
+            android:text="@string/Contacts"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -64,7 +64,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="电话"
+            android:text="@string/Telephone"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -73,7 +73,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="总价"
+            android:text="@string/Total_price"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -83,7 +83,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="订单状态"
+            android:text="@string/Order_status"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -93,7 +93,7 @@
             android:gravity="center"
             android:padding="3dp"
             android:layout_margin="5dp"
-            android:text="详情"
+            android:text="@string/details"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="40dp" />

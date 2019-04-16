@@ -16,7 +16,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/ed_beijin"
             android:drawableRight="@drawable/shousuo"
-            android:hint="手机号"
+            android:hint="@string/phone_number"
             android:imeOptions="actionSearch"
             android:padding="5dp"
             android:singleLine="true" />
@@ -36,12 +36,12 @@
             <TextView
                 android:id="@+id/tv_time"
                 android:layout_marginLeft="10dp"
-                android:text="今日数据"
+                android:text="@string/Data_today"
                 android:textColor="#ffffff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
-                android:text="新增会员数"
+                android:text="@string/New_Membership"
                 android:textColor="#ffffff"
                 android:layout_centerVertical="true"
                 android:textSize="22dp"
@@ -73,7 +73,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:text="余额使用"
+                android:text="@string/Balance_use"
                 android:textColor="#ffffff"
                 android:layout_centerVertical="true"
                 android:textSize="22dp"
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/tv_size"
-                android:text="充值"
+                android:text="@string/Recharge"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="10dp"
                 android:textColor="@color/colormain"
@@ -126,7 +126,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:text="积分兑换"
+                android:text="@string/exchange"
                 android:textColor="#ffffff"
                 android:layout_centerVertical="true"
                 android:textSize="22dp"
@@ -156,7 +156,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="序号"
+            android:text="@string/serial_number"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -164,7 +164,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="姓名"
+            android:text="@string/name"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -173,7 +173,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:text="手机号"
+            android:text="@string/phone_number"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -182,7 +182,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:text="余额变化"
+            android:text="@string/Balance_change"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -190,7 +190,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="积分变化"
+            android:text="@string/Integral_change"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -198,7 +198,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="操作人"
+            android:text="@string/Operator"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -207,7 +207,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_seek"
-            android:text="时间"
+            android:text="@string/time"
             android:padding="5dp"
             android:layout_margin="5dp"
             android:gravity="center"
@@ -241,7 +241,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:id="@+id/tv_total"
-            android:text="会员余额:"
+            android:text="@string/Membership_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -257,7 +257,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="20dp"
             android:padding="10dp"
-            android:text="下一页"
+            android:text="@string/next_page"
             />
 
         <TextView
@@ -281,7 +281,7 @@
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@id/tv_page"
             android:padding="10dp"
-            android:text="上一页"
+            android:text="@string/previous_page"
             />
     </RelativeLayout>
 

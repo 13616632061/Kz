@@ -34,7 +34,7 @@
             android:id="@+id/btn_res_table_open"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="开  桌"
+            android:text="@string/Open_the_table"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -43,7 +43,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="预  定"
+            android:text="@string/Reserve"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -53,7 +53,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="关  桌"
+            android:text="@string/Close_table"
             android:layout_width="120dp"
             android:layout_height="40dp" />
     </LinearLayout>

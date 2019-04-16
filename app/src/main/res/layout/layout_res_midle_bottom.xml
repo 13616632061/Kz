@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp">
         <Button
-            android:text="搜索"
+            android:text="@string/search"
             android:id="@+id/btn_search"
             android:layout_marginLeft="15dp"
             android:layout_centerVertical="true"
@@ -18,7 +18,7 @@
             android:layout_height="60dp" />
         <Button
             android:layout_toRightOf="@+id/btn_search"
-            android:text="同步"
+            android:text="@string/refresh"
             android:id="@+id/btn_refresh"
             android:layout_marginLeft="15dp"
             android:layout_centerVertical="true"
@@ -26,7 +26,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp" />
         <Button
-            android:text="锁屏"
+            android:text="@string/lock_screen"
             android:id="@+id/btn_lock_screen"
             android:layout_toRightOf="@+id/btn_refresh"
             android:layout_marginLeft="15dp"
@@ -35,7 +35,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp" />
         <Button
-            android:text="钱箱"
+            android:text="@string/Cash_box"
             android:layout_toRightOf="@+id/btn_lock_screen"
             android:id="@+id/btn_moneybox"
             android:layout_marginLeft="15dp"
@@ -45,7 +45,7 @@
             android:layout_height="60dp" />
         <Button
             android:visibility="gone"
-            android:text="打印"
+            android:text="@string/btnSend"
             android:layout_toRightOf="@+id/btn_moneybox"
             android:id="@+id/btn_printer"
             android:layout_marginLeft="15dp"
@@ -54,7 +54,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp" />
         <Button
-            android:text="订单"
+            android:text="@string/Order"
             android:layout_toRightOf="@+id/btn_printer"
             android:id="@+id/btn_order"
             android:layout_marginLeft="15dp"
@@ -64,7 +64,7 @@
             android:layout_height="60dp" />
         <Button
             android:id="@+id/but_huiyuan"
-            android:text="会员"
+            android:text="@string/member"
             android:layout_toRightOf="@+id/btn_order"
             android:layout_marginLeft="15dp"
             android:layout_centerVertical="true"
@@ -87,7 +87,7 @@
             android:textColor="#000000"
             android:layout_marginRight="15dp"
             android:layout_alignParentRight="true"
-            android:text="餐桌"
+            android:text="@string/table"
             android:id="@+id/btn_table"
             android:layout_centerVertical="true"
             android:background="@drawable/cc_di"
@@ -97,7 +97,7 @@
             android:textColor="#ffffff"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@+id/btn_table"
-            android:text="点菜"
+            android:text="@string/order_dishes"
             android:id="@+id/btn_dish"
             android:layout_centerVertical="true"
             android:background="@drawable/btn_whilte_orange_circle"

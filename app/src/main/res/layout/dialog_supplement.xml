@@ -16,14 +16,14 @@
     <TextView
         android:id="@+id/tv_t1"
         android:layout_marginTop="20dp"
-        android:text="补充库存"
+        android:text="@string/Replenishment_stock"
         android:inputType="number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/ed_add"
-        android:hint="请输入补充库存"
+        android:hint="@string/Please_enter_replenishment_stock"
         android:digits="1234567890."
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -35,7 +35,7 @@
 
     <Button
         android:id="@+id/but_add"
-        android:text="确定"
+        android:text="@string/confirm"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"

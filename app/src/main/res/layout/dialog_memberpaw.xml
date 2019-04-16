@@ -15,7 +15,7 @@
             android:id="@+id/tv_1"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
-            android:text="是否开启副屏会员码"
+            android:text="@string/Whether_to_open_the_accessory_screen_membership_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -29,7 +29,7 @@
         <TextView
             android:id="@+id/tv_memberprice"
             android:layout_toLeftOf="@+id/sw_member_price"
-            android:text="绑定会员价"
+            android:text="@string/Binding_membership_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -53,7 +53,7 @@
     <TextView
         android:id="@+id/tv_title"
         android:layout_gravity="center"
-        android:text="搜索会员"
+        android:text="@string/Search_member"
 
         android:gravity="center"
         android:layout_marginBottom="20dp"
@@ -76,7 +76,7 @@
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/bg_edittext"
-            android:hint="请扫会员二维码或者输入手机号"
+            android:hint="@string/Please_scan_the_member_two_dimensional_code"
             android:singleLine="true" />
 
         <!--<LinearLayout-->
@@ -122,7 +122,7 @@
                 android:textSize="18sp"
                 android:background="@drawable/btn_gray_less"
                 android:id="@+id/but_cancel"
-                android:text="关闭"
+                android:text="@string/btnClose"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp" />
 
@@ -130,7 +130,7 @@
                 android:textSize="18sp"
                 android:background="@drawable/btn_gray_less"
                 android:id="@+id/but_qixiao"
-                android:text="新增"
+                android:text="@string/Newly_added"
                 android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp" />
@@ -141,7 +141,7 @@
                 android:layout_alignParentRight="true"
                 android:background="@drawable/btn_red"
                 android:id="@+id/but_dimdis"
-                android:text="确定"
+                android:text="@string/confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp" />
 
@@ -157,14 +157,14 @@
         <TextView
             android:layout_margin="5dp"
             android:gravity="center"
-            android:text="名字"
+            android:text="@string/title"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_margin="5dp"
             android:gravity="center"
-            android:text="会员号"
+            android:text="@string/Member_ID"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />

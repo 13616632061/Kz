@@ -19,12 +19,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="标签大小"
+                android:text="@string/Tag_size"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_Size"
-                android:text="输入格式为70*38"
+                android:text="@string/The_input_format_is_70_38"
                 android:padding="10dp"
                 android:textSize="16sp"
                 android:textColor="#ff0000"
@@ -57,12 +57,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="店铺名"
+                android:text="@string/Shop_name"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_nameshopX"
-                android:text="X轴距离"
+                android:text="@string/X_axis_distance"
                 android:id="@+id/tv_distanceshopX"
                 android:padding="10dp"
                 android:textSize="16sp"
@@ -86,7 +86,7 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:text="打印字体大小"
+                android:text="@string/Print_font_size"
                 android:id="@+id/tv_nameshopsize"
                 android:layout_toLeftOf="@+id/ed_nameshopsize"
                 android:padding="10dp"
@@ -111,7 +111,7 @@
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_nameshopY"
-                android:text="Y轴距离"
+                android:text="@string/Y_axis_distance"
                 android:padding="10dp"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
@@ -143,12 +143,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="商品名字"
+                android:text="@string/Commodity_name"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_nameX"
-                android:text="X轴距离"
+                android:text="@string/Y_axis_distance"
                 android:id="@+id/tv_distanceX"
                 android:padding="10dp"
                 android:textSize="16sp"
@@ -172,7 +172,7 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:text="打印字体大小"
+                android:text="@string/Print_font_size"
                 android:id="@+id/tv_namesize"
                 android:layout_toLeftOf="@+id/ed_namesize"
                 android:padding="10dp"
@@ -197,7 +197,7 @@
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_nameY"
-                android:text="Y轴距离"
+                android:text="@string/Y_axis_distance"
                 android:padding="10dp"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
@@ -229,12 +229,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="价格"
+                android:text="@string/price"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_namepriceX"
-                android:text="X轴距离"
+                android:text="@string/X_axis_distance"
                 android:id="@+id/tv_distancepriceX"
                 android:padding="10dp"
                 android:textSize="16sp"
@@ -258,7 +258,7 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:text="打印字体大小"
+                android:text="@string/Print_font_size"
                 android:id="@+id/tv_namepricesize"
                 android:layout_toLeftOf="@+id/ed_namepricesize"
                 android:padding="10dp"
@@ -283,7 +283,7 @@
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_namepriceY"
-                android:text="Y轴距离"
+                android:text="@string/Y_axis_distance"
                 android:padding="10dp"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
@@ -318,7 +318,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="会员价"
+                android:text="@string/membership_price"
                 android:textSize="16sp" />
 
             <TextView
@@ -327,7 +327,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@+id/ed_memberpriceX"
                 android:padding="10dp"
-                android:text="X轴距离"
+                android:text="@string/X_axis_distance"
                 android:textSize="16sp" />
 
             <EditText
@@ -351,7 +351,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@+id/ed_memberpricesize"
                 android:padding="10dp"
-                android:text="打印字体大小"
+                android:text="@string/Print_font_size"
                 android:textSize="16sp" />
 
             <EditText
@@ -361,7 +361,7 @@
                 android:layout_centerInParent="true"
                 android:layout_toLeftOf="@+id/tv_memberpricesize"
                 android:background="#fdfdfe"
-                android:hint="请输入X轴距离"
+                android:hint="@string/Please_enter_X_axis_distance"
                 android:inputType="numberDecimal"
                 android:paddingRight="20dp"
                 android:singleLine="true"
@@ -374,7 +374,7 @@
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@+id/ed_memberpriceY"
                 android:padding="10dp"
-                android:text="Y轴距离"
+                android:text="@string/Y_axis_distance"
                 android:textSize="16sp" />
 
             <EditText
@@ -384,7 +384,7 @@
                 android:layout_centerInParent="true"
                 android:layout_toLeftOf="@+id/tv_memberpriceX"
                 android:background="#fdfdfe"
-                android:hint="请输入Y轴距离"
+                android:hint="@string/Please_enter_Y_axis_distance"
                 android:inputType="numberDecimal"
                 android:paddingRight="20dp"
                 android:singleLine="true"
@@ -403,12 +403,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="单位"
+                android:text="@string/unit"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_namecompanyX"
-                android:text="X轴距离"
+                android:text="@string/X_axis_distance"
                 android:id="@+id/tv_distancecompanyX"
                 android:padding="10dp"
                 android:textSize="16sp"
@@ -430,7 +430,7 @@
                 android:textColorHint="#bcb5b5"
                 android:textSize="14sp" />
             <TextView
-                android:text="打印字体大小"
+                android:text="@string/Print_font_size"
                 android:id="@+id/tv_namecompanysize"
                 android:layout_toLeftOf="@+id/ed_namecompanysize"
                 android:padding="10dp"
@@ -455,7 +455,7 @@
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_namecompanyY"
-                android:text="Y轴距离"
+                android:text="@string/Y_axis_distance"
                 android:padding="10dp"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
@@ -487,12 +487,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="规格"
+                android:text="@string/specifications"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_namespecificationsX"
-                android:text="X轴距离"
+                android:text="@string/X_axis_distance"
                 android:id="@+id/tv_distancespecificationsX"
                 android:padding="10dp"
                 android:textSize="16sp"
@@ -514,7 +514,7 @@
                 android:textColorHint="#bcb5b5"
                 android:textSize="14sp" />
             <TextView
-                android:text="打印字体大小"
+                android:text="@string/Print_font_size"
                 android:id="@+id/tv_namespecificationssize"
                 android:layout_toLeftOf="@+id/ed_namespecificationssize"
                 android:padding="10dp"
@@ -539,7 +539,7 @@
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_namespecificationsY"
-                android:text="Y轴距离"
+                android:text="@string/Y_axis_distance"
                 android:padding="10dp"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
@@ -571,12 +571,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="产地"
+                android:text="@string/place_of_production"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_nameproduce_addrX"
-                android:text="X轴距离"
+                android:text="@string/X_axis_distance"
                 android:id="@+id/tv_distanceproduce_addrX"
                 android:padding="10dp"
                 android:textSize="16sp"
@@ -598,7 +598,7 @@
                 android:textColorHint="#bcb5b5"
                 android:textSize="14sp" />
             <TextView
-                android:text="打印字体大小"
+                android:text="@string/Print_font_size"
                 android:id="@+id/tv_nameproduce_addrsize"
                 android:layout_toLeftOf="@+id/ed_nameproduce_addrsize"
                 android:padding="10dp"
@@ -623,7 +623,7 @@
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_nameproduce_addrY"
-                android:text="Y轴距离"
+                android:text="@string/Y_axis_distance"
                 android:padding="10dp"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
@@ -655,12 +655,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:padding="10dp"
-                android:text="条码"
+                android:text="@string/bar_code"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_namecodeX"
-                android:text="X轴距离"
+                android:text="@string/X_axis_distance"
                 android:id="@+id/tv_distancecodeX"
                 android:padding="10dp"
                 android:textSize="16sp"
@@ -685,7 +685,7 @@
 
             <TextView
                 android:layout_toLeftOf="@+id/ed_namecodeY"
-                android:text="Y轴距离"
+                android:text="@string/Y_axis_distance"
                 android:padding="10dp"
                 android:textSize="16sp"
                 android:layout_width="wrap_content"
@@ -718,7 +718,7 @@
             android:background="@drawable/btn_red"
             android:layout_marginRight="40dp"
             android:id="@+id/but_baochun"
-            android:text="保存"
+            android:text="@string/save"
             android:layout_width="wrap_content"
             android:layout_height="37dp" />
 
