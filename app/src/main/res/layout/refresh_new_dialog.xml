@@ -13,7 +13,7 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:textSize="18dp"
-        android:text="同步数据等待时间较长是否继续？"
+        android:text="@string/data_wait_long_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -30,7 +30,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/but_fenlei"
-            android:text="取消" />
+            android:text="@string/cancel" />
 
         <Button
             android:id="@+id/but_goto"
@@ -39,7 +39,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:background="@drawable/but_fenlei"
-            android:text="确定" />
+            android:text="@string/confirm" />
 
         </RelativeLayout>
 

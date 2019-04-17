@@ -27,7 +27,7 @@
             android:id="@+id/btn_show_picture"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="商品有图"
+            android:text="@string/Commodity_map"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -36,7 +36,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="商品无图"
+            android:text="@string/No_map_of_goods"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -45,7 +45,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="数据刷新"
+            android:text="@string/Data_Refresh"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -54,7 +54,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="开启蓝牙打印"
+            android:text="@string/Turn_on_Bluetooth_Printing"
             android:layout_width="120dp"
             android:layout_height="40dp" />
         <Button
@@ -63,7 +63,7 @@
             android:layout_marginTop="15dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_orange"
-            android:text="返回上一页"
+            android:text="@string/Return_to_the_previous_page"
             android:layout_width="120dp"
             android:layout_height="40dp" />
 

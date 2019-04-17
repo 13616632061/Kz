@@ -11,7 +11,7 @@
         <TextView
             android:id="@+id/tv_serial"
             android:layout_weight="1"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -19,7 +19,7 @@
         <TextView
             android:id="@+id/tv_name"
             android:layout_weight="2"
-            android:text="商品名称"
+            android:text="@string/Trade_name"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -27,7 +27,7 @@
         <TextView
             android:id="@+id/tv_bncode"
             android:layout_weight="2"
-            android:text="商品条码"
+            android:text="@string/Commodity_bar_code"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -35,7 +35,7 @@
         <TextView
             android:id="@+id/tv_classify"
             android:layout_weight="1"
-            android:text="商品分类"
+            android:text="@string/Commodity_classification"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -43,7 +43,7 @@
         <TextView
             android:id="@+id/tv_repertory"
             android:layout_weight="1"
-            android:text="现有库存"
+            android:text="@string/Existing_inventory"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -51,7 +51,7 @@
         <TextView
             android:id="@+id/tv_number"
             android:layout_weight="1"
-            android:text="销售数量"
+            android:text="@string/Sales_volumes"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -59,7 +59,7 @@
         <TextView
             android:id="@+id/tv_total"
             android:layout_weight="1"
-            android:text="商品总价"
+            android:text="@string/Total_commodity_price"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -67,7 +67,7 @@
         <TextView
             android:id="@+id/tv_received"
             android:layout_weight="1"
-            android:text="实收金额"
+            android:text="@string/Amount_received"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -82,7 +82,7 @@
         <TextView
             android:id="@+id/tv_lirun"
             android:layout_weight="1"
-            android:text="利率"
+            android:text="@string/interest_rate"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -91,7 +91,7 @@
             android:visibility="gone"
             android:id="@+id/tv_lirunli"
             android:layout_weight="1"
-            android:text="利率利"
+            android:text="@string/Interest_rate_interest"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"

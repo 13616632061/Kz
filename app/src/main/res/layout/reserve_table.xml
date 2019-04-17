@@ -27,7 +27,7 @@
             android:layout_marginRight="20dp"
             android:textColor="#fff"
             android:background="@drawable/but_fenlei"
-            android:text="确定" />
+            android:text="@string/confirm" />
 
         <Button
             android:id="@+id/but_cancel"
@@ -40,7 +40,7 @@
             android:layout_marginRight="20dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_red"
-            android:text="取消" />
+            android:text="@string/cancel" />
 
 
 

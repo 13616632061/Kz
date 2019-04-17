@@ -16,7 +16,7 @@
             android:id="@+id/tv_biaoti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="挂单"
+            android:text="@string/put_order"
             android:textSize="24dp" />
 
 

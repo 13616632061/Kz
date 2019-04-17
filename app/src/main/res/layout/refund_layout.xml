@@ -29,7 +29,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-            android:text="退款方式"
+            android:text="@string/Method_of_refund"
             android:textSize="18dp" />
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:text="现金"
+            android:text="@string/cash"
             android:textSize="18dp" />
     </RelativeLayout>
 
@@ -56,7 +56,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:textSize="18dp"
-            android:text="申请数量"
+            android:text="@string/Number_of_applications"
              />
 
 
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv_wenti"
-            android:text="问题描述"
+            android:text="@string/Problem_description"
             android:layout_marginBottom="10dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
@@ -116,7 +116,7 @@
             android:layout_height="100dp" />
 
         <Button
-            android:text="提交"
+            android:text="@string/submit"
             android:background="@drawable/but_fenlei"
             android:layout_below="@+id/ed_describe"
             android:layout_centerHorizontal="true"

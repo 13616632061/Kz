@@ -57,7 +57,7 @@
             <TextView
                 android:textSize="20sp"
                 android:layout_centerInParent="true"
-                android:text="分类"
+                android:text="@string/classification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
@@ -87,7 +87,7 @@
             android:id="@+id/btn_ok"
             android:textSize="25sp"
             android:textColor="#ffffff"
-            android:text="选好了"
+            android:text="@string/SelectedOK"
             android:background="@drawable/btn_red"
             android:layout_centerInParent="true"
             android:layout_width="300dp"
@@ -95,7 +95,7 @@
         <Button
             android:id="@+id/btn_search"
             android:textSize="20sp"
-            android:text="搜索"
+            android:text="@string/scanning"
             android:background="@drawable/btn_gray_less"
             android:layout_marginLeft="15dp"
             android:layout_centerVertical="true"

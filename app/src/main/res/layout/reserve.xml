@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="备用金"
+            android:text="@string/reserve_fund"
             android:textColor="#fff"
             android:textSize="30dp" />
     </android.support.v7.widget.Toolbar>
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
-            android:text="请输入备用金"
+            android:text="@string/Please_enter_the_reserve_fund"
             android:textSize="22dp" />
 
         <EditText
@@ -56,7 +56,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/ed_beijin"
-            android:hint="请输入备用金"
+            android:hint="@string/Please_enter_the_reserve_fund"
             android:padding="10dp"
             android:textColorHint="#bebbbb" />
 
@@ -69,7 +69,7 @@
             android:background="@drawable/logpng"
             android:onClick="onclick"
             android:paddingBottom="5dp"
-            android:text="下一步"
+            android:text="@string/next_page"
             android:textColor="#fff"
             android:textSize="16dp" />
     </LinearLayout>

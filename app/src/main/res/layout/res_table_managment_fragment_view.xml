@@ -12,7 +12,7 @@
             android:id="@+id/btn_add_table_sort"
             android:layout_marginLeft="15dp"
             android:background="@drawable/but_comm"
-            android:text="新增餐桌分类"
+            android:text="@string/New_Table_Classification"
             android:layout_width="120dp"
             android:layout_height="35dp" />
         <Button
@@ -22,7 +22,7 @@
             android:id="@+id/btn_add_table_edit"
             android:layout_marginLeft="15dp"
             android:background="@drawable/but_comm"
-            android:text="餐桌分类管理"
+            android:text="@string/Dining_table_classification_management"
             android:layout_width="120dp"
             android:layout_height="35dp" />
         <Button
@@ -32,7 +32,7 @@
             android:id="@+id/btn_add_table"
             android:layout_marginLeft="15dp"
             android:background="@drawable/but_comm"
-            android:text="新增餐桌"
+            android:text="@string/New_table"
             android:layout_width="120dp"
             android:layout_height="35dp" />
         <TextView
@@ -59,7 +59,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="5dp"
                 android:id="@+id/tv_res_table_sort"
-                android:text="餐桌分类"
+                android:text="@string/Table_classification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         <android.support.v7.widget.RecyclerView
@@ -82,7 +82,7 @@
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/btn_red"
                 android:textSize="14sp"
-                android:text="取消"
+                android:text="@string/cancel"
                 android:textColor="#ffff"
                 android:layout_width="150dp"
                 android:layout_height="35dp" />
@@ -98,7 +98,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="5dp"
                 android:id="@+id/tv_res_table"
-                android:text="餐桌"
+                android:text="@string/table"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         <android.support.v7.widget.RecyclerView

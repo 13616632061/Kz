@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textColor="#666666"
-                android:text="多谢"
+                android:text="@string/Thanks"
 
                 android:textSize="25dp" />
 
@@ -38,7 +38,7 @@
                 android:textColor="#666666"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="惠顾"
+                android:text="@string/Patronage"
                 android:gravity="center"
                 android:textSize="25dp" />
         </LinearLayout>
@@ -52,7 +52,7 @@
             android:layout_width="120dp"
             android:layout_height="80dp">
             <TextView
-                android:text="应收"
+                android:text="@string/receivables"
                 android:textColor="#666666"
                 android:textSize="22dp"
                 android:layout_margin="5dp"
@@ -87,7 +87,7 @@
                 android:layout_height="40dp">
                 <TextView
                     android:layout_marginLeft="10dp"
-                    android:text="实收"
+                    android:text="@string/netreceipts"
                     android:textColor="#666666"
                     android:textSize="14dp"
                     android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                 android:layout_height="40dp">
                 <TextView
                     android:layout_marginLeft="10dp"
-                    android:text="找零"
+                    android:text="@string/give_change"
                     android:textColor="#666666"
                     android:textSize="14sp"
                     android:layout_width="wrap_content"

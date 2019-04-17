@@ -12,7 +12,7 @@
     <TextView
         android:id="@+id/tv_title"
         android:visibility="gone"
-        android:text="挂单"
+        android:text="@string/put_order"
         android:layout_centerVertical="true"
         android:textSize="18dp"
         android:layout_width="20dp"
@@ -31,7 +31,7 @@
         android:layout_toRightOf="@+id/tv_1"
         android:id="@+id/tv_name"
         android:layout_centerVertical="true"
-        android:text="汽水，火机，雪糕..."
+        android:text=""
         android:maxEms="8"
         android:singleLine="true"
         android:ellipsize="end"
@@ -51,7 +51,7 @@
 
     <Button
         android:id="@+id/but_order"
-        android:text="取单"
+        android:text="@string/get_order"
         android:layout_centerVertical="true"
         android:textColor="#ffffff"
         android:layout_toLeftOf="@+id/but_print"
@@ -68,7 +68,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="20dp"
-            android:text="更多"
+            android:text="@string/more"
             android:background="@drawable/btn_gray_less"
             android:layout_width="wrap_content"
             android:layout_height="37dp" />
@@ -95,7 +95,7 @@
 
             <Button
                 android:id="@+id/but_add"
-                android:text="添加备注"
+                android:text="@string/Add_remarks"
                 android:background="@drawable/btn_gray_less"
                 android:layout_width="wrap_content"
                 android:layout_height="37dp"
@@ -105,7 +105,7 @@
 
             <Button
                 android:id="@+id/but_cancel"
-                android:text="作废"
+                android:text="@string/To_void"
                 android:layout_toLeftOf="@+id/but_print_text"
                 android:background="@drawable/btn_gray_less"
                 android:layout_width="wrap_content"
@@ -118,7 +118,7 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="20dp"
-                android:text="打印"
+                android:text="@string/btnSend"
                 android:textColor="#ffffff"
                 android:background="@drawable/btn_red"
                 android:layout_width="wrap_content"

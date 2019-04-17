@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="设置"
+            android:text="@string/menu_settings"
             android:textColor="#ffffff"
             android:textSize="22dp" />
     </android.support.v7.widget.Toolbar>
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="数据库的备份"
+            android:text="@string/Backup_of_database"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
             android:visibility="gone"
             android:id="@+id/tv_name"
             android:layout_alignParentRight="true"
-            android:hint="店铺名称"
+            android:hint="@string/Shop_name"
             android:textColorHint="#b4b4b4"
             android:background="@drawable/edit_bg"
             android:padding="5dp"
@@ -59,14 +59,14 @@
 
                 <Button
                     android:id="@+id/but_backup"
-                    android:text="备份数据库"
+                    android:text="@string/Backup_database"
                     android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
 
                 <Button
-                    android:text="恢复数据"
+                    android:text="@string/Restore_data"
                     android:layout_toLeftOf="@+id/but_backup"
                     android:layout_marginRight="10dp"
                     android:id="@+id/but_restroe"
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/tv_discount"
-                    android:text="全场折扣"
+                    android:text="@string/Full_court_discount"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="wrap_content"
@@ -106,7 +106,7 @@
                     android:layout_marginRight="30dp"
                     android:background="#fdfdfe"
                     android:paddingRight="20dp"
-                    android:hint="请输入全场折扣小于10"
+                    android:hint="@string/Please_enter_a_discount_of_less_than_10"
                     android:singleLine="true"
                     android:textColorHint="#bcb5b5"
                     android:textSize="14sp" />
@@ -125,7 +125,7 @@
 
                 <TextView
                     android:id="@+id/tv_name_map"
-                    android:text="地址"
+                    android:text="@string/Address"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="wrap_content"
@@ -141,7 +141,7 @@
                     android:layout_marginRight="30dp"
                     android:background="#fdfdfe"
                     android:paddingRight="20dp"
-                    android:hint="请输入打印地址"
+                    android:hint="@string/Please_enter_a_print_address"
                     android:singleLine="true"
                     android:textColorHint="#bcb5b5"
                     android:textSize="14sp" />
@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/ed_name_remarks"
-                    android:text="打印备注"
+                    android:text="@string/Print_remarks"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="wrap_content"
@@ -197,7 +197,7 @@
                     android:layout_marginRight="30dp"
                     android:background="#fdfdfe"
                     android:paddingRight="20dp"
-                    android:hint="请输入打印的备注"
+                    android:hint="@string/Please_enter_Print_remarks"
                     android:singleLine="true"
                     android:textColorHint="#bcb5b5"
                     android:textSize="14sp" />
@@ -205,7 +205,7 @@
                 <EditText
                     android:visibility="gone"
                     android:background="@drawable/edit_bg"
-                    android:hint="请输入打印的备注"
+                    android:hint="@string/Please_enter_Print_remarks"
                     android:textColorHint="#b4b4b4"
                     android:padding="5dp"
                     android:layout_alignParentRight="true"
@@ -234,7 +234,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/ed_ip"
-                    android:text="Ip地址:"
+                    android:text="@string/IP_address_"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="wrap_content"
@@ -250,7 +250,7 @@
                     android:layout_marginRight="30dp"
                     android:background="#fdfdfe"
                     android:paddingRight="20dp"
-                    android:hint="请输入IP地址"
+                    android:hint="@string/Please_enter_the_IP_address"
                     android:singleLine="true"
                     android:textColorHint="#bcb5b5"
                     android:textSize="14sp" />
@@ -266,7 +266,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="打印单价"
+                    android:text="@string/Printing_unit_price"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="match_parent"
@@ -295,7 +295,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
         <TextView
-            android:text="开机启动"
+            android:text="@string/Boot_up"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -322,7 +322,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="是否开启备用金"
+            android:text="@string/Whether_to_open_the_reserve_fund"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -350,7 +350,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             <TextView
-                android:text="是否自动刷新数据"
+                android:text="@string/Whether_to_refresh_data_automatically"
                 android:layout_margin="5dp"
                 android:padding="10dp"
                 android:layout_width="match_parent"
@@ -377,7 +377,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="是否自动打印小票"
+            android:text="@string/Whether_to_print_the_receipt_automatically"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -402,7 +402,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="是否自动打印订单标签"
+            android:text="@string/Whether_to_print_the_order_label_automatically"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -429,7 +429,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="打印小票张数"
+            android:text="@string/Print_out_the_number_of_tickets"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -439,7 +439,7 @@
             android:layout_centerVertical="true"
             android:textSize="15sp"
             android:textColor="#ffffff"
-            android:text="保存"
+            android:text="@string/save"
             android:layout_marginRight="15dp"
             android:layout_alignParentRight="true"
             android:background="@drawable/btn_orange"
@@ -460,7 +460,7 @@
             android:layout_centerVertical="true"
             android:textSize="15sp"
             android:layout_toLeftOf="@+id/edit_unms"
-            android:text="每次打印数量"
+            android:text="@string/Number_of_prints_per_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -474,7 +474,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="是否开启副屏二维码支付"
+            android:text="@string/Whether_to_Turn_on_Two_Dimensional_Code_Payment_for_Subscreen"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -503,7 +503,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="是否关闭本地计重栏"
+                    android:text="@string/Whether_to_close_the_local_weighing_bar"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="match_parent"
@@ -531,7 +531,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="小票小计显示折后价"
+                    android:text="@string/Ticket_subtotals_show_discount"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="match_parent"
@@ -567,7 +567,7 @@
                     android:layout_centerVertical="true"
                     android:padding="10dp"
                     android:layout_marginLeft="10dp"
-                    android:text="微信二维码" />
+                    android:text="@string/Wechat_Two_Dimensional_Code" />
 
                 <ImageView
                     android:src="@drawable/kuozhang"
@@ -589,7 +589,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="支付宝二维码"
+                    android:text="@string/Alipay_2D_code"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="match_parent"
@@ -615,7 +615,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/ed_name_local_password"
-                    android:text="退货和立减密码"
+                    android:text="@string/Return_and_reduction_codes"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="wrap_content"
@@ -633,7 +633,7 @@
                     android:layout_marginRight="30dp"
                     android:background="#fdfdfe"
                     android:paddingRight="20dp"
-                    android:hint="请输入密码"
+                    android:hint="@string/input_password"
                     android:singleLine="true"
                     android:textColorHint="#bcb5b5"
                     android:textSize="14sp" />
@@ -650,7 +650,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="修改密码"
+            android:text="@string/change_password"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -676,7 +676,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             <TextView
-                android:text="标签打印"
+                android:text="@string/Label_printing"
                 android:layout_margin="5dp"
                 android:padding="10dp"
                 android:layout_width="match_parent"
@@ -701,7 +701,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="设置副屏的视频"
+            android:text="@string/Setting_Video_for_Subscreen"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -726,7 +726,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="设置副屏的图片"
+                    android:text="@string/Set_up_the_picture_of_the_sub_screen"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="match_parent"
@@ -751,7 +751,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv1"
-            android:text="自助收银商品设置"
+            android:text="@string/Setting_up_of_Self_Cashier_Goods"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -761,7 +761,7 @@
             android:layout_centerVertical="true"
             android:textSize="15sp"
             android:textColor="#ffffff"
-            android:text="保存"
+            android:text="@string/save"
             android:layout_marginRight="15dp"
             android:layout_alignParentRight="true"
             android:background="@drawable/btn_orange"
@@ -782,7 +782,7 @@
             android:layout_centerVertical="true"
             android:textSize="15sp"
             android:layout_toLeftOf="@+id/edit_selfservice_nums"
-            android:text="每次自助订单商品数量"
+            android:text="@string/Quantity_of_goods_per_self_service_order"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -796,7 +796,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="自助是否连接蓝牙小票机"
+            android:text="@string/Does_the_self_service_connect_to_Bluetooth_ticket_machine"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -823,7 +823,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="是否开启餐桌"
+                    android:text="@string/Whether_to_open_the_table_or_not"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="match_parent"
@@ -851,7 +851,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="支付后打印"
+                    android:text="@string/Print_after_payment"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="match_parent"
@@ -881,7 +881,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/edit_name_resolving_power"
-                    android:text="设置分辨率"
+                    android:text="@string/Setting_Resolution"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="wrap_content"
@@ -892,7 +892,7 @@
                     android:layout_centerVertical="true"
                     android:textSize="15sp"
                     android:textColor="#ffffff"
-                    android:text="保存"
+                    android:text="@string/save"
                     android:layout_marginRight="15dp"
                     android:layout_alignParentRight="true"
                     android:background="@drawable/btn_orange"
@@ -912,7 +912,7 @@
                     android:background="#fdfdfe"
                     android:paddingRight="20dp"
                     android:digits="123"
-                    android:hint="请输入123"
+                    android:hint="@string/Please_input_123"
                     android:maxLength="1"
                     android:singleLine="true"
                     android:textColorHint="#bcb5b5"
@@ -930,7 +930,7 @@
                 android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/tv_zero"
-                    android:text="设置保留几位小数"
+                    android:text="@string/Set_to_reserve_several_decimal_places"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="wrap_content"
@@ -941,7 +941,7 @@
                     android:layout_centerVertical="true"
                     android:textSize="15sp"
                     android:textColor="#ffffff"
-                    android:text="保存"
+                    android:text="@string/save"
                     android:layout_marginRight="15dp"
                     android:layout_alignParentRight="true"
                     android:background="@drawable/btn_orange"
@@ -961,7 +961,7 @@
                     android:background="#fdfdfe"
                     android:paddingRight="20dp"
                     android:digits="012"
-                    android:hint="请输入012"
+                    android:hint="@string/Please_input_012"
                     android:maxLength="1"
                     android:singleLine="true"
                     android:textColorHint="#bcb5b5"
@@ -979,7 +979,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:text="计算器"
+                    android:text="@string/Calculator"
                     android:layout_margin="5dp"
                     android:padding="10dp"
                     android:layout_width="wrap_content"

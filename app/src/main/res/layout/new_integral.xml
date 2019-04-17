@@ -17,7 +17,7 @@
         <TextView
             android:id="@+id/tv_name1"
             android:gravity="center_horizontal"
-            android:text="条码"
+            android:text="@string/bar_code"
             android:padding="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="20dp"
@@ -48,7 +48,7 @@
         <TextView
             android:id="@+id/tv_name2"
             android:layout_gravity="center_horizontal"
-            android:text="兑换积分"
+            android:text="@string/Exchange_points"
             android:inputType="number"
             android:padding="5dp"
             android:layout_marginLeft="5dp"
@@ -78,7 +78,7 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content">
         <TextView
-            android:text="线上充值"
+            android:text="@string/Online_recharge"
             android:layout_margin="5dp"
             android:padding="10dp"
             android:layout_width="match_parent"
@@ -116,7 +116,7 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/but_tolead"
             android:background="@drawable/but_fenlei"
-            android:text="取消" />
+            android:text="@string/cancel" />
 
         <Button
             android:id="@+id/but_preserve"
@@ -126,7 +126,7 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/but_tolead"
             android:background="@drawable/but_fenlei"
-            android:text="保存" />
+            android:text="@string/save" />
 
 
     </LinearLayout>

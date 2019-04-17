@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
     <TextView
         android:layout_gravity="center"
-        android:text="没有该商品是否新增"
+        android:text="@string/Is_there_any_new_addition_to_this_product"
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:layout_marginBottom="35dp"
@@ -33,7 +33,7 @@
             android:id="@+id/but_cancel"
             android:layout_marginRight="10dp"
             android:background="@drawable/btn_gray_less"
-            android:text="取消"
+            android:text="@string/cancel"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
 
@@ -42,7 +42,7 @@
             android:id="@+id/but_new_comm"
             android:layout_marginLeft="10dp"
             android:background="@drawable/btn_gray_less"
-            android:text="去新增"
+            android:text="@string/To_add"
             android:layout_width="wrap_content"
             android:layout_height="40dp" />
 

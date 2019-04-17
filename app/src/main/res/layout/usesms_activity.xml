@@ -15,7 +15,7 @@
             android:id="@+id/tv_biaoti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="短信使用记录"
+            android:text="@string/Short_Message_Use_Record"
             android:textSize="24dp" />
         <TextView
             android:id="@+id/tv_huanghui"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:padding="3dp"
             android:textColor="@color/colorFont"
             android:textSize="18sp" />
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="发送时间"
+            android:text="@string/Sending_time"
             android:textColor="@color/colorFont"
             android:textSize="18sp" />
 
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="发送数量"
+            android:text="@string/Sending_quantity"
             android:textColor="@color/colorFont"
             android:textSize="18sp" />
 
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="发送成功数"
+            android:text="@string/Number_of_successful_transmissions"
             android:textColor="@color/colorFont"
             android:textSize="18sp" />
         <TextView
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="操作员"
+            android:text="@string/operator"
             android:textColor="@color/colorFont"
             android:textSize="18sp" />
 

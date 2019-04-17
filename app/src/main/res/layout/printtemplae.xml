@@ -12,7 +12,7 @@
         android:layout_marginTop="20dp"
         android:textSize="20px"
         android:layout_centerHorizontal="true"
-        android:text="模板选择"
+        android:text="@string/Template_selection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -22,7 +22,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginRight="10dp"
         android:layout_alignBaseline="@+id/sw_order"
-        android:text="打印顺序"
+        android:text="@string/Print_order"
         android:layout_toLeftOf="@+id/sw_order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -45,7 +45,7 @@
         android:layout_marginLeft="80dp"
         android:id="@+id/cc_box1"
         android:textSize="18px"
-        android:text="模板一"
+        android:text="@string/Template1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -56,7 +56,7 @@
         android:layout_toRightOf="@+id/cc_box1"
         android:id="@+id/cc_box2"
         android:textSize="18px"
-        android:text="模板二"
+        android:text="@string/Template2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -68,7 +68,7 @@
         android:layout_below="@+id/cc_box1"
         android:id="@+id/cc_box3"
         android:textSize="18px"
-        android:text="模板三"
+        android:text="@string/Template3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -80,7 +80,7 @@
         android:layout_toRightOf="@+id/cc_box3"
         android:id="@+id/cc_box4"
         android:textSize="18px"
-        android:text="自定义"
+        android:text="@string/custom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

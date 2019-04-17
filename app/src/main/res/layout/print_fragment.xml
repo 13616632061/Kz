@@ -1,92 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
 
     <LinearLayout
+        android:id="@+id/ll_view"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:id="@+id/ll_view"
-        android:orientation="vertical"
-        android:layout_width="58dp"
-        android:layout_height="wrap_content"/>
+        android:orientation="vertical" />
 
     <LinearLayout
-        android:layout_alignParentRight="true"
         android:id="@+id/ll_sett"
-        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
 
 
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_" />
 
-            <CheckBox
-                android:text="编号"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Shop_name" />
 
-            <CheckBox
-                android:text="店铺名"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Telephone" />
 
-            <CheckBox
-                android:text="电话"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Order_number" />
 
-            <CheckBox
-                android:text="订单号"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Order_time" />
 
-            <CheckBox
-                android:text="下单时间"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Name_and_quantity_subtotal" />
 
-            <CheckBox
-                android:text="品名  数量  小计"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:text="品名
-单价  数量  小计"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/List_price_subtotal" />
 
 
-            <CheckBox
-                android:text="折扣优惠"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Discount" />
 
-            <CheckBox
-                android:text="会员号"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Member_ID" />
 
-            <CheckBox
-                android:text="积分"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:text="余额"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/integral" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Balance" />
 
 
-            <CheckBox
-                android:text="地址"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Address" />
 
     </LinearLayout>
-
 
 
 </RelativeLayout>

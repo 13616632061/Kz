@@ -16,7 +16,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-            android:text="退款方式"
+            android:text="@string/Method_ofrefund"
             android:textSize="18dp" />
 
         <TextView
@@ -26,7 +26,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
-            android:text="现金"
+            android:text="@string/cash"
             android:textSize="18dp" />
     </RelativeLayout>
 
@@ -43,7 +43,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:textSize="18dp"
-            android:text="申请数量"
+            android:text="@string/Number_of_applications"
             />
 
 
@@ -99,7 +99,7 @@
         <EditText
             android:background="@drawable/bg_edittext"
             android:id="@+id/ed_describe"
-            android:hint="请输入商户名字"
+            android:hint="@string/Please_enter_the_name_of_the_merchant"
             android:gravity="left"
             android:layout_toLeftOf="@+id/but_submit"
             android:layout_centerVertical="true"
@@ -116,7 +116,7 @@
                     android:background="@drawable/bg_edittext"
                     android:id="@+id/ed_phone"
                     android:gravity="left"
-                    android:hint="请输入联系方式"
+                    android:hint="@string/Please_enter_your_contact_information"
                     android:layout_toLeftOf="@+id/but_submit"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
@@ -128,7 +128,7 @@
 
             </LinearLayout>
         <Button
-            android:text="提交"
+            android:text="@string/submit"
             android:layout_alignParentRight="true"
             android:background="@drawable/but_fenlei"
             android:id="@+id/but_submit"

@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:text="员工"
+            android:text="@string/staff"
             android:textSize="18dp"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/but_statement"
-                android:text="员工管理"
+                android:text="@string/Staff_management"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"
@@ -42,7 +42,7 @@
                 android:layout_height="1dp"/>
             <RadioButton
                 android:id="@+id/Rl_operate"
-                android:text="敏感操作记录"
+                android:text="@string/Sensitive_Operational_Record"
                 android:button="@null"
                 android:gravity="center"
                 android:background="#ffffff"

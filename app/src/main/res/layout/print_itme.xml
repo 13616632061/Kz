@@ -12,7 +12,7 @@
         <TextView
             android:id="@+id/tv_xuhao"
             android:gravity="center"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -29,7 +29,7 @@
         <TextView
             android:id="@+id/tv_Price"
             android:gravity="center"
-            android:text="价格"
+            android:text="@string/price"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -37,7 +37,7 @@
         <TextView
             android:id="@+id/tv_Specifications"
             android:gravity="center"
-            android:text="规格"
+            android:text="@string/specifications"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -45,7 +45,7 @@
         <TextView
             android:id="@+id/tv_unit"
             android:gravity="center"
-            android:text="单位"
+            android:text="@string/unit"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -53,7 +53,7 @@
         <TextView
             android:id="@+id/tv_code"
             android:gravity="center"
-            android:text="条码"
+            android:text="@string/bar_code"
             android:layout_margin="10dp"
             android:layout_weight="2"
             android:layout_width="0dp"
@@ -61,7 +61,7 @@
         <TextView
             android:id="@+id/tv_id"
             android:gravity="center"
-            android:text="货号"
+            android:text="@string/Item_number"
             android:layout_margin="10dp"
             android:layout_weight="2"
             android:layout_width="0dp"
@@ -70,7 +70,7 @@
         <!--android:background="@drawable/but_main"-->
         <Button
             android:layout_weight="1.3"
-            android:text="打印标签"
+            android:text="@string/print_label"
             android:layout_margin="10dp"
             android:background="@drawable/btn_red"
             android:textColor="#ffffff"

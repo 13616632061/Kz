@@ -10,7 +10,7 @@
     <TextView
         android:layout_marginTop="20dp"
         android:id="@+id/tv_title"
-        android:text="短信"
+        android:text="@string/Short_message"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="剩余"
+            android:text="@string/Surplus"
             android:layout_marginLeft="10dp"
             android:gravity="clip_vertical"
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:background="@drawable/btn_recharge"
             android:layout_marginLeft="60dp"
             android:id="@+id/but_Recharge"
-            android:text="充值"
+            android:text="@string/Recharge"
             android:layout_width="wrap_content"
             android:layout_height="37dp" />
 
@@ -61,7 +61,7 @@
         android:layout_marginTop="20dp"
         android:layout_below="@+id/ll_surplus"
         android:id="@+id/tv_front"
-        android:text="尊敬的会员用户,双十二即来,本店火爆促销!"
+        android:text="@string/our_shop_is_booming_promotion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <EditText
@@ -70,7 +70,7 @@
         android:layout_marginTop="20dp"
         android:layout_below="@+id/tv_front"
         android:id="@+id/ed_context"
-        android:hint="请输入发送的内容"
+        android:hint="@string/Please_enter_the_content_sent"
         android:background="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -79,7 +79,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/ed_context"
-        android:text=",期待您的光临!"
+        android:text="@string/Looking_forward_to_your_coming"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -92,14 +92,14 @@
         android:background="@drawable/btn_red"
         android:layout_marginLeft="60dp"
         android:id="@+id/but_submit"
-        android:text="保存并发生"
+        android:text="@string/Preserve_and_occur"
         android:layout_width="wrap_content"
         android:layout_height="40dp" />
 
 
         <TextView
             android:id="@+id/tv_record"
-            android:text="使用记录"
+            android:text="@string/Usage_record"
             android:textColor="#08bccc"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"

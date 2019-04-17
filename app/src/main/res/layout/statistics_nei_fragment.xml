@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/but_comm"
-            android:text="分类销售" />
+            android:text="@string/Classified_sales" />
 
         <EditText
             android:id="@+id/ed_seek"
@@ -26,7 +26,7 @@
             android:drawablePadding="5dp"
             android:drawableRight="@drawable/shousuo"
             android:gravity="center_vertical"
-            android:hint="商品名"
+            android:hint="@string/goods_name"
             android:imeOptions="actionSearch"
             android:singleLine="true"
             android:textColorHint="#bebbbb" />
@@ -44,7 +44,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:text="商品分类" />
+            android:text="@string/Commodity_classification" />
 
         <TextView
             android:id="@+id/tv_volume"
@@ -59,7 +59,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:text="顺序" />
+            android:text="@string/order" />
 
         <TextView
             android:id="@+id/tv_lable"
@@ -72,11 +72,11 @@
             android:drawableRight="@drawable/spinn"
             android:padding="5dp"
             android:paddingRight="5dp"
-            android:text="全部标签"
+            android:text="@string/All_tags"
             android:visibility="gone" />
         <CheckBox
             android:layout_toLeftOf="@+id/tv_volume"
-            android:text="无销售商品"
+            android:text="@string/No_Sales_Goods"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -93,7 +93,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="序号" />
+            android:text="@string/serial_number" />
 
         <TextView
             android:layout_width="0dp"
@@ -101,7 +101,7 @@
             android:layout_weight="2"
             android:gravity="center"
             android:padding="5dp"
-            android:text="商品名称" />
+            android:text="@string/Trade_name" />
 
         <TextView
             android:layout_width="0dp"
@@ -109,7 +109,7 @@
             android:layout_weight="2"
             android:gravity="center"
             android:padding="5dp"
-            android:text="商品条码" />
+            android:text="@string/Commodity_bar_code" />
 
         <TextView
             android:layout_width="0dp"
@@ -117,7 +117,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="商品分类" />
+            android:text="@string/Commodity_classification" />
 
         <TextView
             android:layout_width="0dp"
@@ -125,7 +125,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="现有库存" />
+            android:text="@string/Existing_inventory" />
 
         <TextView
             android:id="@+id/tv_rank"
@@ -135,7 +135,7 @@
             android:drawableRight="@drawable/rank"
             android:gravity="center"
             android:padding="5dp"
-            android:text="销售数量" />
+            android:text="@string/Sales_volumes" />
 
         <TextView
             android:id="@+id/tv_total"
@@ -145,7 +145,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="商品总价" />
+            android:text="@string/Total_commodity_price" />
 
         <TextView
             android:id="@+id/tv_receipts"
@@ -155,7 +155,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="实收金额" />
+            android:text="@string/Amount_received" />
         <!--<TextView-->
         <!--android:layout_weight="1"-->
         <!--android:text="实收占比"-->
@@ -171,7 +171,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="利润" />
+            android:text="@string/profit" />
 
         <TextView
             android:layout_width="0dp"
@@ -179,7 +179,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="利润利"
+            android:text="@string/Profit_margin"
             android:visibility="gone" />
         <TextView
             android:id="@+id/tv_filtrate"
@@ -188,7 +188,7 @@
             android:layout_weight="0.6"
             android:gravity="center"
             android:padding="5dp"
-            android:text="筛选" />
+            android:text="@string/screen" />
 
 
     </LinearLayout>
@@ -215,7 +215,7 @@
             android:visibility="gone"
             android:id="@+id/tv_tishi"
             android:textSize="30dp"
-            android:text="没有数据"
+            android:text="@string/No_notes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -234,7 +234,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/but_fenlei"
-            android:text="对账导出"
+            android:text="@string/Reconciliation_export"
             android:visibility="gone" />
 
 

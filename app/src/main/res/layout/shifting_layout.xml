@@ -19,7 +19,7 @@
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
             android:padding="5dp"
-            android:text="筛选" />
+            android:text="@string/screen" />
     </RelativeLayout>
 
     <LinearLayout
@@ -33,7 +33,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="序号" />
+            android:text="@string/serial_number" />
 
         <TextView
             android:layout_width="0dp"
@@ -41,7 +41,7 @@
             android:layout_margin="5dp"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="开始时间" />
+            android:text="@string/start_time" />
 
         <TextView
             android:layout_width="0dp"
@@ -49,9 +49,9 @@
             android:layout_margin="5dp"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="结束时间" />
+            android:text="@string/End_time" />
         <TextView
-        android:text="收银员"
+        android:text="@string/Cashiers"
         android:layout_margin="5dp"
         android:gravity="center"
         android:layout_weight="1.5"
@@ -63,7 +63,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="收银总额" />
+            android:text="@string/Total_cash_collection" />
 
         <TextView
             android:layout_width="0dp"
@@ -71,7 +71,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="现金支付" />
+            android:text="@string/Cash_payment" />
 
         <TextView
             android:layout_width="0dp"
@@ -79,7 +79,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="移动支付" />
+            android:text="@string/mobile_type" />
 
         <TextView
             android:layout_width="0dp"
@@ -87,23 +87,23 @@
             android:layout_margin="5dp"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="备用金" />
+            android:text="@string/reserve_fund" />
         <TextView
-        android:text="上缴金额"
+        android:text="@string/turn_over_money_"
         android:layout_margin="5dp"
         android:gravity="center"
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="wrap_content" />
         <TextView
-            android:text="其他金额"
+            android:text="@string/Other_amount"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="库存现金"
+            android:text="@string/stock_cash_"
             android:layout_margin="5dp"
             android:gravity="center"
             android:layout_weight="1"

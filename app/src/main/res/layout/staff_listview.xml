@@ -12,7 +12,7 @@
         <TextView
             android:id="@+id/tv_xuhao"
             android:layout_weight="1"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -20,7 +20,7 @@
         <TextView
             android:id="@+id/tv_bncode"
             android:layout_weight="2"
-            android:text="编号"
+            android:text="@string/number_"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -28,7 +28,7 @@
         <TextView
             android:id="@+id/tv_name"
             android:layout_weight="1"
-            android:text="姓名"
+            android:text="@string/title"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -36,7 +36,7 @@
         <TextView
             android:id="@+id/tv_phone"
             android:layout_weight="2"
-            android:text="手机号码"
+            android:text="@string/phone_number"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -44,7 +44,7 @@
         <TextView
             android:id="@+id/tv_role"
             android:layout_weight="1"
-            android:text="角色"
+            android:text="@string/role"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -52,7 +52,7 @@
         <TextView
             android:id="@+id/tv_deduct"
             android:layout_weight="1"
-            android:text="销售提成"
+            android:text="@string/Sales_commission"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -60,7 +60,7 @@
         <TextView
             android:id="@+id/tv_state"
             android:layout_weight="1"
-            android:text="状态"
+            android:text="@string/States"
             android:padding="5dp"
             android:gravity="center"
             android:layout_width="0dp"
@@ -68,7 +68,7 @@
         <Button
             android:id="@+id/but_edit"
             android:layout_weight="1"
-            android:text="编辑"
+            android:text="@string/edit"
             android:textColor="@color/colormain"
             android:gravity="center"
             android:layout_margin="5dp"

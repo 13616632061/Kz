@@ -28,14 +28,14 @@
         <Button
             android:id="@+id/but_abolish"
             android:layout_marginRight="10dp"
-            android:text="取消"
+            android:text="@string/cancel"
             android:background="@drawable/but_fenlei"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
     <Button
         android:id="@+id/but_goto"
-        android:text="确定"
+        android:text="@string/confirm"
         android:layout_marginLeft="10dp"
         android:background="@drawable/but_fenlei"
         android:layout_width="wrap_content"

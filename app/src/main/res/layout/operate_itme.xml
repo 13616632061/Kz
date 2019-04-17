@@ -11,7 +11,7 @@
         <TextView
             android:id="@+id/tv_xuhao"
             android:gravity="center_horizontal"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -19,7 +19,7 @@
         <TextView
             android:id="@+id/tv_user"
             android:gravity="center_horizontal"
-            android:text="商户"
+            android:text="@string/Merchant"
             android:layout_margin="5dp"
             android:layout_weight="0.5"
             android:layout_width="0dp"
@@ -27,7 +27,7 @@
         <TextView
             android:id="@+id/tv_name"
             android:gravity="center_horizontal"
-            android:text="操作员"
+            android:text="@string/Operator"
             android:layout_margin="5dp"
             android:layout_weight="0.5"
             android:layout_width="0dp"
@@ -35,7 +35,7 @@
         <TextView
             android:id="@+id/tv_way"
             android:gravity="center_horizontal"
-            android:text="操作方式"
+            android:text="@string/Operation_mode"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -43,7 +43,7 @@
         <TextView
             android:id="@+id/tv_time"
             android:gravity="center_horizontal"
-            android:text="操作时间"
+            android:text="@string/Operation_time"
             android:layout_margin="5dp"
             android:layout_weight="1.5"
             android:layout_width="0dp"
@@ -52,7 +52,7 @@
             android:id="@+id/tv_context"
             android:textColor="#f00"
             android:gravity="center_horizontal"
-            android:text="操作内容"
+            android:text="@string/Operation_content"
             android:layout_margin="5dp"
             android:layout_weight="2"
             android:layout_width="0dp"

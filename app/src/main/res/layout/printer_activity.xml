@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingBottom="5dp"
-            android:text="条码打印"
+            android:text="@string/Barcode_printing"
             android:textColor="#fff"
             android:textSize="22dp" />
     </android.support.v7.widget.Toolbar>
@@ -42,7 +42,7 @@
         <TextView
             android:layout_margin="5dp"
             android:id="@+id/tv_label"
-            android:text="是否打印商超标签"
+            android:text="@string/Whether_Printer_Super_Label"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -64,7 +64,7 @@
             android:id="@+id/tv_price"
             android:layout_toRightOf="@+id/sw6"
             android:layout_margin="5dp"
-            android:text="是否打印易星生活"
+            android:text="@string/Whether_to_Print_EasyStar_Life"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -83,7 +83,7 @@
 
 
         <Button
-            android:text="清空数据"
+            android:text="@string/wipe_data"
             android:id="@+id/but_debug"
             android:background="@drawable/btn_gray_less"
             android:layout_toLeftOf="@+id/tv_seek"
@@ -98,7 +98,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/ed_beijin"
             android:drawableRight="@drawable/shousuo"
-            android:hint="条码/名字/拼音码"
+            android:hint="@string/Barcode_Name_Pinyin_Code"
             android:imeOptions="actionSearch"
             android:singleLine="true"
             android:padding="5dp" />
@@ -113,7 +113,7 @@
         <TextView
             android:id="@+id/tv_xuhao"
             android:gravity="center"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -121,7 +121,7 @@
         <TextView
             android:id="@+id/tv_name"
             android:gravity="center"
-            android:text="名字"
+            android:text="@string/title"
             android:layout_margin="10dp"
             android:layout_weight="2"
             android:layout_width="0dp"
@@ -129,7 +129,7 @@
         <TextView
             android:id="@+id/tv_Price"
             android:gravity="center"
-            android:text="价格"
+            android:text="@string/price"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -137,7 +137,7 @@
         <TextView
             android:id="@+id/tv_Specifications"
             android:gravity="center"
-            android:text="规格"
+            android:text="@string/specifications"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -145,7 +145,7 @@
         <TextView
             android:id="@+id/tv_unit"
             android:gravity="center"
-            android:text="单位"
+            android:text="@string/unit"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -153,7 +153,7 @@
         <TextView
             android:id="@+id/tv_code"
             android:gravity="center"
-            android:text="条码"
+            android:text="@string/bar_code"
             android:layout_margin="10dp"
             android:layout_weight="2"
             android:layout_width="0dp"
@@ -161,14 +161,14 @@
         <TextView
             android:id="@+id/tv_id"
             android:gravity="center"
-            android:text="货号"
+            android:text="@string/Item_number"
             android:layout_margin="10dp"
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <Button
             android:layout_weight="1.3"
-            android:text="批量打印"
+            android:text="@string/Batch_printing"
             android:layout_margin="10dp"
             android:background="@drawable/btn_red"
             android:id="@+id/but_print"
@@ -203,7 +203,7 @@
             android:layout_marginRight="10dp"
             android:padding="10dp"
             android:layout_marginLeft="10dp"
-            android:text="打印模板的设置"
+            android:text="@string/Print_Template_Settings"
             />
 
 
@@ -224,7 +224,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_zong"
-            android:text="总进价:"
+            android:text="@string/Total_purchase_price"
             android:textSize="16dp"
             android:visibility="gone" />
 
@@ -246,7 +246,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/tv_jinjia"
-            android:hint="总售价:"
+            android:hint="@string/Total_selling_price"
             android:textSize="16dp"
             android:visibility="gone" />
 
@@ -271,7 +271,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="20dp"
             android:padding="10dp"
-            android:text="下一页"
+            android:text="@string/next_page"
             />
 
         <TextView
@@ -295,7 +295,7 @@
             android:layout_marginRight="10dp"
             android:layout_toLeftOf="@id/tv_page"
             android:padding="10dp"
-            android:text="上一页"
+            android:text="@string/previous_page"
             />
 
 

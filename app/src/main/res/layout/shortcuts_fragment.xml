@@ -15,7 +15,7 @@
         android:layout_height="wrap_content">
         <RadioButton
             android:id="@+id/but_Quick"
-            android:text="快捷栏"
+            android:text="@string/shortcut_bar"
             android:background="@drawable/chuwu"
             android:textColor="#ffffff"
             android:gravity="center"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content" />
         <RadioButton
             android:id="@+id/but_Cook"
-            android:text="煮物栏"
+            android:text="@string/Cooking_bar"
             android:background="@drawable/chuwu"
             android:textColor="#ffffff"
             android:button="@null"
@@ -46,7 +46,7 @@
 
     <Button
         android:id="@+id/but_yidong"
-        android:text="移动位置"
+        android:text="@string/Mobile_location"
         android:layout_marginLeft="40dp"
         android:background="@drawable/but_fenlei"
         android:layout_gravity="center_vertical"
@@ -58,7 +58,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="10dp"
         android:background="@drawable/but_fenlei"
-        android:text="编辑"
+        android:text="@string/edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

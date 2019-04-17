@@ -17,7 +17,7 @@
             android:layout_margin="5dp"
             android:drawableRight="@drawable/shousuo"
             android:gravity="center_vertical"
-            android:hint="工号/姓名/电话"
+            android:hint="@string/Number_or_Name_or_Telephone"
             android:background="@drawable/fubeijin"
             android:imeOptions="actionSearch"
             android:singleLine="true"
@@ -36,7 +36,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:text="全部角色" />
+            android:text="@string/All_roles" />
 
         <TextView
             android:id="@+id/tv_state"
@@ -51,7 +51,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="5dp"
-            android:text="全部状态" />
+            android:text="@string/All_States" />
 
     </RelativeLayout>
 
@@ -66,7 +66,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="序号" />
+            android:text="@string/serial_number" />
 
         <TextView
             android:layout_width="0dp"
@@ -74,7 +74,7 @@
             android:layout_weight="2"
             android:gravity="center"
             android:padding="5dp"
-            android:text="编号" />
+            android:text="@string/number_" />
 
         <TextView
             android:layout_width="0dp"
@@ -82,7 +82,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="姓名" />
+            android:text="@string/title" />
 
         <TextView
             android:layout_width="0dp"
@@ -90,7 +90,7 @@
             android:layout_weight="2"
             android:gravity="center"
             android:padding="5dp"
-            android:text="手机号码" />
+            android:text="@string/phone_number" />
 
         <TextView
             android:layout_width="0dp"
@@ -98,7 +98,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="角色" />
+            android:text="@string/role" />
 
         <TextView
             android:layout_width="0dp"
@@ -106,7 +106,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="销售提成" />
+            android:text="@string/Sales_commission" />
 
         <TextView
             android:layout_width="0dp"
@@ -114,7 +114,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="5dp"
-            android:text="状态" />
+            android:text="@string/States" />
 
         <TextView
             android:layout_width="0dp"
@@ -151,7 +151,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:text="员工角色管理" />
+            android:text="@string/Staff_management" />
 
         <Button
             android:id="@+id/but_newemployee"
@@ -162,7 +162,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/but_fenlei"
-            android:text="新增员工" />
+            android:text="@string/New_employees" />
     </RelativeLayout>
 
 

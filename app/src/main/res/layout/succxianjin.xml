@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:text="收款成功"
+            android:text="@string/successful_receipt"
             android:textSize="30dp"
             android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:textSize="22dp"
-            android:text="已收款："
+            android:text="@string/receivable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
@@ -59,14 +59,14 @@
         android:layout_height="wrap_content">
         <TextView
             android:textSize="22dp"
-            android:text="支付方式："
+            android:text="@string/pay_type_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
             android:layout_marginLeft="20dp"
             android:textSize="22dp"
-            android:text="现金支付"
+            android:text="@string/cash_payment_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:textSize="22dp"
-            android:text="单号："
+            android:text="@string/order_"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -101,7 +101,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:textSize="22dp"
-            android:text="日期："
+            android:text="@string/date_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -120,13 +120,13 @@
         android:textColor="#f00"
         android:textSize="22dp"
         android:layout_centerHorizontal="true"
-        android:text="顾客已付款"
+        android:text="@string/customer_paid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/but_time"
-        android:text="1秒后关闭"
+        android:text="@string/close_after_one_econd"
         android:textSize="20dp"
         android:textColor="#fff"
         android:layout_alignParentBottom="true"

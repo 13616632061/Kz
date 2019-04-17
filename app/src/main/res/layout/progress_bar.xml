@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxWidth="95.0dip"
-            android:text="正在加载..."
+            android:text="@string/loading_"
             android:layout_toRightOf="@id/center_process_bar"
             android:layout_centerVertical="true" />
         <TextView android:id="@+id/tv_line"

@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/tv"
-        android:text="请重新下单"
+        android:text="@string/Please_place_the_order_again"
         android:textSize="30dp"
         android:textColor="#ffffff"
         android:background="@drawable/tost"

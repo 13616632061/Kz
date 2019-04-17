@@ -25,11 +25,11 @@
             android:background="#fff"
             android:singleLine="true"
             android:drawableLeft="@drawable/shousuo"
-            android:hint="请输入商品条码/商品名称/拼音码"
+            android:hint="@string/Please_enter_code_name_Pinyin_code"
             android:padding="5dp" />
         <Button
             android:id="@+id/but_seek"
-            android:text="搜索"
+            android:text="@string/scanning"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="序号"
+            android:text="@string/serial_number"
             android:textSize="16dp" />
 
         <TextView
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="商品条码"
+            android:text="@string/Commodity_bar_code"
             android:textSize="16dp" />
 
         <TextView
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="商品名称"
+            android:text="@string/Trade_name"
             android:textSize="16dp" />
 
         <TextView
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="拼音码"
+            android:text="@string/pinyin_code"
             android:textSize="16dp" />
 
         <TextView
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="分类"
+            android:text="@string/classification"
             android:textSize="16dp" />
 
         <TextView
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="状态"
+            android:text="@string/States"
             android:textSize="16dp" />
 
         <TextView
@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="库存"
+            android:text="@string/stock"
             android:textSize="16dp" />
 
         <TextView
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="进货价"
+            android:text="@string/buying_price"
             android:textSize="16dp" />
 
         <TextView
@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="销售价"
+            android:text="@string/Selling_price"
             android:textSize="16dp" />
 
         <TextView
@@ -118,7 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:gravity="center"
-            android:text="保质情况"
+            android:text="@string/Quality_assurance"
             android:textSize="16dp" />
     </LinearLayout>
     <View

@@ -20,7 +20,7 @@
         <TextView
             android:textSize="22dp"
             android:textColor="#ffffff"
-            android:text="关于我们"
+            android:text="@string/About_us"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -37,7 +37,7 @@
     <TextView
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:text="易众云"
+        android:text="@string/Yi_Zhong_Yun"
         android:textSize="22dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -54,7 +54,7 @@
     <TextView
         android:layout_marginLeft="20dp"
         android:textSize="18dp"
-        android:text="联系电话"
+        android:text="@string/Contact_number"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
         <TextView
             android:layout_marginLeft="20dp"
             android:textSize="18dp"
-            android:text="企业微信"
+            android:text="@string/Enterprise_WeChat"
             android:layout_marginTop="10dp"
             android:paddingBottom="10dp"
             android:layout_width="wrap_content"
@@ -91,7 +91,7 @@
             android:id="@+id/but_code"
             android:layout_marginRight="20dp"
             android:layout_centerVertical="true"
-            android:text="点击生成二维码"
+            android:text="@string/Click_to_generate_two_dimensional_code"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -118,7 +118,7 @@
         <TextView
             android:layout_marginLeft="20dp"
             android:textSize="18dp"
-            android:text="帮助反馈"
+            android:text="@string/Help_feedback"
             android:layout_marginTop="10dp"
             android:paddingBottom="10dp"
             android:layout_width="wrap_content"
@@ -139,7 +139,7 @@
         <TextView
             android:layout_marginLeft="20dp"
             android:textSize="18dp"
-            android:text="检查更新"
+            android:text="@string/Check_update"
             android:layout_marginTop="10dp"
             android:paddingBottom="10dp"
             android:layout_width="wrap_content"

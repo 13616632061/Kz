@@ -26,7 +26,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_margin="5dp"
-                    android:text="收银员"
+                    android:text="@string/Cashiers"
                     android:textSize="22dp" />
 
                 <Button
@@ -35,7 +35,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="20dp"
-                    android:text="全部" />
+                    android:text="@string/whole" />
 
 
             </RelativeLayout>
@@ -58,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="支付方式"
+                    android:text="@string/pay_type_"
                     android:textSize="22dp" />
 
                 <Button
@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="20dp"
-                    android:text="全部" />
+                    android:text="@string/whole" />
 
 
             </RelativeLayout>
@@ -90,12 +90,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="所以订单"
+                    android:text="@string/So_order"
                     android:layout_centerVertical="true"
                     android:textSize="22dp" />
 
                 <Button
-                    android:text="全部"
+                    android:text="@string/whole"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="20dp"
                     android:layout_alignParentRight="true"
@@ -162,7 +162,7 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="今天"
+                    android:text="@string/Today"
                     android:textSize="22dp" />
 
                 <RadioButton
@@ -173,7 +173,7 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="近三天"
+                    android:text="@string/Nearly_three_days"
                     android:textSize="22dp" />
 
                 <RadioButton
@@ -184,7 +184,7 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="近七天"
+                    android:text="@string/Nearly_seven_days"
                     android:textSize="22dp" />
 
                 <RadioButton
@@ -195,7 +195,7 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="本月"
+                    android:text="@string/This_month"
                     android:textSize="22dp" />
 
                 <RadioButton
@@ -207,7 +207,7 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="上月"
+                    android:text="@string/Last_month"
                     android:textSize="22dp" />
 
             </LinearLayout>
@@ -222,7 +222,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:text="起始时间" />
+                    android:text="@string/Starting_time" />
 
                 <TextView
                     android:background="@drawable/fubeijin"
@@ -244,7 +244,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:text="结束时间" />
+                    android:text="@string/End_time" />
 
                 <TextView
                     android:background="@drawable/fubeijin"
@@ -279,7 +279,7 @@
 
         <Button
             android:id="@+id/but_reset"
-            android:text="重置"
+            android:text="@string/Reset"
             android:background="@drawable/buttoncloor1"
             android:layout_width="wrap_content"
             android:layout_marginRight="20dp"
@@ -287,7 +287,7 @@
 
         <Button
             android:id="@+id/but_seek"
-            android:text="确定"
+            android:text="@string/confirm"
             android:background="@drawable/buttoncloor1"
             android:layout_width="wrap_content"
             android:layout_height="35dp" />
